@@ -33,7 +33,6 @@ const config: Config = {
           800: '#1F2937',
           900: '#111827',
         },
-
         'red-arc': {
           50: '#FEF2F2',
           100: '#FEE2E2',
@@ -82,7 +81,6 @@ const config: Config = {
           800: '#3730A3',
           900: '#312E81',
         },
-
         'purple-arc': {
           50: '#FAF5FF',
           100: '#F3E8FF',
@@ -95,7 +93,6 @@ const config: Config = {
           800: '#6B21A8',
           900: '#581C87',
         },
-
         'pink-arc': {
           50: '#FDF2F8',
           100: '#FCE7F3',
