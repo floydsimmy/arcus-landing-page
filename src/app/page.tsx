@@ -1,3 +1,4 @@
+'use client'
 import { EnvelopeSimple } from "@phosphor-icons/react";
 import { Button } from "./components/button";
 import { Navbar } from "./components/navbar";
