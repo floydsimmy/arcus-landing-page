@@ -1,16 +1,16 @@
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
-import Image from "next/image";
+import { ReactNode } from "react";
 
 interface ButtonProps {
-  imgSrc?: string;
+  icon?: ReactNode;
   content?: string;
+  children?: ReactNode;
 }
 
-export const Button = ({imgSrc, content}: ButtonProps) => {
+export const Button = ({ icon, content, children }: ButtonProps) => {
   return (
-    <button className="bg-blue-arc-700 hover:bg-blue-700 text-white py-2 px-4 rounded flex items-center gap-2">
+    <button className="bg-blue-arc-700 hover:bg-blue-arc-800 transition-colors duration-200 text-white py-2 px-4 rounded flex items-center gap-2">
       <span>{content}</span>
-      <Image src={imgSrc ?? ""} width={30} height={30} alt=""/>
+      {children ?? icon ?? null}
     </button>
-  )
-}
+  );
+};
