@@ -2,9 +2,11 @@
 import { Phone } from "@phosphor-icons/react";
 import { Button } from "./components/button";
 import { InsightCard } from "./components/insight-card";
+import Marquee from "./components/marque";
 import { Navbar } from "./components/navbar";
 import { SectionHeader } from "./components/section-header";
 import { ServiceCard } from "./components/service-card";
+import { PartnerCard } from "./components/partner-card";
 
 export default function Home() {
   return (
@@ -47,8 +49,40 @@ export default function Home() {
             <ServiceCard imgSrc="/map.svg" title="Planeamento Físico/Urbano" text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." />
             <ServiceCard imgSrc="/map.svg" title="Engenharia Multidisciplinar" text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." />
             <ServiceCard imgSrc="/map.svg" title="Fiscalização de obras" text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." />
-            
+
           </div>
+        </div>
+
+        <div className="flex flex-col gap-10 ">
+          <SectionHeader title="Projectos" description="Oferecemos serviços onde o nosso maior valor é a qualidade e a satisfação do cliente " />
+          <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-rows-2 gap-4">
+              <div className="row-span-2">
+                <img src="/project-card.png" alt="Merged" />
+              </div>
+            </div>
+            <div className="grid grid-rows-2 gap-4">
+              <div>
+                <img src="/project-card1.png" alt="2" />
+              </div>
+              <div>
+                <img src="/project-card2.png" alt="3" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-10 ">
+          <SectionHeader title="Parceiros" description="Oferecemos serviços onde o nosso maior valor é a qualidade e a satisfação do cliente " />
+          <Marquee >
+            <PartnerCard imgSrc="/R.svg" title="Tzu Chi" />
+            <PartnerCard imgSrc="/Revimo.svg" title="Revimo" />
+            <PartnerCard imgSrc="/Julen.svg" title="Julen Construções " />
+            <PartnerCard imgSrc="/UH.svg" title="Un Habit" />
+            <PartnerCard imgSrc="/Petromoc.svg" title="Petromoc" />
+            <PartnerCard imgSrc="/EDM.svg" title="Electricidade de Moçambique" />
+            <PartnerCard imgSrc="/WB.svg" title="World Bank Group" />
+          </Marquee>
         </div>
       </main>
     </div>
