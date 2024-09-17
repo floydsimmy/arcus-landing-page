@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`bg-slate-arc-400 antialiased`}
+        className={`antialiased`}
       >
         {children}
       </body>

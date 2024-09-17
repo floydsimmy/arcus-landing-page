@@ -1,19 +1,20 @@
 'use client'
 import { Phone } from "@phosphor-icons/react";
 import { Button } from "./components/button";
-import { Navbar } from "./components/navbar";
 import { InsightCard } from "./components/insight-card";
+import { Navbar } from "./components/navbar";
+import { SectionHeader } from "./components/section-header";
+import { ServiceCard } from "./components/service-card";
 
 export default function Home() {
   return (
-    <>
-    <div className="px-16 border h-full mx-auto my-0 bg-white">
+    <div className="px-16 h-full mx-auto my-0 bg-white">
       <div className="px-20 pt-4">
         <Navbar />
       </div>
-    
-      <main className="mt-11 max-w-7xl ">
-        <div className="bg-white mb-10 rounded-[64px] h-[53.75rem] p-16 flex items-center" style={{ backgroundImage: "url('./back.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+
+      <main className="mt-11 max-w-7xl flex flex-col gap-32 ">
+        <div className="bg-white rounded-[64px] h-[53.75rem] p-16 flex items-center" style={{ backgroundImage: "url('./back.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
 
           <div className="max-w-[40rem] flex flex-col gap-3 text-white">
             <div className="flex items-center gap-3">
@@ -27,19 +28,30 @@ export default function Home() {
             <div className="flex gap-3">
               <Button variant content="Peça a cotação do seu projeto" />
               <Button icon={<Phone weight="fill" />} content="Ligue-nos já" />
+
             </div>
           </div>
         </div>
-      </main>
-    </div>
-    <div className="pt-10">
-    <div className="flex gap-6 px-16 ">
+
+        <div className="flex gap-6 mt-28 ">
           <InsightCard imgSrc="/list.svg" title="Projectos" text="+100" />
           <InsightCard imgSrc="/people.svg" title="Trabalhadores" text="+50" />
           <InsightCard imgSrc="/house.svg" title="Obras concluídas" text="+50" />
           <InsightCard imgSrc="/person.svg" title="Clientes" text="+100" />
         </div>
+
+        <div className="flex flex-col gap-10 ">
+          <SectionHeader title="Serviços" description="Oferecemos serviços onde o nosso maior valor é a qualidade e a satisfação do cliente " />
+          <div className="flex gap-6">
+            <ServiceCard imgSrc="/map.svg" title="Arquitectura" text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." />
+            <ServiceCard imgSrc="/map.svg" title="Planeamento Físico/Urbano" text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." />
+            <ServiceCard imgSrc="/map.svg" title="Engenharia Multidisciplinar" text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." />
+            <ServiceCard imgSrc="/map.svg" title="Fiscalização de obras" text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." />
+            
+          </div>
+        </div>
+      </main>
     </div>
-    </>
+
   );
 }
