@@ -13,7 +13,7 @@ interface MarqueeProps {
 export default function Marquee({
   className,
   reverse,
-  pauseOnHover = false,
+  pauseOnHover = true,
   children,
   vertical = false,
   repeat = 4,
@@ -23,7 +23,7 @@ export default function Marquee({
     <div
       {...props}
       className={cn(
-        "group flex overflow-hidden p-2 [--duration:40s] [--gap:1rem] [gap:var(--gap)]",
+        "group flex overflow-hidden p-2 [--duration:15s] [--gap:1rem] [gap:var(--gap)]",
         {
           "flex-row": !vertical,
           "flex-col": vertical,

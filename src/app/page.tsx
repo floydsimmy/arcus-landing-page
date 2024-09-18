@@ -4,10 +4,11 @@ import { Button } from "./components/button";
 import { InsightCard } from "./components/insight-card";
 import Marquee from "./components/marque";
 import { Navbar } from "./components/navbar";
-import { SectionHeader } from "./components/section-header";
-import { ServiceCard } from "./components/service-card";
 import { PartnerCard } from "./components/partner-card";
 import { ProcessCard } from "./components/process-card";
+import { SectionHeader } from "./components/section-header";
+import { ServiceCard } from "./components/service-card";
+import { TestimonialCard } from "./components/testimonial-card";
 
 export default function Home() {
   return (
@@ -98,7 +99,24 @@ export default function Home() {
 
         <div className="flex flex-col gap-10 ">
           <SectionHeader title="Testemunhos" />
-          
+          <div className="flex flex-col gap-6">
+            <Marquee className="[--duration:10s]">
+             <TestimonialCard title="John Doe" text="A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura"/>
+             <TestimonialCard title="John Doe" text="A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura"/>
+             <TestimonialCard title="John Doe" text="A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura"/>
+             <TestimonialCard title="John Doe" text="A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura"/>
+             <TestimonialCard title="John Doe" text="A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura"/>
+            </Marquee>
+            <Marquee reverse>
+            <TestimonialCard title="John Doe" className="w-[23.8rem]" text="A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura"/>
+             <TestimonialCard title="John Doe" className="w-[23.8rem]" text="A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura"/>
+             <TestimonialCard title="John Doe" className="w-[23.8rem]" text="A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura"/>
+             <TestimonialCard title="John Doe" className="w-[23.8rem]" text="A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura"/>
+             <TestimonialCard title="John Doe" className="w-[23.8rem]" text="A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura"/>
+            </Marquee>
+
+            {/* <MarqueeDemo/> */}
+          </div>
         </div>
       </main>
     </div>
