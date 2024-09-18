@@ -89,7 +89,10 @@ export default function Home() {
         <div className="flex flex-col gap-10 ">
           <SectionHeader title="Processos" description="Etapas para a execução dos nossos projectos" />
           <div className="flex gap-6">
-            <ProcessCard imgSrc="/map.svg" title="Arquitectura" text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." />
+            <ProcessCard imgSrc="/Rectangle1.svg" title="1. Analise Geral" text="Fazemos a analise do seu projecto" />
+            <ProcessCard imgSrc="/Rectangle2.svg" title="2. Assinatura de Contrato" text="Fazemos o levantamento dos requisitos e entramos em um acordo." />
+            <ProcessCard imgSrc="/Rectangle3.svg" title="3. Planeamento do projecto" text="Fazemos o plano de execução do projecto" />
+            <ProcessCard imgSrc="/Rectangle4.svg" title="4. Design da estrutura" text="Vamos a elaboração do design." />
           </div>
         </div>
       </main>
