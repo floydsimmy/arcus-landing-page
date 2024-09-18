@@ -7,6 +7,7 @@ import { Navbar } from "./components/navbar";
 import { SectionHeader } from "./components/section-header";
 import { ServiceCard } from "./components/service-card";
 import { PartnerCard } from "./components/partner-card";
+import { ProcessCard } from "./components/process-card";
 
 export default function Home() {
   return (
@@ -83,6 +84,13 @@ export default function Home() {
             <PartnerCard imgSrc="/EDM.svg" title="Electricidade de Moçambique" />
             <PartnerCard imgSrc="/WB.svg" title="World Bank Group" />
           </Marquee>
+        </div>
+
+        <div className="flex flex-col gap-10 ">
+          <SectionHeader title="Processos" description="Etapas para a execução dos nossos projectos" />
+          <div className="flex gap-6">
+            <ProcessCard imgSrc="/map.svg" title="Arquitectura" text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." />
+          </div>
         </div>
       </main>
     </div>
