@@ -95,6 +95,11 @@ export default function Home() {
             <ProcessCard imgSrc="/Rectangle4.svg" title="4. Design da estrutura" text="Vamos a elaboração do design." />
           </div>
         </div>
+
+        <div className="flex flex-col gap-10 ">
+          <SectionHeader title="Testemunhos" />
+          
+        </div>
       </main>
     </div>
 

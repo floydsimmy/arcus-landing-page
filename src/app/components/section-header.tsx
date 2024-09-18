@@ -2,7 +2,7 @@ import Image from "next/image";
 
 interface SectionProps {
   title: string;
-  description: string;
+  description?: string;
 }
 
 export const SectionHeader = ({ title, description }: SectionProps) => {
