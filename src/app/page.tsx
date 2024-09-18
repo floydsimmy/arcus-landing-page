@@ -11,7 +11,7 @@ import { ProcessCard } from "./components/process-card";
 
 export default function Home() {
   return (
-    <div className="px-16 h-full mx-auto my-0 bg-white">
+    <div className="flex flex-col items-center h-full my-0 bg-white">
       <div className="px-20 pt-4">
         <Navbar />
       </div>
