@@ -146,8 +146,10 @@ const Heroabout = () => {
           </div>
         </div>
         <div
-          className="h-[13rem] bg-cover bg-center rounded-md"
-          style={{ backgroundImage: "url('/images/Prancheta1cópia6logo.png')" }}
+          className="h-[13rem] bg-cover bg-center rounded-md "
+          style={{
+            backgroundImage: "url('/images/Prancheta 1 cópia 8logo.png')",
+          }}
         ></div>
       </div>
     </div>

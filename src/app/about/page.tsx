@@ -5,7 +5,7 @@ import Heroabout from "../components/heroabout";
 const AboutUs = () => {
   return (
     <>
-    <Heroabout />
+      <Heroabout />
     </>
   );
 };
