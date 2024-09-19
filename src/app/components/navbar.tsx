@@ -1,0 +1,49 @@
+
+"use client";
+import { EnvelopeSimple } from "@phosphor-icons/react";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "./button";
+
+const transition = {
+  type: "spring",
+  mass: 0.5,
+  damping: 11.5,
+  stiffness: 100,
+  restDelta: 0.001,
+  restSpeed: 0.001,
+};
+
+const menuItems = [
+  { name: "Inicio", link: "/" },
+  { name: "Sobre nós", link: "/about" },
+  { name: "Projectos", link: "/services" },
+];
+
+export const Navbar = () => {
+  return (
+    <nav className="flex gap-64  max-w-[80rem] items-center border border-blue-arc-200 rounded-[64px]  p-8">
+      <div className="logo flex items-center">
+
+        <Image src="/logoFull.svg" className="" alt="Logo" width={100} height={50} />
+        {/* <span className="" >ARCUS</span> */}
+      </div>
+      <div className="">
+        <ul className="list-none flex gap-8">
+          {menuItems.map((item, index) => (
+            <motion.li
+              key={index}
+              whileHover={{ scale: 1.1 }}
+              transition={transition}
+              className="cursor-pointer"
+            >
+              <Link href={item.link}>{item.name}</Link>
+            </motion.li>
+          ))}
+        </ul>
+      </div>
+      <Button icon={<EnvelopeSimple />} content="Contacte-nos" />
+    </nav>
+  );
+};

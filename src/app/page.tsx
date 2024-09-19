@@ -1,101 +1,161 @@
+'use client'
+import { Phone } from "@phosphor-icons/react";
+import { Button } from "./components/button";
+import { InsightCard } from "./components/insight-card";
+import Marquee from "./components/marque";
+import { Navbar } from "./components/navbar";
+import { PartnerCard } from "./components/partner-card";
+import { ProcessCard } from "./components/process-card";
+import { SectionHeader } from "./components/section-header";
+import { ServiceCard } from "./components/service-card";
+import { TestimonialCard } from "./components/testimonial-card";
+import { Form } from "./components/form";
 import Image from "next/image";
+import { Footer } from "./components/footer";
+
+const HeroSection = () => (
+  <div className="bg-white rounded-[64px] h-[53.75rem] p-16 flex items-center" style={{ backgroundImage: "url('./back.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <div className="max-w-[40rem] flex flex-col gap-3 text-white">
+      <div className="flex items-center gap-3">
+        <hr className="w-28 border-t-[3px] border-slate-arc-400 " />
+        <span>Arquitectura</span>
+      </div>
+      <h1 className="text-6xl font-bold">Construindo o futuro com solidez, confiança e inovação.</h1>
+      <p className="leading-8">
+        Transformamos projetos em realidade, com dedicação e excelência em cada detalhe. Seja para grandes obras ou pequenas reformas, estamos prontos para concretizar suas ideias.
+      </p>
+      <div className="flex gap-3">
+        <Button variant content="Peça a cotação do seu projeto" />
+        <Button icon={<Phone weight="fill" />} content="Ligue-nos já" />
+      </div>
+    </div>
+  </div>
+);
+
+const InsightsSection = () => (
+  <div className="flex gap-6">
+    <InsightCard imgSrc="/list.svg" title="Projectos" text="+100" />
+    <InsightCard imgSrc="/people.svg" title="Trabalhadores" text="+50" />
+    <InsightCard imgSrc="/house.svg" title="Obras concluídas" text="+50" />
+    <InsightCard imgSrc="/person.svg" title="Clientes" text="+100" />
+  </div>
+);
+
+const ServicesSection = () => (
+  <div className="flex flex-col gap-10 ">
+    <SectionHeader title="Serviços" description="Oferecemos serviços onde o nosso maior valor é a qualidade e a satisfação do cliente " />
+    <div className="flex gap-6">
+      <ServiceCard imgSrc="/map.svg" title="Arquitectura" text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." />
+      <ServiceCard imgSrc="/map.svg" title="Planeamento Físico/Urbano" text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." />
+      <ServiceCard imgSrc="/map.svg" title="Engenharia Multidisciplinar" text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." />
+      <ServiceCard imgSrc="/map.svg" title="Fiscalização de obras" text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." />
+    </div>
+  </div>
+);
+
+const ProjectsSection = () => (
+  <div className="flex flex-col gap-10 ">
+    <SectionHeader title="Projectos" description="Oferecemos serviços onde o nosso maior valor é a qualidade e a satisfação do cliente " />
+    <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-rows-2 gap-4">
+        <div className="row-span-2">
+          <img src="/project-card.png" alt="Merged" />
+        </div>
+      </div>
+      <div className="grid grid-rows-2 gap-4">
+        <div>
+          <img src="/project-card1.png" alt="2" />
+        </div>
+        <div>
+          <img src="/project-card2.png" alt="3" />
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+const PartnersSection = () => (
+  <div className="flex flex-col gap-10 ">
+    <SectionHeader title="Parceiros" description="Oferecemos serviços onde o nosso maior valor é a qualidade e a satisfação do cliente " />
+    <Marquee>
+      <PartnerCard imgSrc="/R.svg" title="Tzu Chi" />
+      <PartnerCard imgSrc="/Revimo.svg" title="Revimo" />
+      <PartnerCard imgSrc="/Julen.svg" title="Julen Construções " />
+      <PartnerCard imgSrc="/UH.svg" title="Un Habit" />
+      <PartnerCard imgSrc="/Petromoc.svg" title="Petromoc" />
+      <PartnerCard imgSrc="/EDM.svg" title="Electricidade de Moçambique" />
+      <PartnerCard imgSrc="/WB.svg" title="World Bank Group" />
+    </Marquee>
+  </div>
+);
+
+const ProcessesSection = () => (
+  <div className="flex flex-col gap-10 ">
+    <SectionHeader title="Processos" description="Etapas para a execução dos nossos projectos" />
+    <div className="flex gap-6">
+      <ProcessCard imgSrc="/Rectangle1.svg" title="1. Analise Geral" text="Fazemos a analise do seu projecto" />
+      <ProcessCard imgSrc="/Rectangle2.svg" title="2. Assinatura de Contrato" text="Fazemos o levantamento dos requisitos e entramos em um acordo." />
+      <ProcessCard imgSrc="/Rectangle3.svg" title="3. Planeamento do projecto" text="Fazemos o plano de execução do projecto" />
+      <ProcessCard imgSrc="/Rectangle4.svg" title="4. Design da estrutura" text="Vamos a elaboração do design." />
+    </div>
+  </div>
+);
+
+const TestimonialsSection = () => (
+  <div className="flex flex-col gap-10 ">
+    <SectionHeader title="Testemunhos" />
+    <div className="flex flex-col gap-6">
+      <Marquee className="[--duration:10s]">
+        <TestimonialCard title="John Doe" text="A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura" />
+        <TestimonialCard title="John Doe" text="A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura" />
+        <TestimonialCard title="John Doe" text="A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura" />
+        <TestimonialCard title="John Doe" text="A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura" />
+        <TestimonialCard title="John Doe" text="A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura" />
+      </Marquee>
+      <Marquee reverse>
+        <TestimonialCard title="John Doe" className="w-[23.8rem]" text="A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura" />
+        <TestimonialCard title="John Doe" className="w-[23.8rem]" text="A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura" />
+        <TestimonialCard title="John Doe" className="w-[23.8rem]" text="A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura" />
+        <TestimonialCard title="John Doe" className="w-[23.8rem]" text="A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura" />
+        <TestimonialCard title="John Doe" className="w-[23.8rem]" text="A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura" />
+      </Marquee>
+    </div>
+  </div>
+);
+
+const ContactSection = () => (
+  <div className="flex flex-col gap-10 ">
+    
+    <div className="grid grid-cols-2 gap-6">
+      <Form />
+      <Image src={"./contact.svg"} width={780} height={800} alt="" />
+    </div>
+  </div>
+);
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div>
+      <div className="flex flex-col items-center h-full my-0 bg-white">
+        <div className="px-20 pt-4">
+          <Navbar />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <main className="mt-11 max-w-7xl flex flex-col gap-32 ">
+          <HeroSection />
+          <InsightsSection />
+          <ServicesSection />
+          <ProjectsSection />
+          <PartnersSection />
+          <ProcessesSection />
+          <TestimonialsSection />
+          <ContactSection/>
+        </main>
+      </div>
+      <div>
+        <Footer/>
+      </div>
     </div>
   );
 }
+
+
