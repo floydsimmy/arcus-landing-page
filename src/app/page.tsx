@@ -18,7 +18,7 @@ const HeroSection = () => (
     <div className="max-w-[40rem] flex flex-col gap-3 text-white">
       <div className="flex items-center gap-3">
         <hr className="w-28 border-t-[3px] border-slate-arc-400 " />
-        <span>Arquitectura</span>
+        <span className="text-base leading-6">Arquitectura</span>
       </div>
       <h1 className="text-6xl font-bold">Construindo o futuro com solidez, confiança e inovação.</h1>
       <p className="leading-8">
