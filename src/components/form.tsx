@@ -1,6 +1,6 @@
 "use client";
-import { Input } from "@/app/components/input";
-import { Label } from "@/app/components/label";
+import { Input } from "@/components/input";
+import { Label } from "@/components/label";
 import { cn } from "@/lib/utils";
 import React from "react";
 import { Button } from "./button";

@@ -18,7 +18,7 @@ const transition = {
 const menuItems = [
   { name: "Inicio", link: "/" },
   { name: "Sobre nós", link: "/about" },
-  { name: "Projectos", link: "/services" },
+  { name: "Projectos", link: "/projects" },
 ];
 
 export const Navbar = () => {

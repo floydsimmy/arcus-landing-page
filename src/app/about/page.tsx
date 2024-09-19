@@ -1,10 +1,10 @@
 'use client'
 import { Phone } from "@phosphor-icons/react";
-import { Button } from "../components/button";
-import { OrgStatementCard } from "../components/cards/org-statment-card";
-import { TeamCard } from "../components/cards/team-card";
-import { Footer } from "../components/footer";
-import { Navbar } from "../components/navbar";
+import { Button } from "../../components/button";
+import { OrgStatementCard } from "../../components/cards/org-statment-card";
+import { TeamCard } from "../../components/cards/team-card";
+import { Footer } from "../../components/footer";
+import { Navbar } from "../../components/navbar";
 
 const HeroSection = () => (
   <div className="bg-white rounded-[64px] h-[53.75rem] p-16 flex items-center" style={{ backgroundImage: "url('./back.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
