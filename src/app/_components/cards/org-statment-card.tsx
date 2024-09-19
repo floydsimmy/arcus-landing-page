@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import { SectionHeader } from "../section-header";
 
-import { CardProps } from '@/components/cards/CardProps';
+import { CardProps } from '@/app/_components/cards/CardProps';
 
 
 type OrgCardProps = CardProps & {

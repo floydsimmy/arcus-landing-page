@@ -1,4 +1,6 @@
-import { Navbar } from "@/components/navbar";
+import { Footer } from "@/app/_components/footer";
+import { Navbar } from "@/app/_components/navbar";
+import { SectionHeader } from "@/app/_components/section-header";
 
 export default function Projects() {
   return (
@@ -8,14 +10,8 @@ export default function Projects() {
           <Navbar />
         </div>
         <main className="mt-11 max-w-7xl flex flex-col gap-32 ">
-          <HeroSection />
-          <InsightsSection />
-          <ServicesSection />
-          <ProjectsSection />
-          <PartnersSection />
-          <ProcessesSection />
-          <TestimonialsSection />
-          <ContactSection />
+          <SectionHeader title="Nossos Projectos" />
+
         </main>
       </div>
       <div>

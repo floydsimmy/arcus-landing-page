@@ -1,17 +1,17 @@
 'use client'
 import { Phone } from "@phosphor-icons/react";
 import Image from "next/image";
-import { Button } from "../components/button";
-import { InsightCard } from "../components/cards/insight-card";
-import { PartnerCard } from "../components/cards/partner-card";
-import { ProcessCard } from "../components/cards/process-card";
-import { ServiceCard } from "../components/cards/service-card";
-import { TestimonialCard } from "../components/cards/testimonial-card";
-import { Footer } from "../components/footer";
-import { Form } from "../components/form";
-import Marquee from "../components/marque";
-import { Navbar } from "../components/navbar";
-import { SectionHeader } from "../components/section-header";
+import { Button } from "./_components/button";
+import { InsightCard } from "./_components/cards/insight-card";
+import { PartnerCard } from "./_components/cards/partner-card";
+import { ProcessCard } from "./_components/cards/process-card";
+import { ServiceCard } from "./_components/cards/service-card";
+import { TestimonialCard } from "./_components/cards/testimonial-card";
+import { Footer } from "./_components/footer";
+import { Form } from "./_components/form";
+import Marquee from "./_components/marque";
+import { Navbar } from "./_components/navbar";
+import { SectionHeader } from "./_components/section-header";
 
 const HeroSection = () => (
   <div className="bg-white rounded-[64px] h-[53.75rem] p-16 flex items-center" style={{ backgroundImage: "url('./back.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
