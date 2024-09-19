@@ -33,7 +33,7 @@ const HeroSection = () => (
 );
 
 const InsightsSection = () => (
-  <div className="flex gap-6 mt-28 ">
+  <div className="flex gap-6">
     <InsightCard imgSrc="/list.svg" title="Projectos" text="+100" />
     <InsightCard imgSrc="/people.svg" title="Trabalhadores" text="+50" />
     <InsightCard imgSrc="/house.svg" title="Obras concluídas" text="+50" />

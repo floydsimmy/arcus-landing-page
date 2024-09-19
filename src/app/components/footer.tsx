@@ -45,9 +45,6 @@ export const Footer = () => {
         <hr className="border-t-[1px] w-full" />
         <div className="flex justify-between w-full text-base leading-6"><span>© 2024 Arcus</span><span className="">Feito pela: Digital View</span></div>
       </div>
-
-
-
     </footer>
   )
 }
