@@ -11,27 +11,7 @@ import { ServiceCard } from "./components/service-card";
 import { TestimonialCard } from "./components/testimonial-card";
 import { Form } from "./components/form";
 import Image from "next/image";
-
-export default function Home() {
-  return (
-    <div className="flex flex-col items-center h-full my-0 bg-white">
-      <div className="px-20 pt-4">
-        <Navbar />
-      </div>
-
-      <main className="mt-11 max-w-7xl flex flex-col gap-32 ">
-        <HeroSection />
-        <InsightsSection />
-        <ServicesSection />
-        <ProjectsSection />
-        <PartnersSection />
-        <ProcessesSection />
-        <TestimonialsSection />
-        <ContactSection/>
-      </main>
-    </div>
-  );
-}
+import { Footer } from "./components/footer";
 
 const HeroSection = () => (
   <div className="bg-white rounded-[64px] h-[53.75rem] p-16 flex items-center" style={{ backgroundImage: "url('./back.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
@@ -152,3 +132,30 @@ const ContactSection = () => (
     </div>
   </div>
 );
+
+export default function Home() {
+  return (
+    <div>
+      <div className="flex flex-col items-center h-full my-0 bg-white">
+        <div className="px-20 pt-4">
+          <Navbar />
+        </div>
+        <main className="mt-11 max-w-7xl flex flex-col gap-32 ">
+          <HeroSection />
+          <InsightsSection />
+          <ServicesSection />
+          <ProjectsSection />
+          <PartnersSection />
+          <ProcessesSection />
+          <TestimonialsSection />
+          <ContactSection/>
+        </main>
+      </div>
+      <div>
+        <Footer/>
+      </div>
+    </div>
+  );
+}
+
+
