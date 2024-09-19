@@ -1,6 +1,6 @@
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { CardProps } from "./CardProps";
-import { cn } from "@/lib/utils";
 
 type TestimonialCardProps = CardProps & {
   className?: string;

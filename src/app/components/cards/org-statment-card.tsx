@@ -1,11 +1,10 @@
 import { ReactNode } from "react";
-import { SectionHeader } from "./section-header";
+import { SectionHeader } from "../section-header";
 
-import { CardProps } from '@/app/components/CardProps';
+import { CardProps } from '@/app/components/cards/CardProps';
 
 
 type OrgCardProps = CardProps & {
-  className?: string;
   children?: ReactNode
 };
 

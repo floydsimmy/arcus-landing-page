@@ -1,17 +1,17 @@
 'use client'
 import { Phone } from "@phosphor-icons/react";
+import Image from "next/image";
 import { Button } from "./components/button";
-import { InsightCard } from "./components/insight-card";
+import { InsightCard } from "./components/cards/insight-card";
+import { PartnerCard } from "./components/cards/partner-card";
+import { ProcessCard } from "./components/cards/process-card";
+import { ServiceCard } from "./components/cards/service-card";
+import { TestimonialCard } from "./components/cards/testimonial-card";
+import { Footer } from "./components/footer";
+import { Form } from "./components/form";
 import Marquee from "./components/marque";
 import { Navbar } from "./components/navbar";
-import { PartnerCard } from "./components/partner-card";
-import { ProcessCard } from "./components/process-card";
 import { SectionHeader } from "./components/section-header";
-import { ServiceCard } from "./components/service-card";
-import { TestimonialCard } from "./components/testimonial-card";
-import { Form } from "./components/form";
-import Image from "next/image";
-import { Footer } from "./components/footer";
 
 const HeroSection = () => (
   <div className="bg-white rounded-[64px] h-[53.75rem] p-16 flex items-center" style={{ backgroundImage: "url('./back.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
@@ -125,7 +125,7 @@ const TestimonialsSection = () => (
 
 const ContactSection = () => (
   <div className="flex flex-col gap-10 ">
-    
+
     <div className="grid grid-cols-2 gap-6">
       <Form />
       <Image src={"./contact.svg"} width={780} height={800} alt="" />
@@ -148,11 +148,11 @@ export default function Home() {
           <PartnersSection />
           <ProcessesSection />
           <TestimonialsSection />
-          <ContactSection/>
+          <ContactSection />
         </main>
       </div>
       <div>
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );
