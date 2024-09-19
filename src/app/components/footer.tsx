@@ -17,7 +17,7 @@ export const Footer = () => {
     <footer className="bg-blue-arc-800 text-white flex flex-col justify-center
     items-center  h-[16.5rem]">
       <div className=" flex flex-col items-center gap-8">
-        <div className="flex justify-center items-center gap-[23.43rem]">
+        <div className="flex justify-center items-center gap-[17.43rem]">
           <Image src="/logoFullWhite.svg" className="" alt="Logo" width={100} height={50} />
           <div>
             <ul className="list-none flex gap-8">
