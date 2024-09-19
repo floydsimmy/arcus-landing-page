@@ -3,8 +3,8 @@ import { Phone } from "@phosphor-icons/react";
 import { Button } from "../components/button";
 import { OrgStatementCard } from "../components/cards/org-statment-card";
 import { TeamCard } from "../components/cards/team-card";
-import { Navbar } from "../components/navbar";
 import { Footer } from "../components/footer";
+import { Navbar } from "../components/navbar";
 
 const HeroSection = () => (
   <div className="bg-white rounded-[64px] h-[53.75rem] p-16 flex items-center" style={{ backgroundImage: "url('./back.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
@@ -28,7 +28,7 @@ const HeroSection = () => (
 );
 
 const TeamSection = () => (
-  <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 mt-12">
+  <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 ">
     <TeamCard title="Florêncio Chau" text="Coordenador de Orçamento e Fiscalização" />
     <TeamCard title="John Doe" text="Chefe de something" />
     <TeamCard title="Stela Nhantumbo" text="Chefe de Administração/Finanças" />
@@ -37,7 +37,7 @@ const TeamSection = () => (
 )
 
 const OrganazationSection = () => (
-  <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-12">
+  <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
     <OrgStatementCard title="Missão" text="Trazer inovação e praticidade na elaboração e execução de projectos arquitetônicos, permitindo a obtenção de um resultado surpreendente." />
     <OrgStatementCard title="Visão" text="Ser referência na área de consultoria de planeamento arquitetônico e urbano, engenharia multidisciplinar, gestão e desenvolvimento." />
     <OrgStatementCard title="Valores">
@@ -52,7 +52,7 @@ const OrganazationSection = () => (
 )
 
 const AdditionalInfoSection = () => (
-  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-12">
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
     <div className="bg-white p-6 border rounded-lg shadow-lg text-slate-arc-800">
       <h1 className="text-slate-arc-800 font-semibold text-4xl">Informação adicional</h1>
       <p className="mt-4 text-lg">Saiba mais sobre nós.</p>
@@ -79,14 +79,17 @@ const AdditionalInfoSection = () => (
 const AboutUs = () => {
   return (
     <>
-      <div className="w-full max-w-screen-xl mx-auto p-4 lg:py-12">
-        <div className="px-20">
+      <div className="flex flex-col items-center h-full my-0 bg-white">
+        <div className="px-20 pt-4">
           <Navbar />
         </div>
-        <HeroSection />
-        <OrganazationSection />
-        <TeamSection />
-        <AdditionalInfoSection />
+        <main className="mt-11 max-w-7xl flex flex-col gap-32 ">
+          <HeroSection />
+          <OrganazationSection />
+          <TeamSection />
+          <AdditionalInfoSection />
+        </main>
+
 
       </div>
       <div>
