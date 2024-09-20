@@ -11,9 +11,9 @@ export default function Projects() {
         <div className="px-20 pt-4">
           <Navbar />
         </div>
-        <main className="mt-11 max-w-7xl flex flex-col gap-32 ">
+        <main className="mt-11 max-w-7xl flex flex-col">
           <SectionHeader title="Nossos Projectos" />
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-3 gap-12">
             <ProjectCard imgSrc="./project1.svg" title="Escola Primária 12 de Outubro" text="A Escola Primária 12 de Outubro foi concebida com o objetivo de proporcionar uma educação de qualidade para crianças em idade escolar na comunidade local. O processo de criação do projeto envolveu várias etapas importantes, desde a concepção da ideia inicial até a implementação final."/>
             <ProjectCard imgSrc="./project1.svg" title="Escola Primária 12 de Outubro" text="A Escola Primária 12 de Outubro foi concebida com o objetivo de proporcionar uma educação de qualidade para crianças em idade escolar na comunidade local. O processo de criação do projeto envolveu várias etapas importantes, desde a concepção da ideia inicial até a implementação final."/>
             <ProjectCard imgSrc="./project1.svg" title="Escola Primária 12 de Outubro" text="A Escola Primária 12 de Outubro foi concebida com o objetivo de proporcionar uma educação de qualidade para crianças em idade escolar na comunidade local. O processo de criação do projeto envolveu várias etapas importantes, desde a concepção da ideia inicial até a implementação final."/>
@@ -22,7 +22,7 @@ export default function Projects() {
             <ProjectCard imgSrc="./project1.svg" title="Escola Primária 12 de Outubro" text="A Escola Primária 12 de Outubro foi concebida com o objetivo de proporcionar uma educação de qualidade para crianças em idade escolar na comunidade local. O processo de criação do projeto envolveu várias etapas importantes, desde a concepção da ideia inicial até a implementação final."/>
           </div>
         </main>
-        {/* <Pagination totalPages={10} initialPage={1} /> */}
+        <Pagination total={10} initialPage={1} className="mt-10 mb-24"/>
       </div>
       <div>
         <Footer />

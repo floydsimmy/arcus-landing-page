@@ -14,11 +14,11 @@ export const ProjectCard = ({ title, text, imgSrc }: CardProps) => {
   const truncatedText = truncateText(text ?? '', 100);
 
   return (
-    <div className='flex flex-col gap-[0.6254rem]'>
+    <div className='flex flex-col gap-[0.6254rem] p-3 hover:shadow-lg hover:border border-slate-arc-300'>
       <Image src={"./project1.svg"} alt='' width={490} height={460} />
       <h3 className='text-xl font-medium leading-[1.8rem] text-slate-arc-700 '>{title}</h3>
       <p className='text-base font-normal leading-6 text-slate-arc-600 '>{truncatedText}</p>
-      <Button content='Ver mais sobre o projecto' icon={<ArrowRight/>}/>
+      <div><Button content='Ver mais sobre o projecto' icon={<ArrowRight/>}/></div>
     </div>
   )
 }
