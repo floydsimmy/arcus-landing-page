@@ -1,8 +1,9 @@
 import { Footer } from "@/app/_components/footer";
 import { Navbar } from "@/app/_components/navbar";
 import { SectionHeader } from "@/app/_components/section-header";
+import projectsData from "@/data/projects.json";
+import { Pagination } from "@nextui-org/pagination";
 import { ProjectCard } from "../_components/cards/project-card";
-import {Pagination, PaginationItem, PaginationCursor} from "@nextui-org/pagination";
 
 export default function Projects() {
   return (
@@ -14,15 +15,20 @@ export default function Projects() {
         <main className="mt-11 max-w-7xl flex flex-col">
           <SectionHeader title="Nossos Projectos" />
           <div className="grid grid-cols-3 gap-12">
-            <ProjectCard imgSrc="./project1.svg" title="Escola Primária 12 de Outubro" text="A Escola Primária 12 de Outubro foi concebida com o objetivo de proporcionar uma educação de qualidade para crianças em idade escolar na comunidade local. O processo de criação do projeto envolveu várias etapas importantes, desde a concepção da ideia inicial até a implementação final."/>
-            <ProjectCard imgSrc="./project1.svg" title="Escola Primária 12 de Outubro" text="A Escola Primária 12 de Outubro foi concebida com o objetivo de proporcionar uma educação de qualidade para crianças em idade escolar na comunidade local. O processo de criação do projeto envolveu várias etapas importantes, desde a concepção da ideia inicial até a implementação final."/>
-            <ProjectCard imgSrc="./project1.svg" title="Escola Primária 12 de Outubro" text="A Escola Primária 12 de Outubro foi concebida com o objetivo de proporcionar uma educação de qualidade para crianças em idade escolar na comunidade local. O processo de criação do projeto envolveu várias etapas importantes, desde a concepção da ideia inicial até a implementação final."/>
-            <ProjectCard imgSrc="./project1.svg" title="Escola Primária 12 de Outubro" text="A Escola Primária 12 de Outubro foi concebida com o objetivo de proporcionar uma educação de qualidade para crianças em idade escolar na comunidade local. O processo de criação do projeto envolveu várias etapas importantes, desde a concepção da ideia inicial até a implementação final."/>
-            <ProjectCard imgSrc="./project1.svg" title="Escola Primária 12 de Outubro" text="A Escola Primária 12 de Outubro foi concebida com o objetivo de proporcionar uma educação de qualidade para crianças em idade escolar na comunidade local. O processo de criação do projeto envolveu várias etapas importantes, desde a concepção da ideia inicial até a implementação final."/>
-            <ProjectCard imgSrc="./project1.svg" title="Escola Primária 12 de Outubro" text="A Escola Primária 12 de Outubro foi concebida com o objetivo de proporcionar uma educação de qualidade para crianças em idade escolar na comunidade local. O processo de criação do projeto envolveu várias etapas importantes, desde a concepção da ideia inicial até a implementação final."/>
+
+            {projectsData.map((project) => (
+              <ProjectCard
+                key={project.id}
+                id={project.id}
+                imgSrc={project.imgSrc}
+                title={project.title}
+                text={project.text}
+              />
+            ))}
+
           </div>
         </main>
-        <Pagination total={10} initialPage={1} className="mt-10 mb-24"/>
+        <Pagination total={10} initialPage={1} className="mt-10 mb-24" />
       </div>
       <div>
         <Footer />
