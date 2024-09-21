@@ -5,6 +5,7 @@ import { OrgStatementCard } from "../_components/cards/org-statment-card";
 import { TeamCard } from "../_components/cards/team-card";
 import { Footer } from "../_components/footer";
 import { Navbar } from "../_components/navbar";
+import Link from "next/link";
 
 const HeroSection = () => (
   <div className="bg-white rounded-[64px] h-[53.75rem] p-16 flex items-center" style={{ backgroundImage: "url('./back.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
@@ -61,7 +62,7 @@ const AdditionalInfoSection = () => (
           Telefone: <span className="text-slate-arc-900 font-bold"> +258 87 313 3920</span>
         </p>
         <p className="text-slate-arc-500">
-          Localização: <span className="text-slate-arc-900">Museu</span>
+          Localização: <Link href={"https://g.co/kgs/54yy8Fp"} className="text-slate-arc-900">Museu</Link>
         </p>
         <p className="text-slate-arc-500">
           Email: <span className="text-slate-arc-900">arcus@gmail.com</span>
