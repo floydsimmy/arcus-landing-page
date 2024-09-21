@@ -2,7 +2,7 @@ import Image from "next/image";
 import { CardProps } from "./CardProps";
 
 
-export const ProcessCard = ({ imgSrc, title, text }: CardProps) => {
+export const ProcessCard = ({ imgSrc = "", title, text }: CardProps) => {
   return (
     <div className=" border border-slate-400 h-[20.9rem] w-96  flex flex-col items-center justify-center rounded-md gap-[0.625rem] px-4 ">
       <Image src={imgSrc} width={350} height={210} alt={title} />
