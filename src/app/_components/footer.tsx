@@ -1,6 +1,6 @@
 
 "use client";
-import { Phone } from "@phosphor-icons/react";
+import { MapPin, Phone } from "@phosphor-icons/react";
 import { motion } from "framer-motion";
 
 import Image from "next/image";
@@ -33,15 +33,16 @@ export const Footer = () => {
               ))}
             </ul>
           </div>
-          <div className="flex gap-4 items-center">
+          <div className="grid grid-cols-2 grid-rows-2 gap-4 items-center">
             <span className="flex items-center gap-2">
               <Phone className="" weight="fill" /> +258 87 313 3920
             </span>
             <span className="flex items-center gap-2">
               <Image src="/mail.svg" className="" alt="Mail Icon" width={20} height={20} /> info@arcus.co.mz
             </span>
-            <span className="flex items-center gap-2">
-              info@arcus.co.mz
+            <span className="flex items-center gap-2 col-span-2">
+            <MapPin weight="fill" /> <Link href={"https://g.co/kgs/54yy8Fp"}>Museu
+            </Link>
             </span>
           </div>
         </div>
