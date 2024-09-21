@@ -23,14 +23,14 @@ const menuItems = [
 
 export const Navbar = () => {
   return (
-    <nav className="flex gap-64  max-w-[80rem] items-center border border-blue-arc-200 rounded-[64px]  p-8">
+    <nav className="flex gap-64 pr-4  max-w-[80rem] items-center border border-blue-arc-200 rounded-[64px]">
       <div className="logo flex items-center">
 
-        <Image src="/logoFull.svg" className="" alt="Logo" width={100} height={50} />
-        {/* <span className="" >ARCUS</span> */}
+        <Image src="/logo.png" className="" alt="Logo" width={150} height={150} />
+        {/*  <span className="text-lg text-slate-700 leading-7 font-medium" >ARCUS</span> */}
       </div>
       <div className="">
-        <ul className="list-none flex gap-8">
+        <ul className="list-none  flex gap-8">
           {menuItems.map((item, index) => (
             <motion.li
               key={index}
