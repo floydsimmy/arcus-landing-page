@@ -14,7 +14,7 @@ const menuItems = [
 
 export const Footer = () => {
   return (
-    <footer className="bg-blue-arc-800 text-white flex flex-col justify-center
+    <footer className="bg-blue-arc-800 text-white mt-20 flex flex-col justify-center
     items-center  h-[16.5rem]">
       <div className=" flex flex-col items-center gap-8">
         <div className="flex justify-center items-center gap-[12.43rem]">

@@ -9,10 +9,8 @@ export default function Projects() {
   return (
     <div>
       <div className="flex flex-col items-center h-full my-0 bg-white">
-        <div className="px-20 pt-4">
           <Navbar />
-        </div>
-        <main className="mt-11 max-w-7xl flex flex-col">
+        <main className="mt-28 max-w-full px-9 flex flex-col">
           <SectionHeader title="Nossos Projectos" />
           <div className="grid grid-cols-3 gap-12">
 

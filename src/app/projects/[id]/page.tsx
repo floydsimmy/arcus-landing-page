@@ -35,7 +35,7 @@ export default function ProjectDetails({ params }: ProjectProps) {
         <div className="px-20 pt-4">
           <Navbar />
         </div>
-        <main className="mt-11 max-w-7xl ">
+        <main className="mt-11 max-w-full px-9">
           <div className='flex gap-8'>
             <div className='w-[50rem] '>
               <h1 className="text-3xl font-bold text-blue-arc-900">{project.title}</h1>

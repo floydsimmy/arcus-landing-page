@@ -14,7 +14,7 @@ import { Navbar } from "./_components/navbar";
 import { SectionHeader } from "./_components/section-header";
 
 const HeroSection = () => (
-  <div className="bg-white rounded-[64px] h-[53.75rem] p-16 flex items-center" style={{ backgroundImage: "url('./back.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+  <div className="bg-white rounded-[64px] h-[53.75rem] p-16 flex items-center w-full" style={{ backgroundImage: "url('./back.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
     <div className="max-w-[40rem] flex flex-col gap-3 text-white">
       <div className="flex items-center gap-3">
         <hr className="w-28 border-t-[3px] border-slate-arc-400 " />
@@ -33,7 +33,7 @@ const HeroSection = () => (
 );
 
 const InsightsSection = () => (
-  <div className="flex gap-6">
+  <div className="flex gap-6 justify-center items-center">
     <InsightCard imgSrc="/list.svg" title="Projectos" text="+100" />
     <InsightCard imgSrc="/people.svg" title="Trabalhadores" text="+50" />
     <InsightCard imgSrc="/house.svg" title="Obras concluídas" text="+50" />
@@ -42,7 +42,7 @@ const InsightsSection = () => (
 );
 
 const ServicesSection = () => (
-  <div className="flex flex-col gap-10 ">
+  <div className="flex flex-col gap-10 justify-center items-center">
     <SectionHeader title="Serviços" description="Oferecemos serviços onde o nosso maior valor é a qualidade e a satisfação do cliente " />
     <div className="flex gap-6">
       <ServiceCard imgSrc="/map.svg" title="Arquitectura" text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." />
@@ -54,7 +54,7 @@ const ServicesSection = () => (
 );
 
 const ProjectsSection = () => (
-  <div className="flex flex-col gap-10 ">
+  <div className="flex flex-col gap-10 justify-center items-center ">
     <SectionHeader title="Projectos" description="Oferecemos serviços onde o nosso maior valor é a qualidade e a satisfação do cliente " />
     <div className="grid grid-cols-2 gap-4">
       <div className="grid grid-rows-2 gap-4">
@@ -75,7 +75,7 @@ const ProjectsSection = () => (
 );
 
 const PartnersSection = () => (
-  <div className="flex flex-col gap-10 ">
+  <div className="flex flex-col gap-10 justify-center items-center max-w-[100rem] overflow-hidden">
     <SectionHeader title="Parceiros" description="Oferecemos serviços onde o nosso maior valor é a qualidade e a satisfação do cliente " />
     <Marquee>
       <PartnerCard imgSrc="/R.svg" title="Tzu Chi" />
@@ -90,7 +90,7 @@ const PartnersSection = () => (
 );
 
 const ProcessesSection = () => (
-  <div className="flex flex-col gap-10 ">
+  <div className="flex flex-col gap-10 justify-center items-center">
     <SectionHeader title="Processos" description="Etapas para a execução dos nossos projectos" />
     <div className="flex gap-6">
       <ProcessCard imgSrc="/Rectangle1.svg" title="1. Analise Geral" text="Fazemos a analise do seu projecto" />
@@ -102,7 +102,7 @@ const ProcessesSection = () => (
 );
 
 const TestimonialsSection = () => (
-  <div className="flex flex-col gap-10 ">
+  <div className="flex flex-col gap-10 justify-center items-center max-w-[100rem] overflow-hidden ">
     <SectionHeader title="Testemunhos" />
     <div className="flex flex-col gap-6">
       <Marquee className="[--duration:10s]">
@@ -124,7 +124,7 @@ const TestimonialsSection = () => (
 );
 
 const ContactSection = () => (
-  <div className="flex flex-col gap-10 ">
+  <div className="flex flex-col gap-10 justify-center items-center">
 
     <div className="grid grid-cols-2 gap-6">
       <Form />
@@ -137,10 +137,8 @@ export default function Home() {
   return (
     <div>
       <div className="flex flex-col items-center h-full my-0 bg-white">
-        <div className="px-20 pt-4">
-          <Navbar />
-        </div>
-        <main className="mt-11 max-w-7xl flex flex-col gap-32 ">
+        <Navbar />
+        <main className="mt-28 max-w-full pt-12 px-9 flex items-center justify-center flex-col gap-32 ">
           <HeroSection />
           <InsightsSection />
           <ServicesSection />

@@ -81,10 +81,8 @@ const AboutUs = () => {
   return (
     <>
       <div className="flex flex-col items-center h-full my-0 bg-white">
-        <div className="px-20 pt-4">
-          <Navbar />
-        </div>
-        <main className="mt-11 max-w-7xl flex flex-col gap-32 ">
+        <Navbar />
+        <main className="mt-28 max-w-full px-9 flex flex-col gap-32 ">
           <HeroSection />
           <OrganazationSection />
           <TeamSection />
