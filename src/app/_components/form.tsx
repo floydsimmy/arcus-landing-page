@@ -29,12 +29,12 @@ export function Form() {
           <Label htmlFor="email">Email</Label>
           <Input id="email" className="border-none" placeholder="Insira seu email" type="email" />
         </LabelInputContainer>
-        <Label htmlFor="message">Message</Label>
+        <Label htmlFor="message">Mensagem</Label>
 
         <LabelInputContainer className="mb-4">
 
           <TextArea  id="message"
-            placeholder="Write your message here" className=" border-none w-full h-[4.375rem]" />
+            placeholder="Escreva sua mensagem aqui" className=" border-none w-full h-[4.375rem]" />
         </LabelInputContainer>
 
 
