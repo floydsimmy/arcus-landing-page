@@ -6,6 +6,7 @@ import { TeamCard } from "../_components/cards/team-card";
 import { Footer } from "../_components/footer";
 import { Navbar } from "../_components/navbar";
 import Link from "next/link";
+import { SectionHeader } from "../_components/section-header";
 
 const HeroSection = () => (
   <div className="bg-white rounded-[64px] h-[53.75rem] p-16 flex items-center" style={{ backgroundImage: "url('./back.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
@@ -29,11 +30,14 @@ const HeroSection = () => (
 );
 
 const TeamSection = () => (
-  <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 ">
-    <TeamCard title="Florêncio Chau" text="Coordenador de Orçamento e Fiscalização" />
-    <TeamCard title="John Doe" text="Chefe de something" />
-    <TeamCard title="Stela Nhantumbo" text="Chefe de Administração/Finanças" />
-    <TeamCard title="Eduardo Nhate" text="Chefe de Projectos/Criação" />
+  <div>
+    <SectionHeader title="Nossa equipe" description="" />
+    <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 ">
+      <TeamCard title="Eduardo Nhate" text="Chefe de Projectos/Criação" />
+      <TeamCard title="John Doe" text="Chefe de something" />
+      <TeamCard title="Stela Nhantumbo" text="Chefe de Administração/Finanças" />
+      <TeamCard title="Florêncio Chau" text="Coordenador de Orçamento e Fiscalização" />
+    </div>
   </div>
 )
 
