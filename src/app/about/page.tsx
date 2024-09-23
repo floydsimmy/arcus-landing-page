@@ -54,7 +54,7 @@ const OrganazationSection = () => (
 
 const AdditionalInfoSection = () => (
   <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
-    <div className="bg-white p-6 border rounded-lg shadow-lg text-slate-arc-800">
+    <div className="bg-white p-6 border rounded-2xl text-slate-arc-800">
       <h1 className="text-slate-arc-800 font-semibold text-4xl">Informação adicional</h1>
       <p className="mt-4 text-lg">Saiba mais sobre nós.</p>
       <div className="mt-4 text-base font-medium leading-6">
