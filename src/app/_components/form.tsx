@@ -22,19 +22,19 @@ export function Form() {
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
           <LabelInputContainer>
             <Label htmlFor="name">Nome</Label>
-            <Input id="name" placeholder="Insira seu nome" type="text" />
+            <Input id="name" className="border-none" placeholder="Insira seu nome" type="text" />
           </LabelInputContainer>
         </div>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="email">Email</Label>
-          <Input id="email" placeholder="Insira seu email" type="email" />
+          <Input id="email" className="border-none" placeholder="Insira seu email" type="email" />
         </LabelInputContainer>
         <Label htmlFor="message">Message</Label>
 
         <LabelInputContainer className="mb-4">
 
-          <TextArea id="message"
-            placeholder="Write your message here" className="w-full h-[4.375rem]" />
+          <TextArea  id="message"
+            placeholder="Write your message here" className=" border-none w-full h-[4.375rem]" />
         </LabelInputContainer>
 
 
