@@ -32,10 +32,8 @@ export default function ProjectDetails({ params }: ProjectProps) {
   return (
     <div>
       <div className="flex flex-col items-center h-full my-0 bg-white">
-        <div className="px-20 pt-4">
-          <Navbar />
-        </div>
-        <main className="mt-11 max-w-full px-9">
+        <Navbar />
+        <main className="mt-28  max-w-7xl px-9">
           <div className='flex gap-8'>
             <div className='w-[50rem] '>
               <h1 className="text-3xl font-bold text-blue-arc-900">{project.title}</h1>
@@ -44,7 +42,6 @@ export default function ProjectDetails({ params }: ProjectProps) {
             <div className='flex flex-col w-[48rem] gap-8'>
               <div>
                 <h2 className='font-bold leading-7 text-xl'>Introdução</h2>
-                {/* <p className="mt-4 text-lg">{project.text}</p> */}
                 <p className='text-xl leading-7'>A criação da Escola Primária 12 de Outubro foi um processo estratégico que visou atender à necessidade de educação de qualidade na comunidade local. O projeto envolveu uma série de etapas fundamentais, desde a identificação da necessidade até a implementação e abertura da escola. Abaixo, está o percurso detalhado que levou à concretização deste importante projeto educacional.</p>
               </div>
               <div>
