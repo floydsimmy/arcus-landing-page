@@ -33,7 +33,7 @@ const HeroSection = () => (
 );
 
 const InsightsSection = () => (
-  <div className="flex gap-6 justify-center items-center">
+  <div className="flex gap-6 justify-center items-center w-full">
     <InsightCard imgSrc="/list.svg" title="Projectos" text="+100" />
     <InsightCard imgSrc="/people.svg" title="Trabalhadores" text="+50" />
     <InsightCard imgSrc="/house.svg" title="Obras concluídas" text="+50" />
@@ -42,7 +42,7 @@ const InsightsSection = () => (
 );
 
 const ServicesSection = () => (
-  <div className="flex flex-col gap-10 justify-center items-center">
+  <div className="flex flex-col gap-10 justify-center items-center w-full">
     <SectionHeader title="Serviços" description="Oferecemos serviços onde o nosso maior valor é a qualidade e a satisfação do cliente " />
     <div className="flex gap-6">
       <ServiceCard imgSrc="/map.svg" title="Arquitectura" text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." />
@@ -54,7 +54,7 @@ const ServicesSection = () => (
 );
 
 const ProjectsSection = () => (
-  <div className="flex flex-col gap-10 justify-center items-center ">
+  <div className="flex flex-col gap-10 justify-center items-center w-full">
     <SectionHeader title="Projectos" description="Oferecemos serviços onde o nosso maior valor é a qualidade e a satisfação do cliente " />
     <div className="grid grid-cols-2 gap-4">
       <div className="grid grid-rows-2 gap-4">
@@ -75,9 +75,9 @@ const ProjectsSection = () => (
 );
 
 const PartnersSection = () => (
-  <div className="flex flex-col gap-10 justify-center items-center max-w-[87.5rem] overflow-hidden">
+  <div className="flex flex-col gap-10 justify-center items-center w-full overflow-hidden">
     <SectionHeader title="Parceiros" description="Oferecemos serviços onde o nosso maior valor é a qualidade e a satisfação do cliente " />
-    <Marquee>
+    <Marquee className="">
       <PartnerCard imgSrc="/R.svg" title="Tzu Chi" />
       <PartnerCard imgSrc="/Revimo.svg" title="Revimo" />
       <PartnerCard imgSrc="/Julen.svg" title="Julen Construções " />
@@ -90,9 +90,9 @@ const PartnersSection = () => (
 );
 
 const ProcessesSection = () => (
-  <div className="flex flex-col gap-10 justify-center items-center max-w-[87.5rem]">
+  <div className="flex flex-col gap-10 justify-center items-center w-full">
     <SectionHeader title="Processos" description="Etapas para a execução dos nossos projectos" />
-    <div className="flex gap-6">
+    <div className="flex gap-6 ">
       <ProcessCard imgSrc="/Rectangle1.svg" title="1. Analise Geral" text="Fazemos a analise do seu projecto" />
       <ProcessCard imgSrc="/Rectangle2.svg" title="2. Assinatura de Contrato" text="Fazemos o levantamento dos requisitos e entramos em um acordo." />
       <ProcessCard imgSrc="/Rectangle3.svg" title="3. Planeamento do projecto" text="Fazemos o plano de execução do projecto" />
@@ -102,10 +102,10 @@ const ProcessesSection = () => (
 );
 
 const TestimonialsSection = () => (
-  <div className="flex flex-col gap-10 justify-center items-center max-w-[87.5rem] overflow-hidden ">
+  <div className="flex flex-col gap-10 justify-center items-center w-full overflow-hidden">
     <SectionHeader title="Testemunhos" />
     <div className="flex flex-col gap-6">
-      <Marquee className="[--duration:10s]">
+      <Marquee className="[--duration:10s] ">
         <TestimonialCard title="John Doe" text="A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura" />
         <TestimonialCard title="John Doe" text="A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura" />
         <TestimonialCard title="John Doe" text="A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura" />
@@ -138,7 +138,7 @@ export default function Home() {
     <div>
       <div className="flex flex-col items-center h-full my-0 bg-white">
         <Navbar />
-        <main className="mt-28 max-w-full pt-12 px-9 flex items-center justify-center flex-col gap-32 ">
+        <main className="mt-28 max-w-7xl pt-12 px-9 flex items-center justify-center flex-col gap-32 ">
           <HeroSection />
           <InsightsSection />
           <ServicesSection />
