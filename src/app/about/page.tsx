@@ -76,45 +76,40 @@ const OrganazationSection = () => (
 );
 
 const AdditionalInfoSection = () => (
-  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
-    <div className="bg-white p-6 border rounded-2xl text-slate-arc-800">
-      <h1 className="text-slate-arc-800 font-semibold text-4xl">
-        Informação adicional
-      </h1>
-      <p className="mt-4 text-lg">Saiba mais sobre nós.</p>
-      <div className="mt-4 text-base font-medium leading-6">
-        <p className="text-slate-arc-500">
-          Telefone:{" "}
-          <span className="text-slate-arc-900 font-bold">
-            {" "}
-            +258 87 313 3920
-          </span>
-        </p>
-        <p className="text-slate-arc-500">
-          Localização:{" "}
-          <Link
-            href={"https://g.co/kgs/54yy8Fp"}
-            className="text-slate-arc-900"
-          >
-            Museu
-          </Link>
-        </p>
-        <p className="text-slate-arc-500">
-          Email: <span className="text-slate-arc-900">arcus@gmail.com</span>
-        </p>
-        <p className="text-slate-arc-500">
-          Horário de funcionamento:{" "}
-          <span className="text-slate-arc-900">
-            09:00 às 17:00 de Segunda a Sexta-feira
-          </span>
-        </p>
-      </div>
+<div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
+  <div className="bg-white p-6 border rounded-2xl text-slate-arc-800">
+    <h1 className="text-slate-arc-800 font-semibold text-2xl md:text-4xl">
+      Informação adicional
+    </h1>
+    <p className="mt-4 text-lg">Saiba mais sobre nós.</p>
+    <div className="mt-4 text-base font-medium leading-6">
+      <p className="text-slate-arc-500">
+        Telefone:{" "}
+        <span className="text-slate-arc-900 font-bold"> +258 87 313 3920</span>
+      </p>
+      <p className="text-slate-arc-500">
+        Localização:{" "}
+        <Link href={"https://g.co/kgs/54yy8Fp"} className="text-slate-arc-900">
+          Museu
+        </Link>
+      </p>
+      <p className="text-slate-arc-500">
+        Email: <span className="text-slate-arc-900">arcus@gmail.com</span>
+      </p>
+      <p className="text-slate-arc-500">
+        Horário de funcionamento:{" "}
+        <span className="text-slate-arc-900">
+          09:00 às 17:00 de Segunda a Sexta-feira
+        </span>
+      </p>
     </div>
-    <div
-      className="h-[13rem] bg-cover bg-center rounded-md"
-      style={{ backgroundImage: "url('/images/Prancheta2.png')" }}
-    ></div>
   </div>
+  <div
+    className="h-[13rem] bg-cover bg-center rounded-md"
+    style={{ backgroundImage: "url('/images/Prancheta2.png')" }}
+  ></div>
+</div>
+
 );
 
 const AboutUs = () => {
