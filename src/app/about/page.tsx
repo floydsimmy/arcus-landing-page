@@ -116,7 +116,7 @@ const AboutUs = () => {
   return (
     <>
       <div className="flex flex-col items-center h-full my-0 bg-white">
-        {/* <Navbar /> */}
+        <Navbar />
         <main className="mt-28 max-w-full px-9 flex flex-col gap-32 ">
           <HeroSection />
           <OrganazationSection />
