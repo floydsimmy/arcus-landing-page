@@ -23,7 +23,7 @@ const menuItems = [
 
 export const Navbar = () => {
   return (
-    <nav className="flex fixed top-4 gap-64 pr-[1.375rem]  max-w-[80rem] items-center border border-blue-arc-100 rounded-[64px] bg-white">
+    <nav className="flex fixed z-20 top-4 gap-64 pr-[1.375rem]  max-w-[80rem] items-center border border-blue-arc-100 rounded-[64px] bg-white">
       <div className="logo flex items-center">
 
         <Image src="/logo.png" className="" alt="Logo" width={150} height={150} />

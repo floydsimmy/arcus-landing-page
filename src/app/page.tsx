@@ -1,5 +1,6 @@
 'use client'
-import { Phone } from "@phosphor-icons/react";
+import projectsData from "@/data/projects.json";
+import { ArrowRight, Phone } from "@phosphor-icons/react";
 import Image from "next/image";
 import { Button } from "./_components/button";
 import { InsightCard } from "./_components/cards/insight-card";
@@ -33,7 +34,7 @@ const HeroSection = () => (
 );
 
 const InsightsSection = () => (
-  <div className="flex gap-6 justify-center items-center w-full">
+  <div className="flex flex-col lg:flex-row gap-6 justify-center items-center w-full">
     <InsightCard imgSrc="/list.svg" title="Projectos" text="+100" />
     <InsightCard imgSrc="/people.svg" title="Trabalhadores" text="+50" />
     <InsightCard imgSrc="/house.svg" title="Obras concluídas" text="+50" />
@@ -42,34 +43,50 @@ const InsightsSection = () => (
 );
 
 const ServicesSection = () => (
-  <div className="flex flex-col gap-10 justify-center items-center w-full">
+  <div className="flex flex-col gap-10 justify-center items-center w-full overflow-hidden">
     <SectionHeader title="Serviços" description="Oferecemos serviços onde o nosso maior valor é a qualidade e a satisfação do cliente " />
-    <div className="flex gap-6">
+
+    <Marquee className="lg:flex gap-6 ">
       <ServiceCard imgSrc="/map.svg" title="Arquitectura" text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." />
       <ServiceCard imgSrc="/map.svg" title="Planeamento Físico/Urbano" text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." />
       <ServiceCard imgSrc="/map.svg" title="Engenharia Multidisciplinar" text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." />
       <ServiceCard imgSrc="/map.svg" title="Fiscalização de obras" text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." />
-    </div>
+      <ServiceCard imgSrc="/map.svg" title="Avaliação Patrimonial" text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." />
+      <ServiceCard imgSrc="/map.svg" title="Estudos do impacto ambiental" text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." />
+    </Marquee>
+
   </div>
 );
 
 const ProjectsSection = () => (
   <div className="flex flex-col gap-10 justify-center items-center w-full">
     <SectionHeader title="Projectos" description="Oferecemos serviços onde o nosso maior valor é a qualidade e a satisfação do cliente " />
-    <div className="grid grid-cols-2 gap-4">
+    <div className="grid grid-cols-2 gap-4 h-[48rem]">
       <div className="grid grid-rows-2 gap-4">
-        <div className="row-span-2">
-          <img src="/project-card.png" alt="Merged" />
+        <div className="relative text-white flex flex-col justify-center row-span-2 rounded-[4rem] px-8 bg-cover bg-center group " style={{ backgroundImage: `url(${projectsData[0].imgSrc} )` }}>
+          <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-[4rem]"></div>
+          <h3 className="z-10 text-3xl font-medium leading-[2.81rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            {projectsData[0].title}
+          </h3>
+          <p className=" z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">{projectsData[0].text}</p>
         </div>
       </div>
       <div className="grid grid-rows-2 gap-4">
-        <div>
-          <img src="/project-card1.png" alt="2" />
+        <div className="relative text-white flex flex-col justify-center bg-cover bg-center group h-full rounded-[4rem] px-8" style={{ backgroundImage: `url(${projectsData[1].imgSrc} )` }}>
+          <h3 className="z-10 text-3xl font-medium leading-[2.81rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            {projectsData[1].title}
+          </h3>
+          <p className=" z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">{projectsData[1].text}</p>
         </div>
-        <div>
-          <img src="/project-card2.png" alt="3" />
+        <div className="relative text-white flex flex-col justify-center bg-cover bg-center group rounded-[4rem] px-8" style={{ backgroundImage: `url(${projectsData[2].imgSrc} )` }}>
+          <h3 className="z-10 text-3xl font-medium leading-[2.81rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            {projectsData[2].title}
+          </h3>
+          <p className=" z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">{projectsData[2].text}</p>
         </div>
       </div>
+    </div>
+    <div className="flex justify-end w-full"><Button icon={<ArrowRight weight="light" />} content="Ver projectos" />
     </div>
   </div>
 );
@@ -138,7 +155,7 @@ export default function Home() {
     <div>
       <div className="flex flex-col items-center h-full my-0 bg-white">
         <Navbar />
-        <main className="mt-28 max-w-7xl pt-12 px-9 flex items-center justify-center flex-col gap-32 ">
+        <main className="mt-28 max-w-[24.9rem] lg:max-w-7xl pt-12 px-9 flex items-center justify-center flex-col gap-32 ">
           <HeroSection />
           <InsightsSection />
           <ServicesSection />
