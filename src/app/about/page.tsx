@@ -1,27 +1,32 @@
 'use client'
 import { Phone } from "@phosphor-icons/react";
+import Link from "next/link";
 import { Button } from "../_components/button";
 import { OrgStatementCard } from "../_components/cards/org-statment-card";
 import { TeamCard } from "../_components/cards/team-card";
 import { Footer } from "../_components/footer";
 import { Navbar } from "../_components/navbar";
-import Link from "next/link";
 import { SectionHeader } from "../_components/section-header";
 
 const HeroSection = () => (
-  <div className="bg-white rounded-[64px] h-[53.75rem] p-16 flex items-center" style={{ backgroundImage: "url('./back.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
-    <div className="max-w-[40rem] flex flex-col gap-3 text-white">
+  <div className="bg-white rounded-[64px] min-h-[29.375rem] lg:h-[53.75rem] p-16 flex items-center w-[23.875rem] lg:w-full"
+    style={{
+      backgroundImage: "url('./back.png')",
+      backgroundSize: 'cover',
+      backgroundPosition: 'center'
+    }}>
+    <div className="max-w-[25 .875rem] lg:max-w-[40rem] flex flex-col gap-3 text-white">
       <div className="flex items-center gap-3">
-        <hr className="w-28 border-t-[3px] border-slate-arc-400" />
+        <hr className="min-w-8 lg:w-28 border-t-[3px] border-slate-arc-400" />
         <span className="text-base leading-6">Sobre nós</span>
       </div>
-      <h1 className="text-6xl font-bold">Arcus</h1>
-      <p className="leading-8">
+      <h1 className="text-xl leading-7 lg:leading-[6rem] lg:text-6xl font-bold">Arcus</h1>
+      <p className="text-base leading-6 lg:leading-8">
         Criada em 1998, a Arcus Consultores actua como uma empresa de
         consultoria de planeamento arquitetônico e urbano, engenharia
         multidisciplinar, gestão e desenvolvimento.
       </p>
-      <div className="flex gap-3">
+      <div className="flex flex-col lg:flex-row gap-3">
         <Button variant content="Peça a cotação do seu projeto" />
         <Button icon={<Phone weight="fill" />} content="Ligue-nos já" />
       </div>
