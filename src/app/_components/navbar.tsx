@@ -4,8 +4,8 @@ import { EnvelopeSimple, List, X } from "@phosphor-icons/react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 import { Button } from "./button";
+import { useState } from "react";
 
 const transition = {
   type: "spring",
@@ -31,20 +31,23 @@ export const Navbar = () => {
         <Image src="/logo.png" className="" alt="Logo" width={150} height={150} />
         {/*  <span className="text-lg text-slate-700 leading-7 font-medium" >ARCUS</span> */}
       </div>
-      <ul className={`max-md:absolute transition-all duration-200 ease-in z-[-1] list-none flex max-md:flex-col w-full  h-screen gap-8 ${open ? "top-11 opacity-100 pt-8 pb-6 px-4" : "top-[-690px]"} bg-white`}>
-        {menuItems.map((item, index) => (
-          <li
-            key={index}
-            className="cursor-pointer"
-          >
-            <Link href={item.link}>{item.name}</Link>
-          </li>
-        ))}
-      </ul>
-      <button className=" " onClick={() => setOpen(!open)}>
-        {
+      <ul className={`list-none flex gap-8 max-md:absolute transition-all ease-in max-md:z-[-1] max-md:flex-col max-md:h-screen ${open ? "top-11 opacity-100 pt-8 pb-6 px-4" : "top-[-690px]"} bg-white max-md:w-full `}>
+          {menuItems.map((item, index) => (
+            <motion.li
+              key={index}
+              whileHover={{ scale: 1.1 }}
+              transition={transition}
+              className="cursor-pointer"
+            >
+              <Link href={item.link}>{item.name}</Link>
+            </motion.li>
+          ))}
+        </ul>
+     
+      <button className="lg:hidden" onClick={() => setOpen(!open)}>
+      {
           open ? (
-            <X weight="bold"/>
+            <X weight="bold" className="lg:hidden"/>
           ) : (
             <List weight="bold" className="lg:hidden" />
           )
