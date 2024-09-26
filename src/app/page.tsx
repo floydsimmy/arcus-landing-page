@@ -15,17 +15,17 @@ import { Navbar } from "./_components/navbar";
 import { SectionHeader } from "./_components/section-header";
 
 const HeroSection = () => (
-  <div className="bg-white rounded-[64px] h-[53.75rem] p-16 flex items-center w-full" style={{ backgroundImage: "url('./back.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+  <div className="bg-white rounded-[64px] h-[28.25rem] lg:h-[53.75rem] py-16 px-8 lg:p-16 flex items-center w-[24.875rem] lg:w-full" style={{ backgroundImage: "url('./back.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
     <div className="max-w-[40rem] flex flex-col gap-3 text-white">
       <div className="flex items-center gap-3">
         <hr className="w-28 border-t-[3px] border-slate-arc-400 " />
         <span className="text-base leading-6">Empresa de Consultoria</span>
       </div>
-      <h1 className="text-6xl font-bold">Construindo o futuro com solidez, confiança e inovação.</h1>
-      <p className="leading-8">
+      <h1 className="text-xl lg:text-6xl font-bold leading-7 lg:leading-[6rem]">Construindo o futuro com solidez, confiança e inovação.</h1>
+      <p className="leading-6 lg:leading-8 text-base lg:-xl">
         Transformamos projetos em realidade, com dedicação e excelência em cada detalhe. Seja para grandes obras ou pequenas reformas, estamos prontos para concretizar suas ideias.
       </p>
-      <div className="flex gap-3">
+      <div className="flex flex-col lg:flex-row gap-3">
         <Button variant content="Peça a cotação do seu projeto" />
         <Button icon={<Phone weight="fill" />} content="Ligue-nos já" />
       </div>
@@ -61,8 +61,8 @@ const ServicesSection = () => (
 const ProjectsSection = () => (
   <div className="flex flex-col gap-10 justify-center items-center w-full">
     <SectionHeader title="Projectos" description="Oferecemos serviços onde o nosso maior valor é a qualidade e a satisfação do cliente " />
-    <div className="grid grid-cols-2 gap-4 h-[48rem]">
-      <div className="grid grid-rows-2 gap-4">
+    <div className="flex flex-row lg:grid grid-cols-2 gap-4 h-[36rem] lg:h-[48rem]">
+      <div className="flex flex-row lg:grid grid-rows-2 gap-4">
         <div className="relative text-white flex flex-col justify-center row-span-2 rounded-[4rem] px-8 bg-cover bg-center group " style={{ backgroundImage: `url(${projectsData[0].imgSrc} )` }}>
           <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-[4rem]"></div>
           <h3 className="z-10 text-3xl font-medium leading-[2.81rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -71,14 +71,16 @@ const ProjectsSection = () => (
           <p className=" z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">{projectsData[0].text}</p>
         </div>
       </div>
-      <div className="grid grid-rows-2 gap-4">
+      <div className="flex flex-row lg:grid lg:grid-rows-2 gap-4">
         <div className="relative text-white flex flex-col justify-center bg-cover bg-center group h-full rounded-[4rem] px-8" style={{ backgroundImage: `url(${projectsData[1].imgSrc} )` }}>
+          <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-[4rem]"></div>
           <h3 className="z-10 text-3xl font-medium leading-[2.81rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             {projectsData[1].title}
           </h3>
           <p className=" z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">{projectsData[1].text}</p>
         </div>
         <div className="relative text-white flex flex-col justify-center bg-cover bg-center group rounded-[4rem] px-8" style={{ backgroundImage: `url(${projectsData[2].imgSrc} )` }}>
+          <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-[4rem]"></div>
           <h3 className="z-10 text-3xl font-medium leading-[2.81rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             {projectsData[2].title}
           </h3>
@@ -129,7 +131,7 @@ const TestimonialsSection = () => (
         <TestimonialCard title="John Doe" text="A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura" />
         <TestimonialCard title="John Doe" text="A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura" />
       </Marquee>
-      <Marquee reverse>
+      <Marquee className="hidden lg:flex" reverse>
         <TestimonialCard title="John Doe" className="w-[23.8rem]" text="A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura" />
         <TestimonialCard title="John Doe" className="w-[23.8rem]" text="A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura" />
         <TestimonialCard title="John Doe" className="w-[23.8rem]" text="A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura" />
@@ -143,9 +145,9 @@ const TestimonialsSection = () => (
 const ContactSection = () => (
   <div className="flex flex-col gap-10 justify-center items-center">
 
-    <div className="grid grid-cols-2 gap-6">
+    <div className="flex flex-col lg:grid lg:grid-cols-2 gap-6">
       <Form />
-      <Image src={"./contact.svg"} width={780} height={800} alt="" />
+      <Image className="hidden lg:block" src={"./contact.svg"} width={780} height={800} alt="" />
     </div>
   </div>
 );
@@ -155,7 +157,7 @@ export default function Home() {
     <div>
       <div className="flex flex-col items-center h-full my-0 bg-white">
         <Navbar />
-        <main className="mt-28 max-w-[24.9rem] lg:max-w-7xl pt-12 px-9 flex items-center justify-center flex-col gap-32 ">
+        <main className="mt-28 max-w-[24.9rem] lg:max-w-7xl pt-12 px-9  flex items-center justify-center flex-col gap-32 ">
           <HeroSection />
           <InsightsSection />
           <ServicesSection />
