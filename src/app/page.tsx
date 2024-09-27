@@ -47,7 +47,7 @@ const ServicesSection = () => (
   <div className="flex flex-col gap-10 justify-center items-center w-full overflow-hidden">
     <SectionHeader title="Serviços" description="Oferecemos serviços onde o nosso maior valor é a qualidade e a satisfação do cliente " />
 
-    <Marquee className="lg:flex gap-6 ">
+    <Marquee className="max-md:hidden flex gap-6 ">
       <ServiceCard imgSrc="/map.svg" title="Arquitectura" text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." />
       <ServiceCard imgSrc="/map.svg" title="Planeamento Físico/Urbano" text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." />
       <ServiceCard imgSrc="/map.svg" title="Engenharia Multidisciplinar" text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." />
@@ -55,6 +55,17 @@ const ServicesSection = () => (
       <ServiceCard imgSrc="/map.svg" title="Avaliação Patrimonial" text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." />
       <ServiceCard imgSrc="/map.svg" title="Estudos do impacto ambiental" text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." />
     </Marquee>
+
+    <div className="lg:hidden flex gap-4 w-full overflow-x-scroll">
+      <ServiceCard imgSrc="/map.svg" title="Arquitectura" text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." />
+
+      <ServiceCard imgSrc="/map.svg" title="Planeamento Físico/Urbano" text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." />
+
+      <ServiceCard imgSrc="/map.svg" title="Engenharia Multidisciplinar" text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." />
+      <ServiceCard imgSrc="/map.svg" title="Fiscalização de obras" text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." />
+      <ServiceCard imgSrc="/map.svg" title="Avaliação Patrimonial" text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." />
+      <ServiceCard imgSrc="/map.svg" title="Estudos do impacto ambiental" text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." />
+    </div>
 
   </div>
 );
@@ -181,7 +192,7 @@ export default function Home() {
     <div>
       <div className="flex flex-col items-center h-full my-0 bg-white">
         <Navbar />
-        <main className="mt-20 lg:mt-28 max-w-[24.9rem] lg:max-w-7xl pt-12 px-9  flex items-center justify-center flex-col gap-32 ">
+        <main className="mt-20 lg:mt-28 max-w-[24.9rem] lg:max-w-7xl pt-12 px-9  flex items-center justify-center flex-col gap-16 lg:gap-32 ">
           <HeroSection />
           <InsightsSection />
           <ServicesSection />
