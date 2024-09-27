@@ -123,7 +123,7 @@ const PartnersSection = () => (
 );
 
 const ProcessesSection = () => (
-  <div className="flex flex-col gap-10 justify-center items-center w-full">
+  <div className="flex flex-col gap-4 lg:gap-10 justify-start lg:justify-center items-center w-full overflow-x-scroll">
     <SectionHeader title="Processos" description="Etapas para a execução dos nossos projectos" />
     <div className="flex gap-6 max-md:hidden">
       <ProcessCard imgSrc="/Rectangle1.svg" title="1. Analise Geral" text="Fazemos a analise do seu projecto" />
@@ -186,7 +186,7 @@ export default function Home() {
           {/* <InsightsSection /> */}
           {/* <ServicesSection /> */}
           {/* <ProjectsSection /> */}
-          {/* <PartnersSection /> */}
+          <PartnersSection />
           <ProcessesSection />
           <TestimonialsSection />
           <ContactSection />
