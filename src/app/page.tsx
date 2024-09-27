@@ -15,18 +15,19 @@ import { Navbar } from "./_components/navbar";
 import { SectionHeader } from "./_components/section-header";
 
 const HeroSection = () => (
-  <div className="bg-white rounded-[64px] min-h-[29.375rem] lg:h-[53.75rem] p-16 flex items-center w-[23.875rem] lg:w-full" style={{ backgroundImage: "url('./back.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+  <div className="bg-white rounded-[64px] min-h-[29.375rem] lg:h-[53.75rem] lg:p-16 py-16 px-8 flex items-center w-[20rem] lg:w-full" style={{ backgroundImage: "url('./back.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
     <div className="max-w-[25.875rem] lg:max-w-[40rem] flex flex-col gap-3 text-white">
       <div className="flex items-center gap-3">
         <hr className="min-w-8 lg:w-28 border-t-[3px] border-slate-arc-400 " />
-        <span className="text-base leading-6">Empresa de Consultoria</span>
+        <span className="text-sm lg:text-base leading-6">Empresa de Consultoria</span>
       </div>
       <h1 className="text-xl lg:text-6xl font-bold leading-7 lg:leading-[6rem]">Construindo o futuro com solidez, confiança e inovação.</h1>
-      <p className="leading-6 lg:leading-8 text-base lg:-xl">
+      <p className="leading-6 lg:leading-8 text-base lg:text-xl">
         Transformamos projetos em realidade, com dedicação e excelência em cada detalhe. Seja para grandes obras ou pequenas reformas, estamos prontos para concretizar suas ideias.
       </p>
       <div className="flex flex-col lg:flex-row gap-3">
-        <Button variant content="Peça a cotação do seu projeto" />
+        <Button className="max-md:hidden" variant content="Peça a cotação do seu projeto" />
+        <Button className="lg:hidden" variant content="Peça a cotação" />
         <Button icon={<Phone weight="fill" />} content="Ligue-nos já" />
       </div>
     </div>
@@ -124,13 +125,23 @@ const PartnersSection = () => (
 const ProcessesSection = () => (
   <div className="flex flex-col gap-10 justify-center items-center w-full">
     <SectionHeader title="Processos" description="Etapas para a execução dos nossos projectos" />
-    <div className="flex gap-6 ">
+    <div className="flex gap-6 max-md:hidden">
       <ProcessCard imgSrc="/Rectangle1.svg" title="1. Analise Geral" text="Fazemos a analise do seu projecto" />
       <ProcessCard imgSrc="/Rectangle2.svg" title="2. Assinatura de Contrato" text="Fazemos o levantamento dos requisitos e entramos em um acordo." />
       <ProcessCard imgSrc="/Rectangle3.svg" title="3. Planeamento do projecto" text="Fazemos o plano de execução do projecto" />
       <ProcessCard imgSrc="/Rectangle4.svg" title="4. Design da estrutura" text="Vamos a elaboração do design." />
     </div>
+
+    <div className="lg:hidden flex justify-start w-full flex-row gap-4 overflow-x-scroll">
+      <ProcessCard imgSrc="/Rectangle1.svg" title="1. Analise Geral" text="Fazemos a analise do seu projecto" />
+      <ProcessCard imgSrc="/Rectangle2.svg" title="2. Assinatura de Contrato" text="Fazemos o levantamento dos requisitos e entramos em um acordo." />
+      <ProcessCard imgSrc="/Rectangle3.svg" title="3. Planeamento do projecto" text="Fazemos o plano de execução do projecto" />
+      <ProcessCard imgSrc="/Rectangle4.svg" title="4. Design da estrutura" text="Vamos a elaboração do design." />
+
+    </div>
   </div>
+
+
 );
 
 const TestimonialsSection = () => (
@@ -171,11 +182,11 @@ export default function Home() {
       <div className="flex flex-col items-center h-full my-0 bg-white">
         <Navbar />
         <main className="mt-28 max-w-[24.9rem] lg:max-w-7xl pt-12 px-9  flex items-center justify-center flex-col gap-32 ">
-          <HeroSection />
-          <InsightsSection />
-          <ServicesSection />
-          <ProjectsSection />
-          <PartnersSection />
+          {/* <HeroSection /> */}
+          {/* <InsightsSection /> */}
+          {/* <ServicesSection /> */}
+          {/* <ProjectsSection /> */}
+          {/* <PartnersSection /> */}
           <ProcessesSection />
           <TestimonialsSection />
           <ContactSection />

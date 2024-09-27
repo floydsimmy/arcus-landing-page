@@ -12,7 +12,7 @@ export const SectionHeader = ({ title, description }: SectionProps) => {
         <Image src="/triangle.svg" alt="triangle" width={15} height={15} />
         <h2 className="text-base lg:text-2xl leading-9 ">{title}</h2>
       </div>
-      <p className=" text-gray-600">{description} </p>
+      <p className="max-md:text-sm text-gray-600">{description} </p>
     </div>
   )
 }
