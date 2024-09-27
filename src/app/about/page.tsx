@@ -9,7 +9,7 @@ import { Navbar } from "../_components/navbar";
 import { SectionHeader } from "../_components/section-header";
 
 const HeroSection = () => (
-  <div className="bg-white rounded-[64px] min-h-[29.375rem] lg:h-[53.75rem] p-16 flex items-center w-[23.875rem] lg:w-full"
+  <div className="bg-white rounded-[64px] min-h-[29.375rem] lg:h-[53.75rem] lg:p-16 py-16 px-8 flex items-center w-[20rem] lg:w-full"
     style={{
       backgroundImage: "url('./back.png')",
       backgroundSize: 'cover',
@@ -27,7 +27,8 @@ const HeroSection = () => (
         multidisciplinar, gestão e desenvolvimento.
       </p>
       <div className="flex flex-col lg:flex-row gap-3">
-        <Button variant content="Peça a cotação do seu projeto" />
+        <Button className="lg:hidden" variant content="Cotação do projeto" />
+        <Button className="max-md:hidden" variant content="Peça a cotação do seu projeto" />
         <Button icon={<Phone weight="fill" />} content="Ligue-nos já" />
       </div>
     </div>
@@ -51,7 +52,7 @@ const OrganazationSection = () => (
     <OrgStatementCard title="Missão" text="Trazer inovação e praticidade na elaboração e execução de projectos arquitetônicos, permitindo a obtenção de um resultado surpreendente." />
     <OrgStatementCard title="Visão" text="Ser referência na área de consultoria de planeamento arquitetônico e urbano, engenharia multidisciplinar, gestão e desenvolvimento." />
     <OrgStatementCard title="Valores">
-      <ul className="mt-2 text-slate-arc-600 text-lg leading-7 list-disc list-inside">
+      <ul className="mt-2 text-slate-arc-600 text-base lg:text-lg leading-7 list-disc list-inside">
         <li>Comprometimento;</li>
         <li>Honestidade;</li>
         <li>Valorização dos recursos humanos;</li>
@@ -91,7 +92,7 @@ const AboutUs = () => {
     <>
       <div className="flex flex-col items-center h-full my-0 bg-white">
         <Navbar />
-        <main className="mt-20 lg:mt-28  max-w-7xl px-9 flex flex-col gap-32 ">
+        <main className="mt-20 lg:mt-28  max-w-7xl px-9 flex flex-col gap-16 lg:gap-32 ">
           <HeroSection />
           <OrganazationSection />
           <TeamSection />
