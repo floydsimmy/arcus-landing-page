@@ -91,7 +91,7 @@ const AboutUs = () => {
     <>
       <div className="flex flex-col items-center h-full my-0 bg-white">
         <Navbar />
-        <main className="mt-28  max-w-7xl px-9 flex flex-col gap-32 ">
+        <main className="mt-20 lg:mt-28  max-w-7xl px-9 flex flex-col gap-32 ">
           <HeroSection />
           <OrganazationSection />
           <TeamSection />
