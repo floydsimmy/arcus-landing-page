@@ -26,7 +26,7 @@ export default function Projects() {
           </div>
         </main>
 
-        <Pagination total={10} initialPage={1} className="mt-10 mb-24" />
+        <Pagination total={10} initialPage={1} className="mt-10 mb-24 z-0" />
       </div>
 
       <Footer />
