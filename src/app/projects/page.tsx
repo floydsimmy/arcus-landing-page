@@ -9,11 +9,11 @@ export default function Projects() {
   return (
     <div>
       <div className="flex flex-col items-center h-full my-0 bg-white">
-          <Navbar />
-        <main className="mt-28 max-w-7xl px-9 flex flex-col">
+        <Navbar />
+        <main className="mt-28 max-w-7xl px-4 sm:px-9 flex flex-col">
           <SectionHeader title="Nossos Projectos" />
-          <div className="grid grid-cols-3 gap-12">
 
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 mt-8">
             {projectsData.map((project) => (
               <ProjectCard
                 key={project.id}
@@ -23,14 +23,13 @@ export default function Projects() {
                 text={project.text}
               />
             ))}
-
           </div>
         </main>
+
         <Pagination total={10} initialPage={1} className="mt-10 mb-24" />
       </div>
-      <div>
-        <Footer />
-      </div>
+
+      <Footer />
     </div>
   );
 }
