@@ -35,7 +35,7 @@ const HeroSection = () => (
 );
 
 const InsightsSection = () => (
-  <div className="flex flex-row gap-6 justify-start lg:justify-center lg:items-center w-full overflow-x-scroll">
+  <div className="flex flex-row gap-6 justify-start lg:justify-center lg:items-center w-full max-md:overflow-x-scroll">
     <InsightCard imgSrc="/list.svg" title="Projectos" text="+100" />
     <InsightCard imgSrc="/people.svg" title="Trabalhadores" text="+50" />
     <InsightCard imgSrc="/house.svg" title="Obras concluídas" text="+50" />
