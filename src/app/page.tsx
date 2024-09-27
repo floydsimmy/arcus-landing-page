@@ -35,7 +35,7 @@ const HeroSection = () => (
 );
 
 const InsightsSection = () => (
-  <div className="flex flex-col lg:flex-row gap-6 justify-center items-center w-full">
+  <div className="flex flex-row gap-6 justify-start lg:justify-center lg:items-center w-full overflow-x-scroll">
     <InsightCard imgSrc="/list.svg" title="Projectos" text="+100" />
     <InsightCard imgSrc="/people.svg" title="Trabalhadores" text="+50" />
     <InsightCard imgSrc="/house.svg" title="Obras concluídas" text="+50" />
@@ -89,15 +89,15 @@ const ProjectsSection = () => (
         </div>
       </div>
     </div>
-    <div className="lg:hidden flex ml-20 gap-4 overflow-x-scroll w-[24.875rem] ">
+    <div className="lg:hidden flex gap-4 overflow-x-scroll w-full">
       {
         projectsData.map((project, index) => (
-          <div key={index} className="relative flex flex-col justify-center min-w-[20rem] rounded-[4rem] h-[31.8rem] bg-cover bg-center group" style={{ backgroundImage: `url(${project.imgSrc} )` }}>
-            <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-[4rem]"></div>
-            <h3 className="z-10 text-3xl font-medium leading-[2.81rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <div key={index} className="relative flex flex-col justify-center min-w-[20rem] rounded-[4rem] h-[31.8rem] bg-cover bg-center group text-white px-10" style={{ backgroundImage: `url(${project.imgSrc} )` }}>
+            <div className="absolute inset-0 bg-black/90 opacity-50 transition-opacity duration-300 rounded-[4rem]"></div>
+            <h3 className="z-10 text-3xl font-medium leading-[2.81rem] opacity-100 ">
               {project.title}
             </h3>
-            <p className="z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">{project.text}</p>
+            <p className="z-10 opacity-100 group-hover:opacity-100 transition-opacity duration-300">{project.text}</p>
           </div>
         ))
       }
@@ -181,11 +181,11 @@ export default function Home() {
     <div>
       <div className="flex flex-col items-center h-full my-0 bg-white">
         <Navbar />
-        <main className="mt-28 max-w-[24.9rem] lg:max-w-7xl pt-12 px-9  flex items-center justify-center flex-col gap-32 ">
-          {/* <HeroSection /> */}
-          {/* <InsightsSection /> */}
-          {/* <ServicesSection /> */}
-          {/* <ProjectsSection /> */}
+        <main className="mt-20 lg:mt-28 max-w-[24.9rem] lg:max-w-7xl pt-12 px-9  flex items-center justify-center flex-col gap-32 ">
+          <HeroSection />
+          <InsightsSection />
+          <ServicesSection />
+          <ProjectsSection />
           <PartnersSection />
           <ProcessesSection />
           <TestimonialsSection />
