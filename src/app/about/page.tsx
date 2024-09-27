@@ -15,7 +15,7 @@ const HeroSection = () => (
       backgroundSize: 'cover',
       backgroundPosition: 'center'
     }}>
-    <div className="max-w-[25 .875rem] lg:max-w-[40rem] flex flex-col gap-3 text-white">
+    <div className="max-w-[25.875rem] lg:max-w-[40rem] flex flex-col gap-3 text-white">
       <div className="flex items-center gap-3">
         <hr className="min-w-8 lg:w-28 border-t-[3px] border-slate-arc-400" />
         <span className="text-base leading-6">Sobre nós</span>

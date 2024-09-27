@@ -15,10 +15,10 @@ import { Navbar } from "./_components/navbar";
 import { SectionHeader } from "./_components/section-header";
 
 const HeroSection = () => (
-  <div className="bg-white rounded-[64px] h-[28.25rem] lg:h-[53.75rem] py-16 px-8 lg:p-16 flex items-center w-[24.875rem] lg:w-full" style={{ backgroundImage: "url('./back.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
-    <div className="max-w-[40rem] flex flex-col gap-3 text-white">
+  <div className="bg-white rounded-[64px] min-h-[29.375rem] lg:h-[53.75rem] p-16 flex items-center w-[23.875rem] lg:w-full" style={{ backgroundImage: "url('./back.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <div className="max-w-[25.875rem] lg:max-w-[40rem] flex flex-col gap-3 text-white">
       <div className="flex items-center gap-3">
-        <hr className="w-28 border-t-[3px] border-slate-arc-400 " />
+        <hr className="min-w-8 lg:w-28 border-t-[3px] border-slate-arc-400 " />
         <span className="text-base leading-6">Empresa de Consultoria</span>
       </div>
       <h1 className="text-xl lg:text-6xl font-bold leading-7 lg:leading-[6rem]">Construindo o futuro com solidez, confiança e inovação.</h1>
@@ -61,8 +61,8 @@ const ServicesSection = () => (
 const ProjectsSection = () => (
   <div className="flex flex-col gap-10 justify-center items-center w-full">
     <SectionHeader title="Projectos" description="Oferecemos serviços onde o nosso maior valor é a qualidade e a satisfação do cliente " />
-    <div className="flex flex-row lg:grid grid-cols-2 gap-4 h-[36rem] lg:h-[48rem]">
-      <div className="flex flex-row lg:grid grid-rows-2 gap-4">
+    <div className="max-md:hidden grid grid-cols-2 gap-4 lg:h-[48rem]">
+      <div className="lg:grid grid-rows-2 gap-4 ">
         <div className="relative text-white flex flex-col justify-center row-span-2 rounded-[4rem] px-8 bg-cover bg-center group " style={{ backgroundImage: `url(${projectsData[0].imgSrc} )` }}>
           <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-[4rem]"></div>
           <h3 className="z-10 text-3xl font-medium leading-[2.81rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -71,7 +71,7 @@ const ProjectsSection = () => (
           <p className=" z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">{projectsData[0].text}</p>
         </div>
       </div>
-      <div className="flex flex-row lg:grid lg:grid-rows-2 gap-4">
+      <div className="grid grid-rows-2 gap-4">
         <div className="relative text-white flex flex-col justify-center bg-cover bg-center group h-full rounded-[4rem] px-8" style={{ backgroundImage: `url(${projectsData[1].imgSrc} )` }}>
           <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-[4rem]"></div>
           <h3 className="z-10 text-3xl font-medium leading-[2.81rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -87,6 +87,19 @@ const ProjectsSection = () => (
           <p className=" z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">{projectsData[2].text}</p>
         </div>
       </div>
+    </div>
+    <div className="lg:hidden flex ml-20 gap-4 overflow-x-scroll w-[24.875rem] ">
+      {
+        projectsData.map((project, index) => (
+          <div key={index} className="relative flex flex-col justify-center min-w-[20rem] rounded-[4rem] h-[31.8rem] bg-cover bg-center group" style={{ backgroundImage: `url(${project.imgSrc} )` }}>
+            <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-[4rem]"></div>
+            <h3 className="z-10 text-3xl font-medium leading-[2.81rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              {project.title}
+            </h3>
+            <p className="z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">{project.text}</p>
+          </div>
+        ))
+      }
     </div>
     <div className="flex justify-end w-full"><Button icon={<ArrowRight weight="light" />} content="Ver projectos" />
     </div>
