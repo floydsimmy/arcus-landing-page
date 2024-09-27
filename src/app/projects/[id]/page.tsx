@@ -52,7 +52,7 @@ export default function ProjectDetails({ params }: ProjectProps) {
             <div className="flex flex-col w-full md:w-[50%] gap-8">
               <div>
                 <h2 className="font-bold leading-7 text-xl">Introdução</h2>
-                <p className="text-xl leading-7">
+                <p className="text-base lg:text-lg leading-7">
                   A criação da Escola Primária 12 de Outubro foi um processo
                   estratégico que visou atender à necessidade de educação de
                   qualidade na comunidade local. O projeto envolveu uma série de
@@ -66,7 +66,7 @@ export default function ProjectDetails({ params }: ProjectProps) {
                 <h2 className="font-bold leading-7 text-xl">
                   Identificação da Necessidade de Educação
                 </h2>
-                <p className="text-xl leading-7">
+                <p className="text-base lg:text-lg leading-7">
                   A criação da Escola Primária 12 de Outubro foi um processo
                   estratégico que visou atender à necessidade de educação de
                   qualidade na comunidade local. O projeto envolveu uma série de
@@ -80,7 +80,7 @@ export default function ProjectDetails({ params }: ProjectProps) {
                 <h2 className="font-bold leading-7 text-xl">
                   Planejamento do Projeto
                 </h2>
-                <p className="text-xl leading-7">
+                <p className="text-base lg:text-lg leading-7">
                   Após a identificação da necessidade, foi criado um plano
                   detalhado para a criação da escola. Esse planejamento envolveu
                   a definição clara da missão e da visão da instituição, que se
