@@ -76,7 +76,7 @@ const ProjectsSection = () => (
     <SectionHeader title="Projectos" description="Oferecemos serviços onde o nosso maior valor é a qualidade e a satisfação do cliente " />
     <div className="max-md:hidden grid grid-cols-2 gap-4 lg:h-[48rem]">
       <div className="lg:grid grid-rows-2 gap-4 ">
-        <div className="relative text-white flex flex-col justify-center row-span-2 rounded-[4rem] px-8 bg-cover bg-center group " style={{ backgroundImage: `url(${projectsData[0].imgSrc} )` }}>
+        <div className="relative text-white flex flex-col justify-end row-span-2 rounded-[4rem] px-8 pb-16 bg-cover bg-center group " style={{ backgroundImage: `url(${projectsData[0].imgSrc} )` }}>
           <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-[4rem]"></div>
           <h3
             className="z-10 text-3xl font-medium leading-[2.81rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
