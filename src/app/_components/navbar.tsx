@@ -30,12 +30,11 @@ export const Navbar = () => {
   console.log(path);
   
   return (
-    <nav className={`flex fixed z-20 lg:top-4 gap-56 lg:pr-[1.375rem] lg:max-w-[80rem] items-center border-b lg:border border-blue-arc-100 ${open ? "bg-white" : "bg-white/85" }  backdrop-blur-md lg:rounded-[64px] max-md:h-20`}>
+    <nav className={`flex fixed z-20 lg:top-4 lg:gap-56 max-lg:justify-between lg:pr-[1.375rem] max-lg:w-full lg:max-w-[80rem] items-center border-b lg:border border-blue-arc-100 ${open ? "bg-white" : "bg-white/85" }  backdrop-blur-md lg:rounded-[64px] max-md:h-20`}>
       <div className="logo max-md:ml-3 flex items-center">
         <Image src="/logo.png" className="max-md:scale-150" alt="Logo" width={150} height={150} />
-        {/*  <span className="text-lg text-slate-700 leading-7 font-medium" >ARCUS</span> */}
       </div>
-      <ul className={`list-none flex gap-8 max-md:absolute transition-all ease-in max-md:z-[-1] max-md:flex-col max-md:h-screen ${open ? "top-16 opacity-100 pt-8 pb-6 px-4 bg-white backdrop-blur-md" : "top-[-990px]"} max-md:w-full`}>
+      <ul className={`list-none flex gap-8 max-lg:absolute transition-all ease-in max-lg:z-[-1] max-lg:flex-col max-lg:h-screen ${open ? "top-16 opacity-100 pt-8 pb-6 px-4 bg-white backdrop-blur-md" : "top-[-1990px]"} max-lg:w-full`}>
         {menuItems.map((item, index) => (
           <motion.li
             key={index}
