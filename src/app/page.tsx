@@ -233,7 +233,7 @@ const TestimonialsSection = () => (
 );
 
 const ContactSection = () => (
-  <div className="flex flex-col gap-10 justify-center items-center">
+  <div className="flex flex-col gap-10 justify-center items-center max-lg:border max-lg:rounded-2xl max-lg:pt-6">
 
     <div className="flex flex-col lg:grid lg:grid-cols-2 gap-6">
       <Form />

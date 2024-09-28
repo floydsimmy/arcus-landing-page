@@ -15,26 +15,26 @@ export function Form() {
     <div className="w-full  rounded-none md:rounded-2xl bg-white ">
       <div className="flex flex-col gap-3">
         <h2 className="text-2xl lg:text-4xl leading-[3.3rem] font-medium text-slate-600">Contacte-nos</h2>
-        <p className="leading-7 text-lg">Etapas para a execução dos nossos projectos</p>
+        <p className="leading-7 text-sm  lg:text-lg">Etapas para a execução dos nossos projectos</p>
       </div>
 
       <form className="my-8" onSubmit={handleSubmit}>
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
           <LabelInputContainer>
             <Label htmlFor="name">Nome</Label>
-            <Input id="name" className="border-none" placeholder="Insira seu nome" type="text" />
+            <Input id="name" className="border border-slate-200 rounded-small" placeholder="Insira seu nome" type="text" />
           </LabelInputContainer>
         </div>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="email">Email</Label>
-          <Input id="email" className="border-none" placeholder="Insira seu email" type="email" />
+          <Input id="email" className="border border-slate-200 rounded-small" placeholder="Insira seu email" type="email" />
         </LabelInputContainer>
         <Label htmlFor="message">Mensagem</Label>
 
         <LabelInputContainer className="mb-4">
 
           <TextArea  id="message"
-            placeholder="Escreva sua mensagem aqui" className=" border-none w-full h-[4.375rem]" />
+            placeholder="Escreva sua mensagem aqui" className="border border-slate-200 rounded-small w-full h-[4.375rem]" />
         </LabelInputContainer>
 
 
