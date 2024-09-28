@@ -14,7 +14,7 @@ export function Form() {
   return (
     <div className="w-full  rounded-none md:rounded-2xl bg-white ">
       <div className="flex flex-col gap-3">
-        <h2 className="text-4xl leading-[3.3rem] font-medium text-slate-600">Contacte-nos</h2>
+        <h2 className="text-2xl lg:text-4xl leading-[3.3rem] font-medium text-slate-600">Contacte-nos</h2>
         <p className="leading-7 text-lg">Etapas para a execução dos nossos projectos</p>
       </div>
 
