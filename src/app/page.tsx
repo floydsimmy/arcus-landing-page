@@ -2,6 +2,7 @@
 import projectsData from "@/data/projects.json";
 import { ArrowRight, Phone } from "@phosphor-icons/react";
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "./_components/button";
 import { InsightCard } from "./_components/cards/insight-card";
 import { PartnerCard } from "./_components/cards/partner-card";
@@ -15,7 +16,7 @@ import { Navbar } from "./_components/navbar";
 import { SectionHeader } from "./_components/section-header";
 
 const HeroSection = () => (
-  <div className="bg-white rounded-3xl lg:rounded-[64px] min-h-[29.375rem] lg:h-[53.75rem] lg:p-16 py-16 px-4 flex items-center lg:w-full" style={{ backgroundImage: "url('./back.png')", backgroundSize:'cover', backgroundPosition: 'center' }}>
+  <div className="bg-white rounded-3xl lg:rounded-[64px] min-h-[29.375rem] lg:h-[53.75rem] lg:p-16 py-16 px-4 flex items-center lg:w-full" style={{ backgroundImage: "url('./back.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
     <div className="max-w-[25.875rem] lg:max-w-[40rem] flex flex-col gap-3 text-white">
       <div className="flex items-center gap-3">
         <hr className="min-w-8 lg:w-28 border-t-[3px] border-slate-arc-400 " />
@@ -27,7 +28,7 @@ const HeroSection = () => (
       </p>
       <div className="flex flex-col lg:flex-row gap-3">
         <Button className="max-md:hidden" variant content="Peça a cotação do seu projeto" />
-        <Button className="lg:hidden" variant content="Peça a cotação" />
+        <Button className="md:hidden" variant content="Peça a cotação" />
         <Button icon={<Phone weight="fill" />} content="Ligue-nos já" />
       </div>
     </div>
@@ -77,43 +78,97 @@ const ProjectsSection = () => (
       <div className="lg:grid grid-rows-2 gap-4 ">
         <div className="relative text-white flex flex-col justify-center row-span-2 rounded-[4rem] px-8 bg-cover bg-center group " style={{ backgroundImage: `url(${projectsData[0].imgSrc} )` }}>
           <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-[4rem]"></div>
-          <h3 className="z-10 text-3xl font-medium leading-[2.81rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <h3
+            className="z-10 text-3xl font-medium leading-[2.81rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             {projectsData[0].title}
           </h3>
-          <p className=" z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">{projectsData[0].text}</p>
+          <p
+            className=" z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">{projectsData[0].text}
+          </p>
+          <div className="flex items-start opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <Link className="flex items-center justify-center bg-blue-arc-700 hover:bg-blue-arc-800 transition-colors duration-200 z-10 mt-2 gap-2 rounded-[64px] text-center py-4 px-6" href={`/projects/${projectsData[0].id}`}>
+              <span>Ver mais sobre o projecto</span>
+              <ArrowRight weight="regular" />
+            </Link>
+          </div>
         </div>
       </div>
       <div className="grid grid-rows-2 gap-4">
-        <div className="relative text-white flex flex-col justify-center bg-cover bg-center group h-full rounded-[4rem] px-8" style={{ backgroundImage: `url(${projectsData[1].imgSrc} )` }}>
-          <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-[4rem]"></div>
-          <h3 className="z-10 text-3xl font-medium leading-[2.81rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <div
+          className="relative text-white flex flex-col justify-center bg-cover bg-center group h-full rounded-[4rem] px-8"
+          style={{ backgroundImage: `url(${projectsData[1].imgSrc} )` }}>
+          <div
+            className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-[4rem]"></div>
+          <h3
+            className="z-10 text-3xl font-medium leading-[2.81rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             {projectsData[1].title}
           </h3>
-          <p className=" z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">{projectsData[1].text}</p>
+          <p
+            className=" z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            {projectsData[1].text}
+          </p>
+          <div className="flex items-start opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <Link
+              className="flex items-center justify-center bg-blue-arc-700 hover:bg-blue-arc-800 transition-colors duration-200 z-10 mt-2 gap-2 rounded-[64px] text-center py-4 px-6 "
+              href={`/projects/${projectsData[1].id}`}>
+              <span>Ver mais sobre o projecto</span>
+              <ArrowRight weight="regular" />
+            </Link>
+          </div>
         </div>
-        <div className="relative text-white flex flex-col justify-center bg-cover bg-center group rounded-[4rem] px-8" style={{ backgroundImage: `url(${projectsData[2].imgSrc} )` }}>
+        <div
+          className="relative text-white flex flex-col justify-center bg-cover bg-center group rounded-[4rem] px-8"
+          style={{ backgroundImage: `url(${projectsData[2].imgSrc} )` }}>
           <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-[4rem]"></div>
-          <h3 className="z-10 text-3xl font-medium leading-[2.81rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <h3
+            className="z-10 text-3xl font-medium leading-[2.81rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             {projectsData[2].title}
           </h3>
-          <p className=" z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">{projectsData[2].text}</p>
+          <p
+            className=" z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">{projectsData[2].text}
+          </p>
+          <div className="flex items-start opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <Link className="flex items-center justify-center bg-blue-arc-700 hover:bg-blue-arc-800 transition-colors duration-200 z-10 mt-2 gap-2 rounded-[64px] text-center py-4 px-6" href={`/projects/${projectsData[2].id}`}>
+              <span>Ver mais sobre o projecto</span>
+              <ArrowRight weight="regular" />
+            </Link>
+          </div>
         </div>
       </div>
     </div>
     <div className="lg:hidden flex gap-4 overflow-x-scroll w-full">
       {
         projectsData.map((project, index) => (
-          <div key={index} className="relative flex flex-col justify-center min-w-[20rem] rounded-[4rem] h-[31.8rem] bg-cover bg-center group text-white px-10" style={{ backgroundImage: `url(${project.imgSrc} )` }}>
-            <div className="absolute inset-0 bg-black/90 opacity-50 transition-opacity duration-300 rounded-[4rem]"></div>
-            <h3 className="z-10 text-3xl font-medium leading-[2.81rem] opacity-100 ">
+          <div
+            key={index}
+            className="relative flex flex-col justify-center min-w-[20rem] rounded-3xl h-[31.8rem] bg-cover bg-center group text-white px-10"
+            style={{ backgroundImage: `url(${project.imgSrc} )` }}>
+            <div
+              className="absolute inset-0 bg-black/90 opacity-50 transition-opacity duration-300 rounded-3xl"></div>
+            <h3
+              className="z-10 text-3xl font-medium leading-[2.81rem] opacity-100 ">
               {project.title}
             </h3>
-            <p className="z-10 opacity-100 group-hover:opacity-100 transition-opacity duration-300">{project.text}</p>
+            <p
+              className="z-10 opacity-100 group-hover:opacity-100 transition-opacity duration-300">
+              {project.text}
+            </p>
+            <Link
+              className="flex items-center justify-center bg-blue-arc-700 hover:bg-blue-arc-800 transition-colors duration-200 z-10 mt-2 gap-2 rounded-[64px] text-center py-4 w-full" href={`/projects/${project.id}`}>
+              <span>Ver detalhes</span> <ArrowRight weight="light" />
+            </Link>
           </div>
         ))
       }
     </div>
-    <div className="flex justify-end w-full"><Button icon={<ArrowRight weight="light" />} content="Ver projectos" />
+    <Link
+      className="lg:hidden border rounded-[64px] text-center py-4 w-full hover:bg-slate-200 transition-colors duration-200" href={"/projects"}>Ver mais projectos</Link>
+    <div className="max-lg:hidden flex items-center justify-end w-full">
+      <Link
+        className="max-lg:hidden border rounded-[64px] h-full w-fit flex justify-center gap-4 py-4 px-6 items-center text-white bg-blue-arc-700 hover:bg-blue-arc-800 transition-colors duration-200"
+        href={"/projects"}>
+        <span>Ver mais projectos</span>
+        <ArrowRight weight="regular" /></Link>
     </div>
   </div>
 );
