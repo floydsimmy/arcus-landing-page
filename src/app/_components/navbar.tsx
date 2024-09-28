@@ -5,7 +5,9 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+
 import { Button } from "./button";
+import { usePathname } from "next/navigation";
 
 const transition = {
   type: "spring",
@@ -24,8 +26,11 @@ const menuItems = [
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const path = usePathname();
+  console.log(path);
+  
   return (
-    <nav className={`flex fixed z-20 lg:top-4 gap-64 lg:pr-[1.375rem] lg:max-w-[80rem] items-center border-b lg:border border-blue-arc-100 ${open ? "bg-white" : "bg-white/85" }  backdrop-blur-md lg:rounded-[64px] h-20`}>
+    <nav className={`flex fixed z-20 lg:top-4 gap-56 lg:pr-[1.375rem] lg:max-w-[80rem] items-center border-b lg:border border-blue-arc-100 ${open ? "bg-white" : "bg-white/85" }  backdrop-blur-md lg:rounded-[64px] max-md:h-20`}>
       <div className="logo max-md:ml-3 flex items-center">
         <Image src="/logo.png" className="max-md:scale-150" alt="Logo" width={150} height={150} />
         {/*  <span className="text-lg text-slate-700 leading-7 font-medium" >ARCUS</span> */}
@@ -36,7 +41,7 @@ export const Navbar = () => {
             key={index}
             whileHover={{ scale: 1.1 }}
             transition={transition}
-            className="cursor-pointer"
+            className={`relative cursor-pointer py-2 px-4 rounded-[64px]  ${path === item.link ? "bg-slate-arc-200" : "bg-inherit"}`}
           >
             <Link href={item.link}>{item.name}</Link>
           </motion.li>
