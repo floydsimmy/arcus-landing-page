@@ -15,7 +15,7 @@ import { Navbar } from "./_components/navbar";
 import { SectionHeader } from "./_components/section-header";
 
 const HeroSection = () => (
-  <div className="bg-white rounded-[64px] min-h-[29.375rem] lg:h-[53.75rem] lg:p-16 py-16 px-8 flex items-center w-[20rem] lg:w-full" style={{ backgroundImage: "url('./back.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+  <div className="bg-white rounded-3xl lg:rounded-[64px] min-h-[29.375rem] lg:h-[53.75rem] lg:p-16 py-16 px-8 flex items-center lg:w-full" style={{ backgroundImage: "url('./back.png')", backgroundSize:'cover', backgroundPosition: 'center' }}>
     <div className="max-w-[25.875rem] lg:max-w-[40rem] flex flex-col gap-3 text-white">
       <div className="flex items-center gap-3">
         <hr className="min-w-8 lg:w-28 border-t-[3px] border-slate-arc-400 " />
@@ -192,7 +192,7 @@ export default function Home() {
     <div>
       <div className="flex flex-col items-center h-full my-0 bg-white">
         <Navbar />
-        <main className="mt-20 lg:mt-28 max-w-[24.9rem] lg:max-w-7xl pt-12 px-9  flex items-center justify-center flex-col gap-16 lg:gap-32 ">
+        <main className="mt-20 lg:mt-28 max-w-[24.9rem] lg:max-w-7xl pt-12 px-4 lg:px-9  flex items-center justify-center flex-col gap-16 lg:gap-32 ">
           <HeroSection />
           <InsightsSection />
           <ServicesSection />

@@ -41,7 +41,7 @@ export const Navbar = () => {
             key={index}
             whileHover={{ scale: 1.1 }}
             transition={transition}
-            className={`relative cursor-pointer py-2 px-4 rounded-[64px]  ${path === item.link ? "bg-slate-arc-200" : "bg-inherit"}`}
+            className={`relative cursor-pointer py-2 px-4 rounded-lg lg:rounded-[64px]  ${path === item.link ? "bg-slate-arc-200" : "bg-inherit"}`}
           >
             <Link href={item.link}>{item.name}</Link>
           </motion.li>
