@@ -1,10 +1,9 @@
 'use client'
 
+import { Link } from '@/i18n/routing'
+import { ArrowRight } from '@phosphor-icons/react'
 import Image from 'next/image'
 import { CardProps } from './CardProps'
-import { Button } from '../button'
-import { ArrowRight } from '@phosphor-icons/react'
-import Link from 'next/link'
 
 type ProjectCardProps = CardProps & {
   id: string

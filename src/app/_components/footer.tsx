@@ -3,8 +3,8 @@ import { MapPin, Phone } from '@phosphor-icons/react'
 import { motion } from 'framer-motion'
 
 import Image from 'next/image'
-import Link from 'next/link'
 
+import { Link } from '@/i18n/routing'
 const menuItems = [
   { name: 'Inicio', link: '/' },
   { name: 'Sobre nós', link: '/about' },
@@ -56,7 +56,9 @@ export const Footer = () => {
             </span>
             <span className="flex items-center gap-2 col-span-2">
               <MapPin weight="fill" />{' '}
-              <Link href={'https://g.co/kgs/54yy8Fp'}>Museu</Link>
+              <Link target="_blank" href={'https://g.co/kgs/54yy8Fp'}>
+                Museu
+              </Link>
             </span>
           </div>
         </div>
