@@ -1,0 +1,173 @@
+{
+  "Navbar": {
+    "menuItems": [
+      { "name": "Inicio", "link": "/" },
+      { "name": "Sobre nós", "link": "/about" },
+      { "name": "Projectos", "link": "/projects" }
+    ],
+    "contactButton": "Contacte-nos"
+  },
+  "Footer": {
+    "menuItems": [
+      { "name": "Inicio", "link": "/" },
+      { "name": "Sobre nós", "link": "/about" },
+      { "name": "Projectos", "link": "/projects" }
+    ],
+    "contactInfo": {
+      "phone": "+258 87 313 3920",
+      "email": "info@arcus.co.mz",
+      "location": "Museu"
+    },
+    "copyright": "© 2024 Arcus",
+    "credits": "Feito pela: Digital View"
+  },
+  "Home": {
+    "HeroSection": {
+      "h1": "Arcus",
+      "p": "Criada em 1998, a Arcus Consultores actua como uma empresa de consultoria de planeamento arquitetônico e urbano, engenharia multidisciplinar, gestão e desenvolvimento.",
+      "buttons": [
+        "Cotação do projeto",
+        "Peça a cotação do seu projeto",
+        "Ligue-nos já"
+      ]
+    },
+    "InsightsSection": {
+      "cards": [
+        { "title": "Projectos", "text": "+100" },
+        { "title": "Trabalhadores", "text": "+50" },
+        { "title": "Obras concluídas", "text": "+50" },
+        { "title": "Clientes", "text": "+100" }
+      ]
+    },
+    "ServicesSection": {
+      "title": "Serviços",
+      "description": "Oferecemos serviços onde o nosso maior valor é a qualidade e a satisfação do cliente",
+      "cards": [
+        { "title": "Arquitectura", "text": "Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." },
+        { "title": "Planeamento Físico/Urbano", "text": "Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." },
+        { "title": "Engenharia Multidisciplinar", "text": "Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." },
+        { "title": "Fiscalização de obras", "text": "Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." },
+        { "title": "Avaliação Patrimonial", "text": "Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." },
+        { "title": "Estudos do impacto ambiental", "text": "Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." }
+      ]
+    },
+    "ProjectsSection": {
+      "title": "Projectos",
+      "description": "Oferecemos serviços onde o nosso maior valor é a qualidade e a satisfação do cliente",
+      "link": "Ver mais projectos"
+    },
+    "PartnersSection": {
+      "title": "Parceiros",
+      "description": "Oferecemos serviços onde o nosso maior valor é a qualidade e a satisfação do cliente",
+      "cards": [
+        "Tzu Chi",
+        "Revimo",
+        "Julen Construções",
+        "Un Habit",
+        "Petromoc",
+        "Electricidade de Moçambique",
+        "World Bank Group"
+      ]
+    },
+    "ProcessesSection": {
+      "title": "Processos",
+      "description": "Etapas para a execução dos nossos projectos",
+      "cards": [
+        { "title": "1. Analise Geral", "text": "Fazemos a analise do seu projecto" },
+        { "title": "2. Assinatura de Contrato", "text": "Fazemos o levantamento dos requisitos e entramos em um acordo." },
+        { "title": "3. Planeamento do projecto", "text": "Fazemos o plano de execução do projecto" },
+        { "title": "4. Design da estrutura", "text": "Vamos a elaboração do design." }
+      ]
+    },
+    "TestimonialsSection": {
+      "title": "Testemunhos"
+    },
+    "ContactSection": {}
+  },
+  "Projects": {
+    "SectionHeader": {
+      "title": "Nossos Projectos"
+    },
+    "ProjectCard": {
+      "title": "Project Title",
+      "text": "Project Description"
+    }
+  },
+  "ProjectDetails": {
+    "Navbar": {},
+    "main": {
+      "h1": "Project Title",
+      "sections": [
+        {
+          "h2": "Introdução",
+          "p": "A criação da Escola Primária 12 de Outubro foi um processo estratégico que visou atender à necessidade de educação de qualidade na comunidade local. O projeto envolveu uma série de etapas fundamentais, desde a identificação da necessidade até a implementação e abertura da escola. Abaixo, está o percurso detalhado que levou à concretização deste importante projeto educacional."
+        },
+        {
+          "h2": "Identificação da Necessidade de Educação",
+          "p": "A criação da Escola Primária 12 de Outubro foi um processo estratégico que visou atender à necessidade de educação de qualidade na comunidade local. O projeto envolveu uma série de etapas fundamentais, desde a identificação da necessidade até a implementação e abertura da escola. Abaixo, está o percurso detalhado que levou à concretização deste importante projeto educacional."
+        },
+        {
+          "h2": "Planejamento do Projeto",
+          "p": "Após a identificação da necessidade, foi criado um plano detalhado para a criação da escola. Esse planejamento envolveu a definição clara da missão e da visão da instituição, que se centraram na formação de crianças com uma base educacional sólida e valores éticos. Além disso, foram feitos estudos para determinar o número de turmas, o currículo a ser seguido, os recursos didáticos necessários, e a estrutura física ideal para abrigar as atividades escolares. O plano também incluiu a elaboração de um cronograma para a construção e implementação gradual das atividades."
+        }
+      ]
+    },
+    "aside": {
+      "SectionHeader": {
+        "title": "Galeria"
+      },
+      "images": [
+        { "src": "/galeria1.svg", "alt": "Image 1" },
+        { "src": "/galeria1.svg", "alt": "Image 2" },
+        { "src": "/galeria2.svg", "alt": "Image 3" }
+      ]
+    },
+    "Footer": {}
+  },
+  "AboutUs": {
+    "HeroSection": {
+      "h1": "Arcus",
+      "p": "Criada em 1998, a Arcus Consultores actua como uma empresa de consultoria de planeamento arquitetônico e urbano, engenharia multidisciplinar, gestão e desenvolvimento.",
+      "buttons": [
+        "Cotação do projeto",
+        "Peça a cotação do seu projeto",
+        "Ligue-nos já"
+      ]
+    },
+    "OrganazationSection": {
+      "cards": [
+        { "title": "Missão", "text": "Trazer inovação e praticidade na elaboração e execução de projectos arquitetônicos, permitindo a obtenção de um resultado surpreendente." },
+        { "title": "Visão", "text": "Ser referência na área de consultoria de planeamento arquitetônico e urbano, engenharia multidisciplinar, gestão e desenvolvimento." },
+        {
+          "title": "Valores",
+          "list": [
+            "Comprometimento",
+            "Honestidade",
+            "Valorização dos recursos humanos",
+            "Confiabilidade"
+          ]
+        }
+      ]
+    },
+    "TeamSection": {
+      "title": "Nossa equipe",
+      "cards": [
+        { "title": "Eduardo Nhate", "text": "Chefe de Projectos/Criação" },
+        { "title": "John Doe", "text": "Chefe de something" },
+        { "title": "Stela Nhantumbo", "text": "Chefe de Administração/Finanças" },
+        { "title": "Florêncio Chau", "text": "Coordenador de Orçamento e Fiscalização" }
+      ]
+    },
+    "AdditionalInfoSection": {
+      "h1": "Informação adicional",
+      "p": "Saiba mais sobre nós.",
+      "contact": {
+        "phone": "+258 87 313 3920",
+        "location": "Museu",
+        "email": "arcus@gmail.com",
+        "hours": "09:00 às 17:00 de Segunda a Sexta-feira"
+      }
+    },
+    "Footer": {}
+  }
+}

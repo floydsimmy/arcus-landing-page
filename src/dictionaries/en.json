@@ -1,0 +1,173 @@
+{
+  "Navbar": {
+    "menuItems": [
+      { "name": "Home", "link": "/" },
+      { "name": "About Us", "link": "/about" },
+      { "name": "Projects", "link": "/projects" }
+    ],
+    "contactButton": "Contact Us"
+  },
+  "Footer": {
+    "menuItems": [
+      { "name": "Home", "link": "/" },
+      { "name": "About Us", "link": "/about" },
+      { "name": "Projects", "link": "/projects" }
+    ],
+    "contactInfo": {
+      "phone": "+258 87 313 3920",
+      "email": "info@arcus.co.mz",
+      "location": "Museum"
+    },
+    "copyright": "© 2024 Arcus",
+    "credits": "Made by: Digital View"
+  },
+  "Home": {
+    "HeroSection": {
+      "h1": "Arcus",
+      "p": "Founded in 1998, Arcus Consultores operates as a consulting firm in architectural and urban planning, multidisciplinary engineering, management, and development.",
+      "buttons": [
+        "Project Quote",
+        "Request a Quote for Your Project",
+        "Call Us Now"
+      ]
+    },
+    "InsightsSection": {
+      "cards": [
+        { "title": "Projects", "text": "+100" },
+        { "title": "Workers", "text": "+50" },
+        { "title": "Completed Works", "text": "+50" },
+        { "title": "Clients", "text": "+100" }
+      ]
+    },
+    "ServicesSection": {
+      "title": "Services",
+      "description": "We offer services where our greatest value is quality and customer satisfaction",
+      "cards": [
+        { "title": "Architecture", "text": "Our architecture service combines creativity and functionality to bring unique and personalized projects to life." },
+        { "title": "Physical/Urban Planning", "text": "Our architecture service combines creativity and functionality to bring unique and personalized projects to life." },
+        { "title": "Multidisciplinary Engineering", "text": "Our architecture service combines creativity and functionality to bring unique and personalized projects to life." },
+        { "title": "Construction Supervision", "text": "Our architecture service combines creativity and functionality to bring unique and personalized projects to life." },
+        { "title": "Property Valuation", "text": "Our architecture service combines creativity and functionality to bring unique and personalized projects to life." },
+        { "title": "Environmental Impact Studies", "text": "Our architecture service combines creativity and functionality to bring unique and personalized projects to life." }
+      ]
+    },
+    "ProjectsSection": {
+      "title": "Projects",
+      "description": "We offer services where our greatest value is quality and customer satisfaction",
+      "link": "See More Projects"
+    },
+    "PartnersSection": {
+      "title": "Partners",
+      "description": "We offer services where our greatest value is quality and customer satisfaction",
+      "cards": [
+        "Tzu Chi",
+        "Revimo",
+        "Julen Constructions",
+        "Un Habit",
+        "Petromoc",
+        "Electricity of Mozambique",
+        "World Bank Group"
+      ]
+    },
+    "ProcessesSection": {
+      "title": "Processes",
+      "description": "Steps for executing our projects",
+      "cards": [
+        { "title": "1. General Analysis", "text": "We analyze your project" },
+        { "title": "2. Contract Signing", "text": "We gather requirements and reach an agreement." },
+        { "title": "3. Project Planning", "text": "We create the project execution plan" },
+        { "title": "4. Structure Design", "text": "We proceed to the design elaboration." }
+      ]
+    },
+    "TestimonialsSection": {
+      "title": "Testimonials"
+    },
+    "ContactSection": {}
+  },
+  "Projects": {
+    "SectionHeader": {
+      "title": "Our Projects"
+    },
+    "ProjectCard": {
+      "title": "Project Title",
+      "text": "Project Description"
+    }
+  },
+  "ProjectDetails": {
+    "Navbar": {},
+    "main": {
+      "h1": "Project Title",
+      "sections": [
+        {
+          "h2": "Introduction",
+          "p": "The creation of the 12 de Outubro Primary School was a strategic process aimed at meeting the need for quality education in the local community. The project involved a series of fundamental steps, from identifying the need to implementing and opening the school. Below is the detailed journey that led to the realization of this important educational project."
+        },
+        {
+          "h2": "Identifying the Need for Education",
+          "p": "The creation of the 12 de Outubro Primary School was a strategic process aimed at meeting the need for quality education in the local community. The project involved a series of fundamental steps, from identifying the need to implementing and opening the school. Below is the detailed journey that led to the realization of this important educational project."
+        },
+        {
+          "h2": "Project Planning",
+          "p": "After identifying the need, a detailed plan was created for the establishment of the school. This planning involved clearly defining the institution's mission and vision, which focused on providing children with a solid educational foundation and ethical values. Additionally, studies were conducted to determine the number of classes, the curriculum to be followed, the necessary teaching resources, and the ideal physical structure to house school activities. The plan also included the development of a timeline for construction and the gradual implementation of activities."
+        }
+      ]
+    },
+    "aside": {
+      "SectionHeader": {
+        "title": "Gallery"
+      },
+      "images": [
+        { "src": "/gallery1.svg", "alt": "Image 1" },
+        { "src": "/gallery1.svg", "alt": "Image 2" },
+        { "src": "/gallery2.svg", "alt": "Image 3" }
+      ]
+    },
+    "Footer": {}
+  },
+  "AboutUs": {
+    "HeroSection": {
+      "h1": "Arcus",
+      "p": "Founded in 1998, Arcus Consultores operates as a consulting firm in architectural and urban planning, multidisciplinary engineering, management, and development.",
+      "buttons": [
+        "Project Quote",
+        "Request a Quote for Your Project",
+        "Call Us Now"
+      ]
+    },
+    "OrganizationSection": {
+      "cards": [
+        { "title": "Mission", "text": "Bring innovation and practicality in the design and execution of architectural projects, allowing for surprising results." },
+        { "title": "Vision", "text": "To be a reference in the field of consulting in architectural and urban planning, multidisciplinary engineering, management, and development." },
+        {
+          "title": "Values",
+          "list": [
+            "Commitment",
+            "Honesty",
+            "Valuing human resources",
+            "Reliability"
+          ]
+        }
+      ]
+    },
+    "TeamSection": {
+      "title": "Our Team",
+      "cards": [
+        { "title": "Eduardo Nhate", "text": "Head of Projects/Creation" },
+        { "title": "John Doe", "text": "Head of Something" },
+        { "title": "Stela Nhantumbo", "text": "Head of Administration/Finance" },
+        { "title": "Florêncio Chau", "text": "Budget and Supervision Coordinator" }
+      ]
+    },
+    "AdditionalInfoSection": {
+      "h1": "Additional Information",
+      "p": "Learn more about us.",
+      "contact": {
+        "phone": "+258 87 313 3920",
+        "location": "Museum",
+        "email": "arcus@gmail.com",
+        "hours": "09:00 to 17:00 from Monday to Friday"
+      }
+    },
+    "Footer": {}
+  }
+}
