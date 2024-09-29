@@ -3,7 +3,7 @@ import { Navbar } from '@/app/_components/navbar'
 import { SectionHeader } from '@/app/_components/section-header'
 import projectsData from '@/data/projects.json'
 import { Pagination } from '@nextui-org/pagination'
-import { ProjectCard } from '../_components/cards/project-card'
+import { ProjectCard } from '../../_components/cards/project-card'
 
 export default function Projects() {
   return (

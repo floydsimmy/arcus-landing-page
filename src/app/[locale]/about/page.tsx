@@ -1,12 +1,12 @@
 'use client'
 import { Phone } from '@phosphor-icons/react'
 import Link from 'next/link'
-import { Button } from '../_components/button'
-import { OrgStatementCard } from '../_components/cards/org-statment-card'
-import { TeamCard } from '../_components/cards/team-card'
-import { Footer } from '../_components/footer'
-import { Navbar } from '../_components/navbar'
-import { SectionHeader } from '../_components/section-header'
+import { Button } from '../../_components/button'
+import { OrgStatementCard } from '../../_components/cards/org-statment-card'
+import { TeamCard } from '../../_components/cards/team-card'
+import { Footer } from '../../_components/footer'
+import { Navbar } from '../../_components/navbar'
+import { SectionHeader } from '../../_components/section-header'
 
 const HeroSection = () => (
   <div

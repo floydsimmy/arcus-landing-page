@@ -1,8 +1,8 @@
 'use client'
+import { Link } from '@/i18n/routing'
 import { EnvelopeSimple, List, X } from '@phosphor-icons/react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import Link from 'next/link'
 import { useState } from 'react'
 
 import { usePathname } from 'next/navigation'
