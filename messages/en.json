@@ -5,7 +5,7 @@
       { "name": "About Us", "link": "/about" },
       { "name": "Projects", "link": "/projects" }
     ],
-    "contactButton": "Contact Us"
+    "contactButton": "Contact us"
   },
   "Footer": {
     "menuItems": [

@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { useState } from 'react'
 
+import { useTranslations } from 'next-intl'
 import { usePathname } from 'next/navigation'
 import { Button } from './button'
 import { Dropdown } from './dropdown'
@@ -18,16 +19,12 @@ const transition = {
   restSpeed: 0.001,
 }
 
-const menuItems = [
-  { name: 'Inicio', link: '/' },
-  { name: 'Sobre nós', link: '/about' },
-  { name: 'Projectos', link: '/projects' },
-]
-
 export const Navbar = () => {
   const [open, setOpen] = useState(false)
   const path = usePathname()
-  console.log(path)
+  const t = useTranslations('Navbar')
+  const menuItems = t.raw('menuItems')
+  const contactButton = t('contactButton')
 
   return (
     <nav
@@ -39,16 +36,18 @@ export const Navbar = () => {
       <ul
         className={`list-none flex gap-4 lg:gap-8 max-lg:absolute transition-all ease-in max-lg:z-[-1] max-lg:flex-col max-lg:h-screen ${open ? 'top-16 opacity-100 pt-8 pb-6 px-4 bg-white backdrop-blur-md' : 'top-[-1990px]'} max-lg:w-full`}
       >
-        {menuItems.map((item, index) => (
-          <motion.li
-            key={index}
-            whileHover={{ scale: 1.1 }}
-            transition={transition}
-            className={`relative cursor-pointer py-2 px-4 rounded-lg lg:rounded-[64px]  ${path === item.link ? 'bg-slate-arc-200' : 'bg-inherit'}`}
-          >
-            <Link href={item.link}>{item.name}</Link>
-          </motion.li>
-        ))}
+        {menuItems.map(
+          (item: { name: string; link: string }, index: number) => (
+            <motion.li
+              key={index}
+              whileHover={{ scale: 1.1 }}
+              transition={transition}
+              className={`relative cursor-pointer py-2 px-4 rounded-lg lg:rounded-[64px]  ${path === item.link ? 'bg-slate-arc-200' : 'bg-inherit'}`}
+            >
+              <Link href={item.link}>{item.name}</Link>
+            </motion.li>
+          ),
+        )}
         <div className="lg:hidden w-full">
           <Dropdown />
         </div>
@@ -63,7 +62,11 @@ export const Navbar = () => {
       </button>
       <div className="hidden lg:flex gap-3 mr-7">
         <Dropdown />
-        <Button className="" icon={<EnvelopeSimple />} content="Contacte-nos" />
+        <Button
+          className=""
+          icon={<EnvelopeSimple />}
+          content={contactButton}
+        />
       </div>
     </nav>
   )
