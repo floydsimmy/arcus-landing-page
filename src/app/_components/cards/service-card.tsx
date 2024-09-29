@@ -1,6 +1,5 @@
-import Image from "next/image";
-import { CardProps } from "./CardProps";
-
+import Image from 'next/image'
+import { CardProps } from './CardProps'
 
 export const ServiceCard = ({ imgSrc, title, text }: CardProps) => {
   return (
@@ -10,7 +9,5 @@ export const ServiceCard = ({ imgSrc, title, text }: CardProps) => {
       <h3 className="text-gray-600 text-lg font-bold leading-7 ">{title}</h3>
       <p className="text-sm lg:text-base text-gray-600  leading-6">{text}</p>
     </div>
-
   )
-
-} 
+}

@@ -7,7 +7,7 @@ export function Dropdown() {
       <div>
         <MenuButton className="flex justify-between w-full items-center lg:justify-center gap-x-1.5 rounded-[64px] border bg-inherit px-3 py-2 text-gray-700 hover:bg-gray-50">
           Português
-          <CaretDown  className="-mr-1 h-5 w-5 text-gray-400" />
+          <CaretDown className="-mr-1 h-5 w-5 text-gray-400" />
         </MenuButton>
       </div>
 
@@ -17,14 +17,10 @@ export function Dropdown() {
       >
         <div className="py-1 rounded-lg border">
           <MenuItem>
-            <a
-              href="#"
-              className="block px-4 py-2 text-gray-700"
-            >
+            <a href="#" className="block px-4 py-2 text-gray-700">
               Inglês
             </a>
           </MenuItem>
-          
         </div>
       </MenuItems>
     </Menu>

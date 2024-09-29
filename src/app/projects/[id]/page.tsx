@@ -1,34 +1,34 @@
-import { Footer } from "@/app/_components/footer";
-import { Navbar } from "@/app/_components/navbar";
-import { SectionHeader } from "@/app/_components/section-header";
-import projectsData from "@/data/projects.json";
-import Image from "next/image";
-import { notFound } from "next/navigation";
+import { Footer } from '@/app/_components/footer'
+import { Navbar } from '@/app/_components/navbar'
+import { SectionHeader } from '@/app/_components/section-header'
+import projectsData from '@/data/projects.json'
+import Image from 'next/image'
+import { notFound } from 'next/navigation'
 
 interface Project {
-  id: string;
-  title: string;
-  text: string;
-  imgSrc: string;
+  id: string
+  title: string
+  text: string
+  imgSrc: string
 }
 
 interface ProjectProps {
-  params: { id: string };
+  params: { id: string }
 }
 
 export async function generateStaticParams() {
   return projectsData.map((project: Project) => ({
     id: project.id,
-  }));
+  }))
 }
 
 export default function ProjectDetails({ params }: ProjectProps) {
   const project = projectsData.find(
-    (project: Project) => project.id === params.id
-  );
+    (project: Project) => project.id === params.id,
+  )
 
   if (!project) {
-    return notFound();
+    return notFound()
   }
 
   return (
@@ -131,5 +131,5 @@ export default function ProjectDetails({ params }: ProjectProps) {
       </div>
       <Footer />
     </div>
-  );
+  )
 }

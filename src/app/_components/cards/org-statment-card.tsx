@@ -1,20 +1,22 @@
-import { ReactNode } from "react";
-import { SectionHeader } from "../section-header";
+import { ReactNode } from 'react'
+import { SectionHeader } from '../section-header'
 
-import { CardProps } from '@/app/_components/cards/CardProps';
-
+import { CardProps } from '@/app/_components/cards/CardProps'
 
 type OrgCardProps = CardProps & {
   children?: ReactNode
-};
+}
 
 export const OrgStatementCard = ({ title, text, children }: OrgCardProps) => {
   return (
     <div className="bg-white p-10 border rounded-2xl">
       <SectionHeader title={title} description="" />
       {children}
-      {text && <p className="mt-2 text-slate-arc-600 text-base lg:text-lg leading-7">{text}</p>}
-
+      {text && (
+        <p className="mt-2 text-slate-arc-600 text-base lg:text-lg leading-7">
+          {text}
+        </p>
+      )}
     </div>
   )
 }

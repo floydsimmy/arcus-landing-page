@@ -1,24 +1,31 @@
+'use client'
+import { MapPin, Phone } from '@phosphor-icons/react'
+import { motion } from 'framer-motion'
 
-"use client";
-import { MapPin, Phone } from "@phosphor-icons/react";
-import { motion } from "framer-motion";
-
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image'
+import Link from 'next/link'
 
 const menuItems = [
-  { name: "Inicio", link: "/" },
-  { name: "Sobre nós", link: "/about" },
-  { name: "Projectos", link: "/projects" },
-];
+  { name: 'Inicio', link: '/' },
+  { name: 'Sobre nós', link: '/about' },
+  { name: 'Projectos', link: '/projects' },
+]
 
 export const Footer = () => {
   return (
-    <footer className="bg-blue-arc-800 text-white mt-20 flex flex-col lg:justify-center
-    lg:items-center h-[34.375rem] lg:h-[16.5rem]">
+    <footer
+      className="bg-blue-arc-800 text-white mt-20 flex flex-col lg:justify-center
+    lg:items-center h-[34.375rem] lg:h-[16.5rem]"
+    >
       <div className=" flex flex-col lg:items-center gap-8 ">
         <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center lg:gap-[12.43rem]">
-          <Image src="/logoWhite.png" className="" alt="Logo" width={250} height={50} />
+          <Image
+            src="/logoWhite.png"
+            className=""
+            alt="Logo"
+            width={250}
+            height={50}
+          />
           <div>
             <ul className="list-none flex max-md:px-9  max-md:flex-col gap-8 mb-12">
               {menuItems.map((item, index) => (
@@ -38,16 +45,26 @@ export const Footer = () => {
               <Phone className="" weight="fill" /> +258 87 313 3920
             </span>
             <span className="flex items-center gap-2">
-              <Image src="/mail.svg" className="" alt="Mail Icon" width={20} height={20} /> info@arcus.co.mz
+              <Image
+                src="/mail.svg"
+                className=""
+                alt="Mail Icon"
+                width={20}
+                height={20}
+              />{' '}
+              info@arcus.co.mz
             </span>
             <span className="flex items-center gap-2 col-span-2">
-            <MapPin weight="fill" /> <Link href={"https://g.co/kgs/54yy8Fp"}>Museu
-            </Link>
+              <MapPin weight="fill" />{' '}
+              <Link href={'https://g.co/kgs/54yy8Fp'}>Museu</Link>
             </span>
           </div>
         </div>
         <hr className="border-t-[1px] w-full" />
-        <div className="flex  max-md:px-9 max-md:flex-col justify-between w-full text-base leading-6"><span>© 2024 Arcus</span><span className="">Feito pela: Digital View</span></div>
+        <div className="flex  max-md:px-9 max-md:flex-col justify-between w-full text-base leading-6">
+          <span>© 2024 Arcus</span>
+          <span className="">Feito pela: Digital View</span>
+        </div>
       </div>
     </footer>
   )

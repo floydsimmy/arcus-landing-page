@@ -1,8 +1,8 @@
-import Image from "next/image";
+import Image from 'next/image'
 
 interface SectionProps {
-  title: string;
-  description?: string;
+  title: string
+  description?: string
 }
 
 export const SectionHeader = ({ title, description }: SectionProps) => {
