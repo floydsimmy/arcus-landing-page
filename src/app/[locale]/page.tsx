@@ -190,7 +190,7 @@ const ProjectsSection = ({ value, t, t3, projectsData }: any) => {
         </div>
       </div>
       <div className="lg:hidden flex gap-4 overflow-x-scroll w-full">
-        {projectsData.map((project, index) => (
+        {projectsData.map((project: any, index: any) => (
           <div
             key={index}
             className="relative flex flex-col justify-center min-w-[20rem] rounded-3xl h-[31.8rem] bg-cover bg-center group text-white px-10"

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client'
 import { MapPin, Phone } from '@phosphor-icons/react'
 import { motion } from 'framer-motion'
@@ -28,7 +29,7 @@ export const Footer = () => {
           />
           <div>
             <ul className="list-none flex max-md:px-9  max-md:flex-col gap-8 mb-12">
-              {menuItems.map((item, index) => (
+              {menuItems.map((item: any, index: any) => (
                 <motion.li
                   key={index}
                   whileHover={{ scale: 1.1 }}
