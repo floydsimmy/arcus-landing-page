@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use client'
-import projectsData from '@/data/projects.json'
+// import projectsData from '@/data/projects.json'
 import { Link } from '@/i18n/routing'
 import { ArrowRight, Phone } from '@phosphor-icons/react'
 import { useTranslations } from 'next-intl'
@@ -107,121 +107,129 @@ const ServicesSection = ({ value, t, cards }: any) => (
   </div>
 )
 
-const ProjectsSection = ({ value, t }: any) => (
-  <div className="flex flex-col gap-10 justify-center items-center w-full">
-    <SectionHeader
-      title={t(`${value}.title`)}
-      description={t(`${value}.description`)}
-    />
-    <div className="max-md:hidden grid grid-cols-2 gap-4 lg:h-[48rem]">
-      <div className="lg:grid grid-rows-2 gap-4 ">
-        <div
-          className="relative text-white flex flex-col justify-end row-span-2 rounded-[4rem] px-8 pb-16 bg-cover bg-center group "
-          style={{ backgroundImage: `url(${projectsData[0].imgSrc} )` }}
-        >
-          <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-[4rem]"></div>
-          <h3 className="z-10 text-3xl font-medium leading-[2.81rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            {projectsData[0].title}
-          </h3>
-          <p className=" z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            {projectsData[0].text}
-          </p>
-          <div className="flex items-start opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <Link
-              className="flex items-center justify-center bg-blue-arc-700 hover:bg-blue-arc-800 transition-colors duration-200 z-10 mt-2 gap-2 rounded-[64px] text-center py-4 px-6"
-              href={`/projects/${projectsData[0].id}`}
-            >
-              <span>{t(`${value}.link`)}</span>
-              <ArrowRight weight="regular" />
-            </Link>
-          </div>
-        </div>
-      </div>
-      <div className="grid grid-rows-2 gap-4">
-        <div
-          className="relative text-white flex flex-col justify-center bg-cover bg-center group h-full rounded-[4rem] px-8"
-          style={{ backgroundImage: `url(${projectsData[1].imgSrc} )` }}
-        >
-          <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-[4rem]"></div>
-          <h3 className="z-10 text-3xl font-medium leading-[2.81rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            {projectsData[1].title}
-          </h3>
-          <p className=" z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            {projectsData[1].text}
-          </p>
-          <div className="flex items-start opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <Link
-              className="flex items-center justify-center bg-blue-arc-700 hover:bg-blue-arc-800 transition-colors duration-200 z-10 mt-2 gap-2 rounded-[64px] text-center py-4 px-6 "
-              href={`/projects/${projectsData[1].id}`}
-            >
-              <span>{t(`${value}.link`)}</span>
-              <ArrowRight weight="regular" />
-            </Link>
-          </div>
-        </div>
-        <div
-          className="relative text-white flex flex-col justify-center bg-cover bg-center group rounded-[4rem] px-8"
-          style={{ backgroundImage: `url(${projectsData[2].imgSrc} )` }}
-        >
-          <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-[4rem]"></div>
-          <h3 className="z-10 text-3xl font-medium leading-[2.81rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            {projectsData[2].title}
-          </h3>
-          <p className=" z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            {projectsData[2].text}
-          </p>
-          <div className="flex items-start opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <Link
-              className="flex items-center justify-center bg-blue-arc-700 hover:bg-blue-arc-800 transition-colors duration-200 z-10 mt-2 gap-2 rounded-[64px] text-center py-4 px-6"
-              href={`/projects/${projectsData[2].id}`}
-            >
-              <span>{t(`${value}.link`)}</span>
-              <ArrowRight weight="regular" />
-            </Link>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div className="lg:hidden flex gap-4 overflow-x-scroll w-full">
-      {projectsData.map((project, index) => (
-        <div
-          key={index}
-          className="relative flex flex-col justify-center min-w-[20rem] rounded-3xl h-[31.8rem] bg-cover bg-center group text-white px-10"
-          style={{ backgroundImage: `url(${project.imgSrc} )` }}
-        >
-          <div className="absolute inset-0 bg-black/90 opacity-50 transition-opacity duration-300 rounded-3xl"></div>
-          <h3 className="z-10 text-3xl font-medium leading-[2.81rem] opacity-100 ">
-            {project.title}
-          </h3>
-          <p className="z-10 opacity-100 group-hover:opacity-100 transition-opacity duration-300">
-            {project.text}
-          </p>
-          <Link
-            className="flex items-center justify-center bg-blue-arc-700 hover:bg-blue-arc-800 transition-colors duration-200 z-10 mt-2 gap-2 rounded-[64px] text-center py-4 w-full"
-            href={`/projects/${project.id}`}
+const ProjectsSection = ({ value, t, projectsData }: any) => {
+  console.log('ProjectsSection projectsData:', projectsData)
+
+  if (!projectsData || projectsData.length < 3) {
+    return <div>No projects available</div>
+  }
+
+  return (
+    <div className="flex flex-col gap-10 justify-center items-center w-full">
+      <SectionHeader
+        title={t(`${value}.title`)}
+        description={t(`${value}.description`)}
+      />
+      <div className="max-md:hidden grid grid-cols-2 gap-4 lg:h-[48rem]">
+        <div className="lg:grid grid-rows-2 gap-4 ">
+          <div
+            className="relative text-white flex flex-col justify-end row-span-2 rounded-[4rem] px-8 pb-16 bg-cover bg-center group "
+            style={{ backgroundImage: `url(${projectsData[0].imgSrc})` }}
           >
-            <span>Ver detalhes</span> <ArrowRight weight="light" />
-          </Link>
+            <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-[4rem]"></div>
+            <h3 className="z-10 text-3xl font-medium leading-[2.81rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              {projectsData[0].title}
+            </h3>
+            <p className=" z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              {projectsData[0].text}
+            </p>
+            <div className="flex items-start opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <Link
+                className="flex items-center justify-center bg-blue-arc-700 hover:bg-blue-arc-800 transition-colors duration-200 z-10 mt-2 gap-2 rounded-[64px] text-center py-4 px-6"
+                href={`/projects/${projectsData[0].id}`}
+              >
+                <span>{t(`${value}.link`)}</span>
+                <ArrowRight weight="regular" />
+              </Link>
+            </div>
+          </div>
         </div>
-      ))}
-    </div>
-    <Link
-      className="lg:hidden border rounded-[64px] text-center py-4 w-full hover:bg-slate-200 transition-colors duration-200"
-      href={'/projects'}
-    >
-      {t(`${value}.link1`)}
-    </Link>
-    <div className="max-lg:hidden flex items-center justify-end w-full">
+        <div className="grid grid-rows-2 gap-4">
+          <div
+            className="relative text-white flex flex-col justify-center bg-cover bg-center group h-full rounded-[4rem] px-8"
+            style={{ backgroundImage: `url(${projectsData[1].imgSrc})` }}
+          >
+            <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-[4rem]"></div>
+            <h3 className="z-10 text-3xl font-medium leading-[2.81rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              {projectsData[1].title}
+            </h3>
+            <p className=" z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              {projectsData[1].text}
+            </p>
+            <div className="flex items-start opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <Link
+                className="flex items-center justify-center bg-blue-arc-700 hover:bg-blue-arc-800 transition-colors duration-200 z-10 mt-2 gap-2 rounded-[64px] text-center py-4 px-6 "
+                href={`/projects/${projectsData[1].id}`}
+              >
+                <span>{t(`${value}.link`)}</span>
+                <ArrowRight weight="regular" />
+              </Link>
+            </div>
+          </div>
+          <div
+            className="relative text-white flex flex-col justify-center bg-cover bg-center group rounded-[4rem] px-8"
+            style={{ backgroundImage: `url(${projectsData[2].imgSrc})` }}
+          >
+            <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-[4rem]"></div>
+            <h3 className="z-10 text-3xl font-medium leading-[2.81rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              {projectsData[2].title}
+            </h3>
+            <p className=" z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              {projectsData[2].text}
+            </p>
+            <div className="flex items-start opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <Link
+                className="flex items-center justify-center bg-blue-arc-700 hover:bg-blue-arc-800 transition-colors duration-200 z-10 mt-2 gap-2 rounded-[64px] text-center py-4 px-6"
+                href={`/projects/${projectsData[2].id}`}
+              >
+                <span>{t(`${value}.link`)}</span>
+                <ArrowRight weight="regular" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="lg:hidden flex gap-4 overflow-x-scroll w-full">
+        {projectsData.map((project, index) => (
+          <div
+            key={index}
+            className="relative flex flex-col justify-center min-w-[20rem] rounded-3xl h-[31.8rem] bg-cover bg-center group text-white px-10"
+            style={{ backgroundImage: `url(${project.imgSrc})` }}
+          >
+            <div className="absolute inset-0 bg-black/90 opacity-50 transition-opacity duration-300 rounded-3xl"></div>
+            <h3 className="z-10 text-3xl font-medium leading-[2.81rem] opacity-100 ">
+              {project.title}
+            </h3>
+            <p className="z-10 opacity-100 group-hover:opacity-100 transition-opacity duration-300">
+              {project.text}
+            </p>
+            <Link
+              className="flex items-center justify-center bg-blue-arc-700 hover:bg-blue-arc-800 transition-colors duration-200 z-10 mt-2 gap-2 rounded-[64px] text-center py-4 w-full"
+              href={`/projects/${project.id}`}
+            >
+              <span>Ver detalhes</span> <ArrowRight weight="light" />
+            </Link>
+          </div>
+        ))}
+      </div>
       <Link
-        className="max-lg:hidden border rounded-[64px] h-full w-fit flex justify-center gap-4 py-4 px-6 items-center text-white bg-blue-arc-700 hover:bg-blue-arc-800 transition-colors duration-200"
+        className="lg:hidden border rounded-[64px] text-center py-4 w-full hover:bg-slate-200 transition-colors duration-200"
         href={'/projects'}
       >
-        <span>{t(`${value}.link1`)}</span>
-        <ArrowRight weight="regular" />
+        {t(`${value}.link1`)}
       </Link>
+      <div className="max-lg:hidden flex items-center justify-end w-full">
+        <Link
+          className="max-lg:hidden border rounded-[64px] h-full w-fit flex justify-center gap-4 py-4 px-6 items-center text-white bg-blue-arc-700 hover:bg-blue-arc-800 transition-colors duration-200"
+          href={'/projects'}
+        >
+          <span>{t(`${value}.link1`)}</span>
+          <ArrowRight weight="regular" />
+        </Link>
+      </div>
     </div>
-  </div>
-)
+  )
+}
 
 const PartnersSection = ({ value, t, cards }: any) => (
   <div className="flex flex-col gap-10 justify-center items-center w-full overflow-hidden">
@@ -303,6 +311,8 @@ const ContactSection = ({ value, t }: any) => (
 
 export default function Home() {
   const t = useTranslations('Home')
+  const t2 = useTranslations('Projects')
+  const projectsData = t2.raw(`ProjectList`)
   const sections = [
     'HeroSection',
     'InsightsSection',
@@ -320,19 +330,28 @@ export default function Home() {
   const parternsCards = t.raw(`${sections[4]}.cards`)
   const processesCards = t.raw(`${sections[5]}.cards`)
   const testimonialCards = t.raw(`${sections[6]}.cards`)
-  console.log(serviceCards)
+  console.log(projectsData.length)
 
   return (
     <div>
       <div className="flex flex-col items-center h-full my-0 bg-white">
         <Navbar />
-        <main className="mt-28 lg:mt-28 md:max-w-3xl max-w-[22rem] lg:max-w-7xl xl:max-w-[87rem] 2xl:max-w-[110rem] flex flex-col gap-16 lg:gap-32 ">
+        <main className="mt-28 lg:mt-36 md:max-w-3xl max-w-[22rem] lg:max-w-7xl xl:max-w-[87rem] 2xl:max-w-[110rem] flex flex-col gap-16 lg:gap-32 ">
           <HeroSection t={t} value={sections[0]} buttons={heroButtons} />
           <InsightsSection t={t} value={sections[1]} cards={insightCards} />
           <ServicesSection t={t} value={sections[2]} cards={serviceCards} />
-          <ProjectsSection t={t} value={sections[3]} />
+          <ProjectsSection
+            t={t}
+            value={sections[3]}
+            projectsData={projectsData}
+          />
           <PartnersSection t={t} value={sections[4]} cards={parternsCards} />
-          <ProcessesSection t={t} value={sections[5]} cards={processesCards} />
+          <ProcessesSection
+            t={t}
+            t2={t2}
+            value={sections[5]}
+            cards={processesCards}
+          />
           <TestimonialsSection
             t={t}
             value={sections[6]}

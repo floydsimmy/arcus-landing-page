@@ -181,7 +181,7 @@
   },
   "Projects": {
     "SectionHeader": {
-      "title": "Nossos Projectos"
+      "title": "Nossos projectos"
     },
     "ProjectCard": {
       "title": "Project Title",
@@ -273,7 +273,7 @@
         "Ligue-nos já"
       ]
     },
-    "OrganazationSection": {
+    "OrganizationSection": {
       "cards": [
         {
           "title": "Missão",
@@ -325,7 +325,10 @@
         "span": "Horário de funcionamento",
         "hours": "09:00 às 17:00 de Segunda a Sexta-feira"
       }
-    },
-    "Footer": {}
-  }
+    }
+   
+  },
+  "ButtonLink": {
+      "link":"Ver mais"
+    }
 }

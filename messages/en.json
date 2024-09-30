@@ -202,7 +202,7 @@
   },
   "Projects": {
     "SectionHeader": {
-      "title": "Our Projects"
+      "title": "Our projects"
     },
     "ProjectCard": {
       "title": "Project Title",
@@ -346,7 +346,9 @@
         "span": "Opening Hours",
         "hours": "09:00 to 17:00 from Monday to Friday"
       }
-    },
-    "Footer": {}
-  }
+    }
+  },
+  "ButtonLink": {
+      "link":"Details"
+    }
 }
