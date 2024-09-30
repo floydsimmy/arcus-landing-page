@@ -248,24 +248,20 @@
     ]
   },
   "ProjectDetails": {
-    "Navbar": {},
-    "main": {
-      "h1": "Project Title",
-      "sections": [
-        {
-          "h2": "Introduction",
-          "p": "The creation of the 12 de Outubro Primary School was a strategic process aimed at meeting the need for quality education in the local community. The project involved a series of fundamental steps, from identifying the need to implementing and opening the school. Below is the detailed journey that led to the realization of this important educational project."
-        },
-        {
-          "h2": "Identifying the Need for Education",
-          "p": "The creation of the 12 de Outubro Primary School was a strategic process aimed at meeting the need for quality education in the local community. The project involved a series of fundamental steps, from identifying the need to implementing and opening the school. Below is the detailed journey that led to the realization of this important educational project."
-        },
-        {
-          "h2": "Project Planning",
-          "p": "After identifying the need, a detailed plan was created for the establishment of the school. This planning involved clearly defining the institution's mission and vision, which focused on providing children with a solid educational foundation and ethical values. Additionally, studies were conducted to determine the number of classes, the curriculum to be followed, the necessary teaching resources, and the ideal physical structure to house school activities. The plan also included the development of a timeline for construction and the gradual implementation of activities."
-        }
-      ]
-    },
+    "sections": [
+      {
+        "h2": "Introduction",
+        "p": "The creation of the 12 de Outubro Primary School was a strategic process aimed at meeting the need for quality education in the local community. The project involved a series of fundamental steps, from identifying the need to implementing and opening the school. Below is the detailed journey that led to the realization of this important educational project."
+      },
+      {
+        "h2": "Identifying the Need for Education",
+        "p": "The creation of the 12 de Outubro Primary School was a strategic process aimed at meeting the need for quality education in the local community. The project involved a series of fundamental steps, from identifying the need to implementing and opening the school. Below is the detailed journey that led to the realization of this important educational project."
+      },
+      {
+        "h2": "Project Planning",
+        "p": "After identifying the need, a detailed plan was created for the establishment of the school. This planning involved clearly defining the institution's mission and vision, which focused on providing children with a solid educational foundation and ethical values. Additionally, studies were conducted to determine the number of classes, the curriculum to be followed, the necessary teaching resources, and the ideal physical structure to house school activities. The plan also included the development of a timeline for construction and the gradual implementation of activities."
+      }
+    ],
     "aside": {
       "SectionHeader": {
         "title": "Gallery"

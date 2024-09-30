@@ -1,7 +1,7 @@
 import { Footer } from '@/app/_components/footer'
 import { Navbar } from '@/app/_components/navbar'
 import { SectionHeader } from '@/app/_components/section-header'
-import projectsData from '@/data/projects.json'
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
 
@@ -16,16 +16,15 @@ interface ProjectProps {
   params: { id: string }
 }
 
-export async function generateStaticParams() {
-  return projectsData.map((project: Project) => ({
-    id: project.id,
-  }))
-}
-
 export default function ProjectDetails({ params }: ProjectProps) {
+  const t = useTranslations('Projects')
+  const projectsData = t.raw(`ProjectList`)
   const project = projectsData.find(
     (project: Project) => project.id === params.id,
   )
+
+  const t2 = useTranslations('ProjectDetails')
+  const projectDetails = t2.raw(`sections`)
 
   if (!project) {
     return notFound()
@@ -50,53 +49,16 @@ export default function ProjectDetails({ params }: ProjectProps) {
               />
             </div>
             <div className="flex flex-col w-full md:w-[50%] gap-8">
-              <div>
-                <h2 className="font-bold leading-7 text-xl">Introdução</h2>
-                <p className="text-base lg:text-lg leading-7">
-                  A criação da Escola Primária 12 de Outubro foi um processo
-                  estratégico que visou atender à necessidade de educação de
-                  qualidade na comunidade local. O projeto envolveu uma série de
-                  etapas fundamentais, desde a identificação da necessidade até
-                  a implementação e abertura da escola. Abaixo, está o percurso
-                  detalhado que levou à concretização deste importante projeto
-                  educacional.
-                </p>
-              </div>
-              <div>
-                <h2 className="font-bold leading-7 text-xl">
-                  Identificação da Necessidade de Educação
-                </h2>
-                <p className="text-base lg:text-lg leading-7">
-                  A criação da Escola Primária 12 de Outubro foi um processo
-                  estratégico que visou atender à necessidade de educação de
-                  qualidade na comunidade local. O projeto envolveu uma série de
-                  etapas fundamentais, desde a identificação da necessidade até
-                  a implementação e abertura da escola. Abaixo, está o percurso
-                  detalhado que levou à concretização deste importante projeto
-                  educacional.
-                </p>
-              </div>
-              <div>
-                <h2 className="font-bold leading-7 text-xl">
-                  Planejamento do Projeto
-                </h2>
-                <p className="text-base lg:text-lg leading-7">
-                  Após a identificação da necessidade, foi criado um plano
-                  detalhado para a criação da escola. Esse planejamento envolveu
-                  a definição clara da missão e da visão da instituição, que se
-                  centraram na formação de crianças com uma base educacional
-                  sólida e valores éticos. Além disso, foram feitos estudos para
-                  determinar o número de turmas, o currículo a ser seguido, os
-                  recursos didáticos necessários, e a estrutura física ideal
-                  para abrigar as atividades escolares. O plano também incluiu a
-                  elaboração de um cronograma para a construção e implementação
-                  gradual das atividades.
-                </p>
-              </div>
+              {projectDetails.map((section: any, index: number) => (
+                <div key={index}>
+                  <h2 className="font-bold leading-7 text-xl">{section.h2}</h2>
+                  <p className="text-base lg:text-lg leading-7">{section.p}</p>
+                </div>
+              ))}
             </div>
           </div>
           <aside className="gap-10 mt-12 mb-24">
-            <SectionHeader title="Galeria" />
+            <SectionHeader title={t2('aside.SectionHeader.title')} />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="col-span-1 row-span-1">
                 <Image

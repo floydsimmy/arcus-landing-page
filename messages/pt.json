@@ -227,24 +227,20 @@
     ]
   },
   "ProjectDetails": {
-    "Navbar": {},
-    "main": {
-      "h1": "Project Title",
-      "sections": [
-        {
-          "h2": "Introdução",
-          "p": "A criação da Escola Primária 12 de Outubro foi um processo estratégico que visou atender à necessidade de educação de qualidade na comunidade local. O projeto envolveu uma série de etapas fundamentais, desde a identificação da necessidade até a implementação e abertura da escola. Abaixo, está o percurso detalhado que levou à concretização deste importante projeto educacional."
-        },
-        {
-          "h2": "Identificação da Necessidade de Educação",
-          "p": "A criação da Escola Primária 12 de Outubro foi um processo estratégico que visou atender à necessidade de educação de qualidade na comunidade local. O projeto envolveu uma série de etapas fundamentais, desde a identificação da necessidade até a implementação e abertura da escola. Abaixo, está o percurso detalhado que levou à concretização deste importante projeto educacional."
-        },
-        {
-          "h2": "Planejamento do Projeto",
-          "p": "Após a identificação da necessidade, foi criado um plano detalhado para a criação da escola. Esse planejamento envolveu a definição clara da missão e da visão da instituição, que se centraram na formação de crianças com uma base educacional sólida e valores éticos. Além disso, foram feitos estudos para determinar o número de turmas, o currículo a ser seguido, os recursos didáticos necessários, e a estrutura física ideal para abrigar as atividades escolares. O plano também incluiu a elaboração de um cronograma para a construção e implementação gradual das atividades."
-        }
-      ]
-    },
+    "sections": [
+      {
+        "h2": "Introdução",
+        "p": "A criação da Escola Primária 12 de Outubro foi um processo estratégico que visou atender à necessidade de educação de qualidade na comunidade local. O projeto envolveu uma série de etapas fundamentais, desde a identificação da necessidade até a implementação e abertura da escola. Abaixo, está o percurso detalhado que levou à concretização deste importante projeto educacional."
+      },
+      {
+        "h2": "Identificação da Necessidade de Educação",
+        "p": "A criação da Escola Primária 12 de Outubro foi um processo estratégico que visou atender à necessidade de educação de qualidade na comunidade local. O projeto envolveu uma série de etapas fundamentais, desde a identificação da necessidade até a implementação e abertura da escola. Abaixo, está o percurso detalhado que levou à concretização deste importante projeto educacional."
+      },
+      {
+        "h2": "Planejamento do Projeto",
+        "p": "Após a identificação da necessidade, foi criado um plano detalhado para a criação da escola. Esse planejamento envolveu a definição clara da missão e da visão da instituição, que se centraram na formação de crianças com uma base educacional sólida e valores éticos. Além disso, foram feitos estudos para determinar o número de turmas, o currículo a ser seguido, os recursos didáticos necessários, e a estrutura física ideal para abrigar as atividades escolares. O plano também incluiu a elaboração de um cronograma para a construção e implementação gradual das atividades."
+      }
+    ],
     "aside": {
       "SectionHeader": {
         "title": "Galeria"
