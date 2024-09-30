@@ -207,7 +207,45 @@
     "ProjectCard": {
       "title": "Project Title",
       "text": "Project Description"
-    }
+    },
+    "ProjectList": [
+      {
+        "id": "1",
+        "title": "12th of October Primary School",
+        "imgSrc": "/project1.svg",
+        "text": "The 12th of October Primary School was designed with the aim of providing quality education for school-aged children in the local community. The project creation process involved several important stages, from the initial idea conception to the final implementation."
+      },
+      {
+        "id": "2",
+        "title": "12th of October Primary School",
+        "imgSrc": "/project1.svg",
+        "text": "The 12th of October Primary School was designed with the aim of providing quality education for school-aged children in the local community. The project creation process involved several important stages, from the initial idea conception to the final implementation."
+      },
+      {
+        "id": "3",
+        "title": "12th of October Primary School",
+        "imgSrc": "/project1.svg",
+        "text": "The 12th of October Primary School was designed with the aim of providing quality education for school-aged children in the local community. The project creation process involved several important stages, from the initial idea conception to the final implementation."
+      },
+      {
+        "id": "4",
+        "title": "12th of October Primary School",
+        "imgSrc": "/project1.svg",
+        "text": "The 12th of October Primary School was designed with the aim of providing quality education for school-aged children in the local community. The project creation process involved several important stages, from the initial idea conception to the final implementation."
+      },
+      {
+        "id": "5",
+        "title": "12th of October Primary School",
+        "imgSrc": "/project1.svg",
+        "text": "The 12th of October Primary School was designed with the aim of providing quality education for school-aged children in the local community. The project creation process involved several important stages, from the initial idea conception to the final implementation."
+      },
+      {
+        "id": "6",
+        "title": "12th of October Primary School",
+        "imgSrc": "/project1.svg",
+        "text": "The 12th of October Primary School was designed with the aim of providing quality education for school-aged children in the local community. The project creation process involved several important stages, from the initial idea conception to the final implementation."
+      }
+    ]
   },
   "ProjectDetails": {
     "Navbar": {},
