@@ -285,6 +285,7 @@
   },
   "AboutUs": {
     "HeroSection": {
+      "span": "About us",
       "h1": "Arcus",
       "p": "Founded in 1998, Arcus Consultores operates as a consulting firm in architectural and urban planning, multidisciplinary engineering, management, and development.",
       "buttons": [
@@ -339,9 +340,10 @@
       "h1": "Additional Information",
       "p": "Learn more about us.",
       "contact": {
-        "phone": "+258 87 313 3920",
-        "location": "Museum",
+        "phone": "Phone",
+        "location": "Location",
         "email": "arcus@gmail.com",
+        "span": "Opening Hours",
         "hours": "09:00 to 17:00 from Monday to Friday"
       }
     },

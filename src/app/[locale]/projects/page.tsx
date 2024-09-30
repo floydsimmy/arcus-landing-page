@@ -13,7 +13,7 @@ export default function Projects() {
     <div>
       <div className="flex flex-col items-center h-full my-0 bg-white">
         <Navbar />
-        <main className="mt-28 max-w-7xl px-4 sm:px-9 flex flex-col">
+        <main className="mt-28 lg:mt-28 md:max-w-3xl max-w-[22rem] lg:max-w-7xl xl:max-w-[87rem] 2xl:max-w-[110rem] flex flex-col gap-16 lg:gap-32 ">
           <SectionHeader title={t(`SectionHeader.title`)} />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 mt-8">

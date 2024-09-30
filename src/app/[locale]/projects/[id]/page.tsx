@@ -34,10 +34,10 @@ export default function ProjectDetails({ params }: ProjectProps) {
     <div>
       <div className="flex flex-col items-center h-full my-0 bg-white">
         <Navbar />
-        <main className="mt-28 max-w-7xl px-5 md:px-9">
+        <main className="mt-28 lg:mt-28 md:max-w-3xl max-w-[22rem] lg:max-w-7xl xl:max-w-[87rem] 2xl:max-w-[110rem] flex flex-col gap-16 lg:gap-32 ">
           <div className="flex flex-col md:flex-row gap-8">
             <div className="w-full md:w-[50%]">
-              <h1 className="text-3xl font-bold text-blue-arc-900">
+              <h1 className="text-3xl mb-4 font-bold text-blue-arc-800">
                 {project.title}
               </h1>
               <Image

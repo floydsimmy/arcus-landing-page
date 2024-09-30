@@ -264,6 +264,7 @@
   },
   "AboutUs": {
     "HeroSection": {
+      "span": "Sobre nós",
       "h1": "Arcus",
       "p": "Criada em 1998, a Arcus Consultores actua como uma empresa de consultoria de planeamento arquitetônico e urbano, engenharia multidisciplinar, gestão e desenvolvimento.",
       "buttons": [
@@ -318,9 +319,10 @@
       "h1": "Informação adicional",
       "p": "Saiba mais sobre nós.",
       "contact": {
-        "phone": "+258 87 313 3920",
-        "location": "Museu",
+        "phone": "Telefone",
+        "location": "Localização",
         "email": "arcus@gmail.com",
+        "span": "Horário de funcionamento",
         "hours": "09:00 às 17:00 de Segunda a Sexta-feira"
       }
     },
