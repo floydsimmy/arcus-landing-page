@@ -22,7 +22,7 @@ const HeroSection = ({ value, t, buttons }: any) => (
   <div
     className="bg-white rounded-3xl lg:rounded-[64px] min-h-[29.375rem] lg:h-[53.75rem] lg:p-16 py-16 px-4 flex items-center lg:w-full"
     style={{
-      backgroundImage: "url('./back.png')",
+      backgroundImage: "url('/back.png')",
       backgroundSize: 'cover',
       backgroundPosition: 'center',
     }}
@@ -169,7 +169,7 @@ const ProjectsSection = ({ value, t, t3, projectsData }: any) => {
             style={{ backgroundImage: `url(${project.imgSrc})` }}
           >
             <div className="absolute inset-0 bg-black/90 opacity-50 transition-opacity duration-300 rounded-3xl"></div>
-            <div className="h-full flex flex-col justify-between z-10 gap-10">
+            <div className="h-full flex flex-col justify-end z-10 gap-3">
               <h3 className="z-10 text-3xl mt-24 font-medium leading-[2.81rem] opacity-100 ">
                 {project.title}
               </h3>

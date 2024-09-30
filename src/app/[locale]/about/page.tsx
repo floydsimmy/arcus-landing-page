@@ -12,7 +12,7 @@ import { SectionHeader } from '../../_components/section-header'
 
 const HeroSection = ({ value, t, buttons }: any) => (
   <div
-    className="bg-white rounded-[64px] min-h-[29.375rem] lg:h-[53.75rem] lg:p-16 py-16 px-8 flex items-center w-[20rem] lg:w-full"
+    className="bg-white rounded-3xl lg:rounded-[64px] min-h-[29.375rem] lg:h-[53.75rem] lg:p-16 py-16 px-4 flex items-center lg:w-full"
     style={{
       backgroundImage: "url('/back.png')",
       backgroundSize: 'cover',
