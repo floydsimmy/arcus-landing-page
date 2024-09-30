@@ -9,6 +9,7 @@ import { Button } from '../_components/button'
 import { InsightCard } from '../_components/cards/insight-card'
 import { PartnerCard } from '../_components/cards/partner-card'
 import { ProcessCard } from '../_components/cards/process-card'
+import { truncateText } from '../_components/cards/project-card'
 import { ServiceCard } from '../_components/cards/service-card'
 import { TestimonialCard } from '../_components/cards/testimonial-card'
 import { Footer } from '../_components/footer'
@@ -164,18 +165,20 @@ const ProjectsSection = ({ value, t, t3, projectsData }: any) => {
         {projectsData.map((project: any, index: any) => (
           <div
             key={index}
-            className="relative flex flex-col justify-center min-w-[20rem] rounded-3xl h-[31.8rem] bg-cover bg-center group text-white px-10"
+            className="relative flex flex-col justify-between gap-10 min-w-[20rem] rounded-3xl h-[31.8rem] bg-cover bg-center group text-white py-10 px-10"
             style={{ backgroundImage: `url(${project.imgSrc})` }}
           >
             <div className="absolute inset-0 bg-black/90 opacity-50 transition-opacity duration-300 rounded-3xl"></div>
-            <h3 className="z-10 text-3xl font-medium leading-[2.81rem] opacity-100 ">
-              {project.title}
-            </h3>
-            <p className="z-10 opacity-100 group-hover:opacity-100 transition-opacity duration-300">
-              {project.text}
-            </p>
+            <div className="h-full flex flex-col justify-between z-10 gap-10">
+              <h3 className="z-10 text-3xl mt-24 font-medium leading-[2.81rem] opacity-100 ">
+                {project.title}
+              </h3>
+              <p className="z-10 opacity-100 group-hover:opacity-100 transition-opacity duration-300">
+                {truncateText(project.text, 70)}
+              </p>
+            </div>
             <Link
-              className="flex items-center justify-center bg-blue-arc-700 hover:bg-blue-arc-800 transition-colors duration-200 z-10 mt-2 gap-2 rounded-[64px] text-center py-4 w-full"
+              className="flex items-center justify-center bg-blue-arc-700 hover:bg-blue-arc-800 transition-colors duration-200 z-10 gap-2 rounded-[64px] text-center py-2 w-full"
               href={`/projects/${project.id}`}
             >
               <span> {t3('link')}</span> <ArrowRight weight="light" />
