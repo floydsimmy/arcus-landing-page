@@ -14,7 +14,7 @@ const HeroSection = ({ value, t, buttons }: any) => (
   <div
     className="bg-white rounded-[64px] min-h-[29.375rem] lg:h-[53.75rem] lg:p-16 py-16 px-8 flex items-center w-[20rem] lg:w-full"
     style={{
-      backgroundImage: "url('./back.png')",
+      backgroundImage: "url('/back.png')",
       backgroundSize: 'cover',
       backgroundPosition: 'center',
     }}
@@ -27,7 +27,9 @@ const HeroSection = ({ value, t, buttons }: any) => (
       <h1 className="text-xl leading-7 lg:leading-[6rem] lg:text-6xl font-bold">
         {t(`${value}.h1`)}
       </h1>
-      <p className="text-base leading-6 lg:leading-8">{t(`${value}.p`)}</p>
+      <p className="text-base leading-6 lg:leading-8 lg:text-xl">
+        {t(`${value}.p`)}
+      </p>
       <div className="flex flex-col lg:flex-row gap-3">
         <Button className="max-md:hidden" variant content={buttons[1]} />
         <Button className="md:hidden" variant content={buttons[0]} />
@@ -121,7 +123,7 @@ const AboutUs = () => {
     <>
       <div className="flex flex-col items-center h-full my-0 bg-white">
         <Navbar />
-        <main className="mt-28 lg:mt-28 md:max-w-3xl max-w-[22rem] lg:max-w-7xl xl:max-w-[87rem] 2xl:max-w-[110rem] flex flex-col gap-16 lg:gap-32 ">
+        <main className="mt-28 lg:mt-36 md:max-w-3xl max-w-[22rem] lg:max-w-7xl xl:max-w-[87rem] 2xl:max-w-[110rem] flex flex-col gap-16 lg:gap-32 ">
           <HeroSection t={t} value={sections[0]} buttons={heroButtons} />
           <OrganazationSection cards={organizationCards} />
           <TeamSection t={t} value={sections[2]} cards={teamCards} />
