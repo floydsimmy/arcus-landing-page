@@ -107,7 +107,7 @@ const ServicesSection = ({ value, t, cards }: any) => (
   </div>
 )
 
-const ProjectsSection = ({ value, t, projectsData }: any) => {
+const ProjectsSection = ({ value, t, t3, projectsData }: any) => {
   console.log('ProjectsSection projectsData:', projectsData)
 
   if (!projectsData || projectsData.length < 3) {
@@ -207,7 +207,7 @@ const ProjectsSection = ({ value, t, projectsData }: any) => {
               className="flex items-center justify-center bg-blue-arc-700 hover:bg-blue-arc-800 transition-colors duration-200 z-10 mt-2 gap-2 rounded-[64px] text-center py-4 w-full"
               href={`/projects/${project.id}`}
             >
-              <span>Ver detalhes</span> <ArrowRight weight="light" />
+              <span> {t3('link')}</span> <ArrowRight weight="light" />
             </Link>
           </div>
         ))}
@@ -312,6 +312,7 @@ const ContactSection = ({ value, t }: any) => (
 export default function Home() {
   const t = useTranslations('Home')
   const t2 = useTranslations('Projects')
+  const t3 = useTranslations('ButtonLink')
   const projectsData = t2.raw(`ProjectList`)
   const sections = [
     'HeroSection',
@@ -330,7 +331,6 @@ export default function Home() {
   const parternsCards = t.raw(`${sections[4]}.cards`)
   const processesCards = t.raw(`${sections[5]}.cards`)
   const testimonialCards = t.raw(`${sections[6]}.cards`)
-  console.log(projectsData.length)
 
   return (
     <div>
@@ -342,6 +342,7 @@ export default function Home() {
           <ServicesSection t={t} value={sections[2]} cards={serviceCards} />
           <ProjectsSection
             t={t}
+            t3={t3}
             value={sections[3]}
             projectsData={projectsData}
           />

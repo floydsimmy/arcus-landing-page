@@ -110,13 +110,34 @@
       "title": "Parceiros",
       "description": "Oferecemos serviços onde o nosso maior valor é a qualidade e a satisfação do cliente",
       "cards": [
-        "Tzu Chi",
-        "Revimo",
-        "Julen Construções",
-        "Un Habit",
-        "Petromoc",
-        "Electricidade de Moçambique",
-        "World Bank Group"
+        {
+          "title": "Tzu Chi",
+          "imgSrc": "/R.svg"
+        },
+        {
+          "title": "Revimo",
+          "imgSrc": "/Revimo.svg"
+        },
+        {
+          "title": "Julen Constructions",
+          "imgSrc": "/Julen.svg"
+        },
+        {
+          "title": "Un Habit",
+          "imgSrc": "/UH.svg"
+        },
+        {
+          "title": "Petromoc",
+          "imgSrc": "/Petromoc.svg"
+        },
+        {
+          "title": "Electricity of Mozambique",
+          "imgSrc": "/EDM.svg"
+        },
+        {
+          "title": "World Bank Group",
+          "imgSrc": "/WB.svg"
+        }
       ]
     },
     "ProcessesSection": {
@@ -326,9 +347,8 @@
         "hours": "09:00 às 17:00 de Segunda a Sexta-feira"
       }
     }
-   
   },
   "ButtonLink": {
-      "link":"Ver mais"
-    }
+    "link": "Ver mais"
+  }
 }
