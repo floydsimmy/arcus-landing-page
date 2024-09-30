@@ -1,17 +1,35 @@
 {
   "Navbar": {
     "menuItems": [
-      { "name": "Inicio", "link": "/" },
-      { "name": "Sobre nós", "link": "/about" },
-      { "name": "Projectos", "link": "/projects" }
+      {
+        "name": "Inicio",
+        "link": "/"
+      },
+      {
+        "name": "Sobre nós",
+        "link": "/about"
+      },
+      {
+        "name": "Projectos",
+        "link": "/projects"
+      }
     ],
     "contactButton": "Contacte-nos"
   },
   "Footer": {
     "menuItems": [
-      { "name": "Inicio", "link": "/" },
-      { "name": "Sobre nós", "link": "/about" },
-      { "name": "Projectos", "link": "/projects" }
+      {
+        "name": "Inicio",
+        "link": "/"
+      },
+      {
+        "name": "Sobre nós",
+        "link": "/about"
+      },
+      {
+        "name": "Projectos",
+        "link": "/projects"
+      }
     ],
     "contactInfo": {
       "phone": "+258 87 313 3920",
@@ -23,38 +41,70 @@
   },
   "Home": {
     "HeroSection": {
-      "h1": "Arcus",
-      "p": "Criada em 1998, a Arcus Consultores actua como uma empresa de consultoria de planeamento arquitetônico e urbano, engenharia multidisciplinar, gestão e desenvolvimento.",
+      "span": "Empresa de Consultoria",
+      "h1": "Construindo o futuro com solidez, confiança e inovação.",
+      "p": "Transformamos projetos em realidade, com dedicação e excelência em cada detalhe. Seja para grandes obras ou pequenas reformas, estamos prontos para concretizar suas ideias.",
       "buttons": [
-        "Cotação do projeto",
+        "Peça a cotação",
         "Peça a cotação do seu projeto",
         "Ligue-nos já"
       ]
     },
     "InsightsSection": {
       "cards": [
-        { "title": "Projectos", "text": "+100" },
-        { "title": "Trabalhadores", "text": "+50" },
-        { "title": "Obras concluídas", "text": "+50" },
-        { "title": "Clientes", "text": "+100" }
+        {
+          "title": "Projectos",
+          "text": "+100"
+        },
+        {
+          "title": "Trabalhadores",
+          "text": "+50"
+        },
+        {
+          "title": "Obras concluídas",
+          "text": "+50"
+        },
+        {
+          "title": "Clientes",
+          "text": "+100"
+        }
       ]
     },
     "ServicesSection": {
       "title": "Serviços",
       "description": "Oferecemos serviços onde o nosso maior valor é a qualidade e a satisfação do cliente",
       "cards": [
-        { "title": "Arquitectura", "text": "Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." },
-        { "title": "Planeamento Físico/Urbano", "text": "Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." },
-        { "title": "Engenharia Multidisciplinar", "text": "Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." },
-        { "title": "Fiscalização de obras", "text": "Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." },
-        { "title": "Avaliação Patrimonial", "text": "Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." },
-        { "title": "Estudos do impacto ambiental", "text": "Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados." }
+        {
+          "title": "Arquitectura",
+          "text": "Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados."
+        },
+        {
+          "title": "Planeamento Físico/Urbano",
+          "text": "Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados."
+        },
+        {
+          "title": "Engenharia Multidisciplinar",
+          "text": "Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados."
+        },
+        {
+          "title": "Fiscalização de obras",
+          "text": "Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados."
+        },
+        {
+          "title": "Avaliação Patrimonial",
+          "text": "Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados."
+        },
+        {
+          "title": "Estudos do impacto ambiental",
+          "text": "Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados."
+        }
       ]
     },
     "ProjectsSection": {
       "title": "Projectos",
       "description": "Oferecemos serviços onde o nosso maior valor é a qualidade e a satisfação do cliente",
-      "link": "Ver mais projectos"
+      "link": "Ver mais sobre o projecto",
+      "link1": "Ver mais projectos"
     },
     "PartnersSection": {
       "title": "Parceiros",
@@ -73,16 +123,61 @@
       "title": "Processos",
       "description": "Etapas para a execução dos nossos projectos",
       "cards": [
-        { "title": "1. Analise Geral", "text": "Fazemos a analise do seu projecto" },
-        { "title": "2. Assinatura de Contrato", "text": "Fazemos o levantamento dos requisitos e entramos em um acordo." },
-        { "title": "3. Planeamento do projecto", "text": "Fazemos o plano de execução do projecto" },
-        { "title": "4. Design da estrutura", "text": "Vamos a elaboração do design." }
+        {
+          "title": "1. Analise Geral",
+          "text": "Fazemos a analise do seu projecto",
+          "imgSrc": "/Rectangle1.svg"
+        },
+        {
+          "title": "2. Assinatura de Contrato",
+          "text": "Fazemos o levantamento dos requisitos e entramos em um acordo.",
+          "imgSrc": "/Rectangle2.svg"
+        },
+        {
+          "title": "3. Planeamento do projecto",
+          "text": "Fazemos o plano de execução do projecto",
+          "imgSrc": "/Rectangle3.svg"
+        },
+        {
+          "title": "4. Design da estrutura",
+          "text": "Vamos a elaboração do design.",
+          "imgSrc": "/Rectangle4.svg"
+        }
       ]
     },
     "TestimonialsSection": {
-      "title": "Testemunhos"
+      "title": "Testimonials",
+      "cards": [
+        {
+          "title": "John Doe",
+          "text": "A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura"
+        },
+        {
+          "title": "John Doe",
+          "text": "A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura"
+        },
+        {
+          "title": "John Doe",
+          "text": "A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura"
+        },
+        {
+          "title": "John Doe",
+          "text": "A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura"
+        },
+        {
+          "title": "John Doe",
+          "text": "A Empresa tem uma qualidade inemaginavel. Nunca antes vista no mercado de arquitectura"
+        }
+      ]
     },
-    "ContactSection": {}
+    "ContactSection": {
+      "title": "Contacte-nos",
+      "description": "Estamos aqui para ajudar",
+      "name": "Insira seu nome",
+      "email": "Insira seu email",
+      "message": "Insira sua mensagem",
+      "submit": "Submeter"
+    }
   },
   "Projects": {
     "SectionHeader": {
@@ -117,9 +212,18 @@
         "title": "Galeria"
       },
       "images": [
-        { "src": "/galeria1.svg", "alt": "Image 1" },
-        { "src": "/galeria1.svg", "alt": "Image 2" },
-        { "src": "/galeria2.svg", "alt": "Image 3" }
+        {
+          "src": "/galeria1.svg",
+          "alt": "Image 1"
+        },
+        {
+          "src": "/galeria1.svg",
+          "alt": "Image 2"
+        },
+        {
+          "src": "/galeria2.svg",
+          "alt": "Image 3"
+        }
       ]
     },
     "Footer": {}
@@ -136,8 +240,14 @@
     },
     "OrganazationSection": {
       "cards": [
-        { "title": "Missão", "text": "Trazer inovação e praticidade na elaboração e execução de projectos arquitetônicos, permitindo a obtenção de um resultado surpreendente." },
-        { "title": "Visão", "text": "Ser referência na área de consultoria de planeamento arquitetônico e urbano, engenharia multidisciplinar, gestão e desenvolvimento." },
+        {
+          "title": "Missão",
+          "text": "Trazer inovação e praticidade na elaboração e execução de projectos arquitetônicos, permitindo a obtenção de um resultado surpreendente."
+        },
+        {
+          "title": "Visão",
+          "text": "Ser referência na área de consultoria de planeamento arquitetônico e urbano, engenharia multidisciplinar, gestão e desenvolvimento."
+        },
         {
           "title": "Valores",
           "list": [
@@ -152,10 +262,22 @@
     "TeamSection": {
       "title": "Nossa equipe",
       "cards": [
-        { "title": "Eduardo Nhate", "text": "Chefe de Projectos/Criação" },
-        { "title": "John Doe", "text": "Chefe de something" },
-        { "title": "Stela Nhantumbo", "text": "Chefe de Administração/Finanças" },
-        { "title": "Florêncio Chau", "text": "Coordenador de Orçamento e Fiscalização" }
+        {
+          "title": "Eduardo Nhate",
+          "text": "Chefe de Projectos/Criação"
+        },
+        {
+          "title": "John Doe",
+          "text": "Chefe de something"
+        },
+        {
+          "title": "Stela Nhantumbo",
+          "text": "Chefe de Administração/Finanças"
+        },
+        {
+          "title": "Florêncio Chau",
+          "text": "Coordenador de Orçamento e Fiscalização"
+        }
       ]
     },
     "AdditionalInfoSection": {

@@ -1,17 +1,35 @@
 {
   "Navbar": {
     "menuItems": [
-      { "name": "Home", "link": "/" },
-      { "name": "About Us", "link": "/about" },
-      { "name": "Projects", "link": "/projects" }
+      {
+        "name": "Home",
+        "link": "/"
+      },
+      {
+        "name": "About Us",
+        "link": "/about"
+      },
+      {
+        "name": "Projects",
+        "link": "/projects"
+      }
     ],
     "contactButton": "Contact us"
   },
   "Footer": {
     "menuItems": [
-      { "name": "Home", "link": "/" },
-      { "name": "About Us", "link": "/about" },
-      { "name": "Projects", "link": "/projects" }
+      {
+        "name": "Home",
+        "link": "/"
+      },
+      {
+        "name": "About Us",
+        "link": "/about"
+      },
+      {
+        "name": "Projects",
+        "link": "/projects"
+      }
     ],
     "contactInfo": {
       "phone": "+258 87 313 3920",
@@ -23,8 +41,9 @@
   },
   "Home": {
     "HeroSection": {
-      "h1": "Arcus",
-      "p": "Founded in 1998, Arcus Consultores operates as a consulting firm in architectural and urban planning, multidisciplinary engineering, management, and development.",
+      "span": "Consulting Company",
+      "h1": "Building the future with solidity, trust, and innovation.",
+      "p": "We transform projects into reality, with dedication and excellence in every detail. Whether for large constructions or small renovations, we are ready to bring your ideas to life.",
       "buttons": [
         "Project Quote",
         "Request a Quote for Your Project",
@@ -33,56 +52,153 @@
     },
     "InsightsSection": {
       "cards": [
-        { "title": "Projects", "text": "+100" },
-        { "title": "Workers", "text": "+50" },
-        { "title": "Completed Works", "text": "+50" },
-        { "title": "Clients", "text": "+100" }
+        {
+          "title": "Projects",
+          "text": "+100"
+        },
+        {
+          "title": "Workers",
+          "text": "+50"
+        },
+        {
+          "title": "Completed Works",
+          "text": "+50"
+        },
+        {
+          "title": "Clients",
+          "text": "+100"
+        }
       ]
     },
     "ServicesSection": {
       "title": "Services",
       "description": "We offer services where our greatest value is quality and customer satisfaction",
       "cards": [
-        { "title": "Architecture", "text": "Our architecture service combines creativity and functionality to bring unique and personalized projects to life." },
-        { "title": "Physical/Urban Planning", "text": "Our architecture service combines creativity and functionality to bring unique and personalized projects to life." },
-        { "title": "Multidisciplinary Engineering", "text": "Our architecture service combines creativity and functionality to bring unique and personalized projects to life." },
-        { "title": "Construction Supervision", "text": "Our architecture service combines creativity and functionality to bring unique and personalized projects to life." },
-        { "title": "Property Valuation", "text": "Our architecture service combines creativity and functionality to bring unique and personalized projects to life." },
-        { "title": "Environmental Impact Studies", "text": "Our architecture service combines creativity and functionality to bring unique and personalized projects to life." }
+        {
+          "title": "Architecture",
+          "text": "Our architecture service combines creativity and functionality to bring unique and personalized projects to life."
+        },
+        {
+          "title": "Physical/Urban Planning",
+          "text": "Our architecture service combines creativity and functionality to bring unique and personalized projects to life."
+        },
+        {
+          "title": "Multidisciplinary Engineering",
+          "text": "Our architecture service combines creativity and functionality to bring unique and personalized projects to life."
+        },
+        {
+          "title": "Construction Supervision",
+          "text": "Our architecture service combines creativity and functionality to bring unique and personalized projects to life."
+        },
+        {
+          "title": "Property Valuation",
+          "text": "Our architecture service combines creativity and functionality to bring unique and personalized projects to life."
+        },
+        {
+          "title": "Environmental Impact Studies",
+          "text": "Our architecture service combines creativity and functionality to bring unique and personalized projects to life."
+        }
       ]
     },
     "ProjectsSection": {
       "title": "Projects",
       "description": "We offer services where our greatest value is quality and customer satisfaction",
-      "link": "See More Projects"
+      "link": "See about the project",
+      "link1": "See More Projects"
     },
     "PartnersSection": {
       "title": "Partners",
       "description": "We offer services where our greatest value is quality and customer satisfaction",
       "cards": [
-        "Tzu Chi",
-        "Revimo",
-        "Julen Constructions",
-        "Un Habit",
-        "Petromoc",
-        "Electricity of Mozambique",
-        "World Bank Group"
+        {
+          "title": "Tzu Chi",
+          "imgSrc": "/R.svg"
+        },
+        {
+          "title": "Revimo",
+          "imgSrc": "/Revimo.svg"
+        },
+        {
+          "title": "Julen Constructions",
+          "imgSrc": "/Julen.svg"
+        },
+        {
+          "title": "Un Habit",
+          "imgSrc": "/UH.svg"
+        },
+        {
+          "title": "Petromoc",
+          "imgSrc": "/Petromoc.svg"
+        },
+        {
+          "title": "Electricity of Mozambique",
+          "imgSrc": "/EDM.svg"
+        },
+        {
+          "title": "World Bank Group",
+          "imgSrc": "/WB.svg"
+        }
       ]
     },
     "ProcessesSection": {
       "title": "Processes",
       "description": "Steps for executing our projects",
       "cards": [
-        { "title": "1. General Analysis", "text": "We analyze your project" },
-        { "title": "2. Contract Signing", "text": "We gather requirements and reach an agreement." },
-        { "title": "3. Project Planning", "text": "We create the project execution plan" },
-        { "title": "4. Structure Design", "text": "We proceed to the design elaboration." }
+        {
+          "title": "1. General Analysis",
+          "text": "We analyze your project",
+          "imgSrc": "/Rectangle1.svg"
+        },
+        {
+          "title": "2. Contract Signing",
+          "text": "We gather requirements and reach an agreement.",
+          "imgSrc": "/Rectangle2.svg"
+        },
+        {
+          "title": "3. Project Planning",
+          "text": "We create the project execution plan",
+          "imgSrc": "/Rectangle3.svg"
+        },
+        {
+          "title": "4. Structure Design",
+          "text": "We proceed to the design elaboration.",
+          "imgSrc": "/Rectangle4.svg"
+        }
       ]
     },
     "TestimonialsSection": {
-      "title": "Testimonials"
+      "title": "Testimonials",
+      "cards": [
+        {
+          "title": "John Doe",
+          "text": "The company has an unimaginable quality. Never seen before in the architecture market."
+        },
+        {
+          "title": "John Doe",
+          "text": "The company has an unimaginable quality. Never seen before in the architecture market."
+        },
+        {
+          "title": "John Doe",
+          "text": "The company has an unimaginable quality. Never seen before in the architecture market."
+        },
+        {
+          "title": "John Doe",
+          "text": "The company has an unimaginable quality. Never seen before in the architecture market."
+        },
+        {
+          "title": "John Doe",
+          "text": "The company has an unimaginable quality. Never seen before in the architecture market."
+        }
+      ]
     },
-    "ContactSection": {}
+    "ContactSection": {
+      "title": "Contact Us",
+      "description": "We are here to help you",
+      "name": "Enter your name",
+      "email": "Enter your email",
+      "message": "Enter your message",
+      "submit": "Submit"
+    }
   },
   "Projects": {
     "SectionHeader": {
@@ -117,9 +233,18 @@
         "title": "Gallery"
       },
       "images": [
-        { "src": "/gallery1.svg", "alt": "Image 1" },
-        { "src": "/gallery1.svg", "alt": "Image 2" },
-        { "src": "/gallery2.svg", "alt": "Image 3" }
+        {
+          "src": "/gallery1.svg",
+          "alt": "Image 1"
+        },
+        {
+          "src": "/gallery1.svg",
+          "alt": "Image 2"
+        },
+        {
+          "src": "/gallery2.svg",
+          "alt": "Image 3"
+        }
       ]
     },
     "Footer": {}
@@ -136,8 +261,14 @@
     },
     "OrganizationSection": {
       "cards": [
-        { "title": "Mission", "text": "Bring innovation and practicality in the design and execution of architectural projects, allowing for surprising results." },
-        { "title": "Vision", "text": "To be a reference in the field of consulting in architectural and urban planning, multidisciplinary engineering, management, and development." },
+        {
+          "title": "Mission",
+          "text": "Bring innovation and practicality in the design and execution of architectural projects, allowing for surprising results."
+        },
+        {
+          "title": "Vision",
+          "text": "To be a reference in the field of consulting in architectural and urban planning, multidisciplinary engineering, management, and development."
+        },
         {
           "title": "Values",
           "list": [
@@ -152,10 +283,22 @@
     "TeamSection": {
       "title": "Our Team",
       "cards": [
-        { "title": "Eduardo Nhate", "text": "Head of Projects/Creation" },
-        { "title": "John Doe", "text": "Head of Something" },
-        { "title": "Stela Nhantumbo", "text": "Head of Administration/Finance" },
-        { "title": "Florêncio Chau", "text": "Budget and Supervision Coordinator" }
+        {
+          "title": "Eduardo Nhate",
+          "text": "Head of Projects/Creation"
+        },
+        {
+          "title": "John Doe",
+          "text": "Head of Something"
+        },
+        {
+          "title": "Stela Nhantumbo",
+          "text": "Head of Administration/Finance"
+        },
+        {
+          "title": "Florêncio Chau",
+          "text": "Budget and Supervision Coordinator"
+        }
       ]
     },
     "AdditionalInfoSection": {

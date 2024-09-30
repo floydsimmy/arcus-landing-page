@@ -6,7 +6,23 @@ import React from 'react'
 import { Button } from './button'
 import { TextArea } from './textarea'
 
-export function Form() {
+interface FormProps {
+  title: string
+  description: string
+  name: string
+  email: string
+  message: string
+  submitMessage: string
+}
+
+export function Form({
+  title,
+  description,
+  name,
+  email,
+  message,
+  submitMessage,
+}: FormProps) {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     console.log('Form submitted')
@@ -15,11 +31,9 @@ export function Form() {
     <div className="w-full  rounded-none md:rounded-2xl bg-white ">
       <div className="flex flex-col gap-3">
         <h2 className="text-2xl lg:text-4xl leading-[3.3rem] font-medium text-slate-600">
-          Contacte-nos
+          {title}
         </h2>
-        <p className="leading-7 text-sm  lg:text-lg">
-          Etapas para a execução dos nossos projectos
-        </p>
+        <p className="leading-7 text-sm  lg:text-lg">{description}</p>
       </div>
 
       <form className="my-8" onSubmit={handleSubmit}>
@@ -29,7 +43,7 @@ export function Form() {
             <Input
               id="name"
               className="border border-slate-200 rounded-small"
-              placeholder="Insira seu nome"
+              placeholder={name}
               type="text"
             />
           </LabelInputContainer>
@@ -39,7 +53,7 @@ export function Form() {
           <Input
             id="email"
             className="border border-slate-200 rounded-small"
-            placeholder="Insira seu email"
+            placeholder={email}
             type="email"
           />
         </LabelInputContainer>
@@ -48,14 +62,14 @@ export function Form() {
         <LabelInputContainer className="mb-4">
           <TextArea
             id="message"
-            placeholder="Escreva sua mensagem aqui"
+            placeholder={message}
             className="border border-slate-200 rounded-small w-full h-[4.375rem]"
           />
         </LabelInputContainer>
 
         <LabelInputContainer className="mb-4">
           <Button
-            content="Submeter"
+            content={submitMessage}
             type="submit"
             className="w-full text-center"
           />

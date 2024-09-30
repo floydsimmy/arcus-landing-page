@@ -5,13 +5,13 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 
 import { Link } from '@/i18n/routing'
-const menuItems = [
-  { name: 'Inicio', link: '/' },
-  { name: 'Sobre nós', link: '/about' },
-  { name: 'Projectos', link: '/projects' },
-]
+import { useTranslations } from 'next-intl'
 
 export const Footer = () => {
+  const t = useTranslations('Footer')
+  const menuItems = t.raw('menuItems')
+  const contactInfo = t('contactInfo')
+
   return (
     <footer
       className="bg-blue-arc-800 text-white mt-20 flex flex-col lg:justify-center
@@ -65,7 +65,7 @@ export const Footer = () => {
         <hr className="border-t-[1px] w-full" />
         <div className="flex  max-md:px-9 max-md:flex-col justify-between w-full text-base leading-6">
           <span>© 2024 Arcus</span>
-          <span className="">Feito pela: Digital View</span>
+          <span className="">{t(`credits`)}</span>
         </div>
       </div>
     </footer>

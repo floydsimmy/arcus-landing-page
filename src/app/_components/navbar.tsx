@@ -24,6 +24,7 @@ export const Navbar = () => {
   const path = usePathname()
   const t = useTranslations('Navbar')
   const menuItems = t.raw('menuItems')
+
   const contactButton = t('contactButton')
 
   return (
