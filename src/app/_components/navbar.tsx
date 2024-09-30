@@ -35,7 +35,7 @@ export const Navbar = () => {
         <Image src="/logo.png" alt="Logo" width={150} height={150} />
       </div>
       <ul
-        className={`list-none flex gap-4 lg:gap-8 max-lg:absolute transition-all ease-in max-lg:z-[-1] max-lg:flex-col max-lg:h-screen ${open ? 'top-16 opacity-100 pt-8 pb-6 px-4 bg-white backdrop-blur-md' : 'top-[-1990px]'} max-lg:w-full`}
+        className={`list-none flex gap-4 lg:gap-8 max-lg:absolute transition-all ease-in max-lg:z-[-1] max-lg:flex-col max-lg:h-screen ${open ? 'top-16 opacity-100 pt-8 pb-6 px-4 bg-white backdrop-blur-md' : 'top-[-1990px]'} max-lg:w-full max-lg:border-t`}
       >
         {menuItems.map(
           (item: { name: string; link: string }, index: number) => (

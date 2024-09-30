@@ -71,38 +71,9 @@ const ServicesSection = ({ value, t, cards }: any) => (
     </Marquee>
 
     <div className="lg:hidden flex gap-4 w-full overflow-x-scroll">
-      <ServiceCard
-        imgSrc="/map.svg"
-        title="Arquitectura"
-        text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados."
-      />
-
-      <ServiceCard
-        imgSrc="/map.svg"
-        title="Planeamento Físico/Urbano"
-        text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados."
-      />
-
-      <ServiceCard
-        imgSrc="/map.svg"
-        title="Engenharia Multidisciplinar"
-        text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados."
-      />
-      <ServiceCard
-        imgSrc="/map.svg"
-        title="Fiscalização de obras"
-        text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados."
-      />
-      <ServiceCard
-        imgSrc="/map.svg"
-        title="Avaliação Patrimonial"
-        text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados."
-      />
-      <ServiceCard
-        imgSrc="/map.svg"
-        title="Estudos do impacto ambiental"
-        text="Nosso serviço de arquitetura combina criatividade e funcionalidade para dar vida a projetos únicos e personalizados."
-      />
+      {cards.map((card: any) => (
+        <ServiceCard imgSrc="/map.svg" title={card.title} text={card.text} />
+      ))}
     </div>
   </div>
 )
