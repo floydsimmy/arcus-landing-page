@@ -19,7 +19,7 @@ export const LanguageSelector = () => {
     <label htmlFor="">
       <p className="sr-only">Change language</p>
       <select
-        className="border rounded-[64px] ring-0 hover:ring-0 hover:border-none p-2 text-slate-arc-500 focus:ring-0 focus:border-none bg-inherit"
+        className="border rounded-[64px] max-lg:w-full ring-0 hover:ring-0 hover:border-none p-2 text-slate-arc-500 focus:ring-0 focus:border-none bg-inherit"
         name=""
         id=""
         onChange={onSelectChange}

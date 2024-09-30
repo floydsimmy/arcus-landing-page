@@ -29,7 +29,7 @@ export const Navbar = () => {
 
   return (
     <nav
-      className={`flex fixed z-20 lg:top-4 lg:gap-56 max-lg:justify-between max-lg:w-full lg:max-w-[80rem] lg:min-w-[80rem] items-center border-b lg:border border-blue-arc-100 ${open ? 'bg-white' : 'bg-white/85'}  backdrop-blur-md lg:rounded-[64px] max-md:h-20`}
+      className={`flex fixed z-20 lg:top-4 lg:gap-56 justify-between max-lg:w-full lg:max-w-[80rem] lg:min-w-[80rem] items-center border-b lg:border border-blue-arc-100 ${open ? 'bg-white' : 'bg-white/85'}  backdrop-blur-md lg:rounded-[64px] max-md:h-20`}
     >
       <div className="logo flex items-center">
         <Image src="/logo.png" alt="Logo" width={150} height={150} />
@@ -61,7 +61,7 @@ export const Navbar = () => {
           <List weight="bold" size={30} className="mr-3 lg:hidden" />
         )}
       </button>
-      <div className="hidden lg:flex justify-center items-center gap-3">
+      <div className="hidden lg:flex justify-center items-center gap-3 mr-7">
         {/* <Dropdown /> */}
         <LanguageSelector />
         <Button
