@@ -11,7 +11,6 @@ import { useTranslations } from 'next-intl'
 export const Footer = () => {
   const t = useTranslations('Footer')
   const menuItems = t.raw('menuItems')
-  const contactInfo = t('contactInfo')
 
   return (
     <footer
@@ -58,7 +57,7 @@ export const Footer = () => {
             <span className="flex items-center gap-2 col-span-2">
               <MapPin weight="fill" />{' '}
               <Link target="_blank" href={'https://g.co/kgs/54yy8Fp'}>
-                Museu
+                Avenida Friedrich Engels, nº 555, Maputo
               </Link>
             </span>
           </div>

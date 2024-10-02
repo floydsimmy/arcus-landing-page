@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Footer } from '@/app/_components/footer'
 import { Navbar } from '@/app/_components/navbar'
 import { SectionHeader } from '@/app/_components/section-header'
@@ -10,6 +11,7 @@ interface Project {
   title: string
   text: string
   imgSrc: string
+  imgSrcs: string[]
 }
 
 interface ProjectProps {
@@ -45,7 +47,7 @@ export default function ProjectDetails({ params }: ProjectProps) {
                 width={800}
                 height={512}
                 alt={project.title}
-                className="rounded-lg w-full h-auto object-cover"
+                className="rounded-2xl w-full h-auto object-cover"
               />
             </div>
             <div className="flex flex-col w-full md:w-[50%] gap-8">
@@ -62,29 +64,29 @@ export default function ProjectDetails({ params }: ProjectProps) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="col-span-1 row-span-1">
                 <Image
-                  src="/galeria1.svg"
+                  src={project.imgSrcs[0]}
                   width={788}
                   height={522}
                   alt="Image 1"
-                  className="rounded-lg w-full h-auto object-cover"
+                  className="rounded-[32px] max-lg:rounded-2xl w-full h-full object-cover"
                 />
               </div>
               <div className="col-span-1 row-span-1">
                 <Image
-                  src="/galeria1.svg"
+                  src={project.imgSrcs[1]}
                   width={788}
                   height={522}
-                  alt="Image 2"
-                  className="rounded-lg w-full h-auto object-cover"
+                  alt="Image 1"
+                  className="rounded-[32px] max-lg:rounded-2xl w-full h-full object-cover"
                 />
               </div>
               <div className="col-span-1 md:col-span-2 row-span-1">
                 <Image
-                  src="/galeria2.svg"
+                  src={project.imgSrcs[2]}
                   width={1600}
                   height={522}
                   alt="Image 3"
-                  className="rounded-lg w-full h-auto object-cover"
+                  className="rounded-[32px] max-lg:rounded-2xl w-full h-auto object-cover"
                 />
               </div>
             </div>

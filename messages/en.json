@@ -211,38 +211,68 @@
     "ProjectList": [
       {
         "id": "1",
-        "title": "12th of October Primary School",
-        "imgSrc": "/project1.svg",
+        "title": "12th of October Complete Primary School",
+        "imgSrc": "https://i.ibb.co/9NWX71D/2-11-Foto.jpg",
+        "imgSrcs": [
+          "https://i.ibb.co/zfDkrBG/DDDDDDDDD.jpg",
+          "https://i.ibb.co/JrZNNBs/2-10-Photo.jpg",
+          "https://i.ibb.co/FXBQf5b/2-5-Photo.jpg"
+        ],
         "text": "The 12th of October Primary School was designed with the aim of providing quality education for school-aged children in the local community. The project creation process involved several important stages, from the initial idea conception to the final implementation."
       },
       {
         "id": "2",
-        "title": "12th of October Primary School",
-        "imgSrc": "/project1.svg",
+        "title": "Muda Complete Primary School",
+        "imgSrc": "https://i.ibb.co/fFpP2m6/1-5-ZQ-Photo.jpg",
+        "imgSrcs": [
+          "https://i.ibb.co/MV4fXHg/1-4-Photo.jpg",
+          "https://i.ibb.co/7WmFkLw/EF.jpg",
+          "https://i.ibb.co/1GqBy67/1-3-1-Photo.jpg"
+        ],
         "text": "The 12th of October Primary School was designed with the aim of providing quality education for school-aged children in the local community. The project creation process involved several important stages, from the initial idea conception to the final implementation."
       },
       {
         "id": "3",
-        "title": "12th of October Primary School",
-        "imgSrc": "/project1.svg",
+        "title": "Tica Complete Primary School",
+        "imgSrc": "https://i.ibb.co/g9TXdrt/1-11-Foto.jpg",
+        "imgSrcs": [
+          "https://i.ibb.co/6F1ZGT5/1-4-Photo.jpg",
+          "https://i.ibb.co/W6mNKLS/2-5-Photo.jpg",
+          "https://i.ibb.co/4FdGdgY/2-9-Photo.jpg"
+        ],
         "text": "The 12th of October Primary School was designed with the aim of providing quality education for school-aged children in the local community. The project creation process involved several important stages, from the initial idea conception to the final implementation."
       },
       {
         "id": "4",
-        "title": "12th of October Primary School",
-        "imgSrc": "/project1.svg",
+        "title": "Esturro Complete Primary School",
+        "imgSrc": "https://i.ibb.co/ZdctybZ/4-11-Foto.jpg",
+        "imgSrcs": [
+          "https://i.ibb.co/G7xzXxM/2-9-Photo.jpg",
+          "https://i.ibb.co/r7XRXg3/2-10-Photo.jpg",
+          "https://i.ibb.co/mTQxC0C/4-12-Foto.jpg"
+        ],
         "text": "The 12th of October Primary School was designed with the aim of providing quality education for school-aged children in the local community. The project creation process involved several important stages, from the initial idea conception to the final implementation."
       },
       {
         "id": "5",
-        "title": "12th of October Primary School",
-        "imgSrc": "/project1.svg",
+        "title": "Lamengo Complete Primary School",
+        "imgSrc": "https://i.ibb.co/5xW96g4/2-8-QPhoto.jpg",
+        "imgSrcs": [
+          "https://i.ibb.co/m8Fz42S/2-4-1-Photo.jpg",
+          "https://i.ibb.co/5xW96g4/2-8-QPhoto.jpg",
+          "https://i.ibb.co/hC8vSxL/2-9-2-Photo.jpg"
+        ],
         "text": "The 12th of October Primary School was designed with the aim of providing quality education for school-aged children in the local community. The project creation process involved several important stages, from the initial idea conception to the final implementation."
       },
       {
         "id": "6",
-        "title": "12th of October Primary School",
-        "imgSrc": "/project1.svg",
+        "title": "Metuchira General Secondary School",
+        "imgSrc": "https://i.ibb.co/ZMsxtrx/1-11-Foto.jpg",
+        "imgSrcs": [
+          "https://i.ibb.co/L1tQ2Vx/15.jpg",
+          "https://i.ibb.co/Mppn3ZR/1-7-Photo-2.jpg",
+          "https://i.ibb.co/ZMsxtrx/1-11-Foto.jpg"
+        ],
         "text": "The 12th of October Primary School was designed with the aim of providing quality education for school-aged children in the local community. The project creation process involved several important stages, from the initial idea conception to the final implementation."
       }
     ]
@@ -349,6 +379,6 @@
     }
   },
   "ButtonLink": {
-      "link":"Details"
-    }
+    "link": "Details"
+  }
 }

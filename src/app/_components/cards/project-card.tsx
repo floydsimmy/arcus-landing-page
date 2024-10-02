@@ -20,8 +20,14 @@ export const ProjectCard = ({ title, text, imgSrc, id }: ProjectCardProps) => {
   const truncatedText = truncateText(text ?? '', 100)
   console.log(imgSrc)
   return (
-    <div className="flex flex-col gap-[0.6254rem] p-3 hover:shadow-lg hover:border border-slate-arc-300 rounded-2xl">
-      <Image src={imgSrc ?? ''} alt="" width={490} height={460} />
+    <div className="flex flex-col gap-[0.6254rem] p-3 hover:shadow-lg hover:border border-slate-arc-300 rounded-2xl transition duration-200 hover:transform hover:duration-200 ">
+      <Image
+        className="rounded-2xl object-cover w-full h-[90%]"
+        src={imgSrc ?? ''}
+        alt=""
+        width={490}
+        height={490}
+      />
 
       <h3 className="text-xl font-medium leading-[1.8rem] text-slate-arc-700 ">
         {title}
