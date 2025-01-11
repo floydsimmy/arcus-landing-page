@@ -1,30 +1,30 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-'use client'
+"use client";
 // import projectsData from '@/data/projects.json'
-import { Link } from '@/i18n/routing'
-import { ArrowRight, Phone } from '@phosphor-icons/react'
-import { useTranslations } from 'next-intl'
-import Image from 'next/image'
-import { Button } from '../_components/button'
-import { InsightCard } from '../_components/cards/insight-card'
-import { PartnerCard } from '../_components/cards/partner-card'
-import { ProcessCard } from '../_components/cards/process-card'
-import { truncateText } from '../_components/cards/project-card'
-import { ServiceCard } from '../_components/cards/service-card'
-import { TestimonialCard } from '../_components/cards/testimonial-card'
-import { Footer } from '../_components/footer'
-import { Form } from '../_components/form'
-import Marquee from '../_components/marque'
-import { Navbar } from '../_components/navbar'
-import { SectionHeader } from '../_components/section-header'
+import { Link } from "@/i18n/routing";
+import { ArrowRight, Phone } from "@phosphor-icons/react";
+import { useTranslations } from "next-intl";
+import Image from "next/image";
+import { Button } from "../_components/button";
+import { InsightCard } from "../_components/cards/insight-card";
+import { PartnerCard } from "../_components/cards/partner-card";
+import { ProcessCard } from "../_components/cards/process-card";
+import { truncateText } from "../_components/cards/project-card";
+import { ServiceCard } from "../_components/cards/service-card";
+import { TestimonialCard } from "../_components/cards/testimonial-card";
+import { Footer } from "../_components/footer";
+import { Form } from "../_components/form";
+import Marquee from "../_components/marque";
+import { Navbar } from "../_components/navbar";
+import { SectionHeader } from "../_components/section-header";
 
 const HeroSection = ({ value, t, buttons }: any) => (
   <div
-    className="bg-white rounded-3xl lg:rounded-[64px] min-h-[29.375rem] lg:h-[53.75rem] lg:p-16 py-16 px-4 flex items-center lg:w-full"
+    className="bg-white rounded-3xl lg:rounded-[64px] min-h-[29.375rem bg-opacity-30  bg-black lg:h-[53.75rem] lg:p-16 py-16 px-4 flex items-center lg:w-full"
     style={{
       backgroundImage: "url('/back.png')",
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
+      backgroundSize: "cover",
+      backgroundPosition: "center",
     }}
   >
     <div className="max-w-[25.875rem] lg:max-w-[40rem] flex flex-col gap-3 text-white">
@@ -47,7 +47,7 @@ const HeroSection = ({ value, t, buttons }: any) => (
       </div>
     </div>
   </div>
-)
+);
 
 const InsightsSection = ({ cards }: any) => (
   <div className="flex flex-row gap-6 justify-start lg:justify-center lg:items-center w-full max-md:overflow-x-scroll">
@@ -56,7 +56,7 @@ const InsightsSection = ({ cards }: any) => (
     <InsightCard imgSrc="/house.svg" title={cards[2].title} text="+50" />
     <InsightCard imgSrc="/person.svg" title={cards[3].title} text="+100" />
   </div>
-)
+);
 
 const ServicesSection = ({ value, t, cards }: any) => (
   <div className="flex flex-col gap-10 justify-center items-center w-full overflow-hidden">
@@ -66,24 +66,32 @@ const ServicesSection = ({ value, t, cards }: any) => (
     />
 
     <Marquee className="max-md:hidden flex gap-6 ">
-      {cards.map((card: any) => (
-        <ServiceCard imgSrc="/map.svg" title={card.title} text={card.text} />
+      {cards.map((card: any, index: number) => (
+        <ServiceCard
+          key={index}
+          imgSrc="/map.svg"
+          title={card.title}
+          text={card.text}
+        />
       ))}
     </Marquee>
 
     <div className="lg:hidden flex gap-4 w-full overflow-x-scroll">
-      {cards.map((card: any) => (
-        <ServiceCard imgSrc="/map.svg" title={card.title} text={card.text} />
+      {cards.map((card: any, index: number) => (
+        <ServiceCard
+          key={index}
+          imgSrc="/map.svg"
+          title={card.title}
+          text={card.text}
+        />
       ))}
     </div>
   </div>
-)
+);
 
 const ProjectsSection = ({ value, t, t3, projectsData }: any) => {
-  console.log('ProjectsSection projectsData:', projectsData)
-
   if (!projectsData || projectsData.length < 3) {
-    return <div>No projects available</div>
+    return <div>No projects available</div>;
   }
 
   return (
@@ -181,29 +189,29 @@ const ProjectsSection = ({ value, t, t3, projectsData }: any) => {
               className="flex items-center justify-center bg-blue-arc-700 hover:bg-blue-arc-800 transition-colors duration-200 z-10 gap-2 rounded-[64px] text-center py-2 w-full"
               href={`/projects/${project.id}`}
             >
-              <span> {t3('link')}</span> <ArrowRight weight="light" />
+              <span> {t3("link")}</span> <ArrowRight weight="light" />
             </Link>
           </div>
         ))}
       </div>
       <Link
         className="lg:hidden border rounded-[64px] text-center py-4 w-full hover:bg-slate-200 transition-colors duration-200"
-        href={'/projects'}
+        href={"/projects"}
       >
         {t(`${value}.link1`)}
       </Link>
       <div className="max-lg:hidden flex items-center justify-end w-full">
         <Link
           className="max-lg:hidden border rounded-[64px] h-full w-fit flex justify-center gap-4 py-4 px-6 items-center text-white bg-blue-arc-700 hover:bg-blue-arc-800 transition-colors duration-200"
-          href={'/projects'}
+          href={"/projects"}
         >
           <span>{t(`${value}.link1`)}</span>
           <ArrowRight weight="regular" />
         </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
 const PartnersSection = ({ value, t, cards }: any) => (
   <div className="flex flex-col gap-10 justify-center items-center w-full overflow-hidden">
@@ -212,12 +220,17 @@ const PartnersSection = ({ value, t, cards }: any) => (
       description={t(`${value}.description`)}
     />
     <Marquee className="">
-      {cards.map((card: any) => (
-        <PartnerCard imgSrc={card.imgSrc} title={card.title} />
+      {cards.map((card: any, index: number) => (
+        <PartnerCard
+          key={index}
+          imgSrc={card.imgSrc}
+          title={card.title}
+          text={card.text}
+        />
       ))}
     </Marquee>
   </div>
-)
+);
 
 const ProcessesSection = ({ value, t, cards }: any) => (
   <div className="flex flex-col gap-4 lg:gap-10 justify-start lg:justify-center items-center w-full">
@@ -226,31 +239,42 @@ const ProcessesSection = ({ value, t, cards }: any) => (
       description={t(`${value}.description`)}
     />
     <div className="flex gap-6 max-md:hidden">
-      {cards.map((card: any) => (
-        <ProcessCard imgSrc={card.imgSrc} title={card.title} text={card.text} />
+      {cards.map((card: any, index: number) => (
+        <ProcessCard
+          key={index}
+          imgSrc={card.imgSrc}
+          title={card.title}
+          text={card.text}
+        />
       ))}
     </div>
 
     <div className="lg:hidden flex justify-start w-full flex-row gap-4 overflow-x-scroll">
-      {cards.map((card: any) => (
-        <ProcessCard imgSrc={card.imgSrc} title={card.title} text={card.text} />
+      {cards.map((card: any, index: number) => (
+        <ProcessCard
+          key={index}
+          imgSrc={card.imgSrc}
+          title={card.title}
+          text={card.text}
+        />
       ))}
     </div>
   </div>
-)
+);
 
 const TestimonialsSection = ({ value, t, cards }: any) => (
   <div className="flex flex-col gap-10 justify-center items-center w-full overflow-hidden">
     <SectionHeader title={t(`${value}.title`)} />
     <div className="flex flex-col gap-6">
       <Marquee className="[--duration:10s] ">
-        {cards.map((card: any) => (
-          <TestimonialCard title={card.title} text={card.text} />
+        {cards.map((card: any, index: number) => (
+          <TestimonialCard key={index} title={card.title} text={card.text} />
         ))}
       </Marquee>
       <Marquee className="hidden lg:flex" reverse>
-        {cards.map((card: any) => (
+        {cards.map((card: any, index: number) => (
           <TestimonialCard
+            key={index}
             title={card.title}
             className="w-[23.8rem]"
             text={card.text}
@@ -259,7 +283,7 @@ const TestimonialsSection = ({ value, t, cards }: any) => (
       </Marquee>
     </div>
   </div>
-)
+);
 
 const ContactSection = ({ value, t }: any) => (
   <div className="flex flex-col gap-10 justify-center items-center max-lg:border max-lg:rounded-2xl max-lg:pt-6">
@@ -274,37 +298,37 @@ const ContactSection = ({ value, t }: any) => (
       />
       <Image
         className="hidden lg:block"
-        src={'./contact.svg'}
+        src={"./contact.svg"}
         width={780}
         height={800}
         alt=""
       />
     </div>
   </div>
-)
+);
 
 export default function Home() {
-  const t = useTranslations('Home')
-  const t2 = useTranslations('Projects')
-  const t3 = useTranslations('ButtonLink')
-  const projectsData = t2.raw(`ProjectList`)
+  const t = useTranslations("Home");
+  const t2 = useTranslations("Projects");
+  const t3 = useTranslations("ButtonLink");
+  const projectsData = t2.raw(`ProjectList`);
   const sections = [
-    'HeroSection',
-    'InsightsSection',
-    'ServicesSection',
-    'ProjectsSection',
-    'PartnersSection',
-    'ProcessesSection',
-    'TestimonialsSection',
-    'ContactSection',
-  ] as const
+    "HeroSection",
+    "InsightsSection",
+    "ServicesSection",
+    "ProjectsSection",
+    "PartnersSection",
+    "ProcessesSection",
+    "TestimonialsSection",
+    "ContactSection",
+  ] as const;
 
-  const heroButtons = t.raw(`${sections[0]}.buttons`)
-  const insightCards = t.raw(`${sections[1]}.cards`)
-  const serviceCards = t.raw(`${sections[2]}.cards`)
-  const parternsCards = t.raw(`${sections[4]}.cards`)
-  const processesCards = t.raw(`${sections[5]}.cards`)
-  const testimonialCards = t.raw(`${sections[6]}.cards`)
+  const heroButtons = t.raw(`${sections[0]}.buttons`);
+  const insightCards = t.raw(`${sections[1]}.cards`);
+  const serviceCards = t.raw(`${sections[2]}.cards`);
+  const parternsCards = t.raw(`${sections[4]}.cards`);
+  const processesCards = t.raw(`${sections[5]}.cards`);
+  const testimonialCards = t.raw(`${sections[6]}.cards`);
 
   return (
     <div>
@@ -339,5 +363,5 @@ export default function Home() {
         <Footer />
       </div>
     </div>
-  )
+  );
 }
