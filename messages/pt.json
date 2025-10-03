@@ -214,66 +214,80 @@
         "title": "Escola Primária Completa 12 de Outubro",
         "imgSrc": "https://i.ibb.co/JrZNNBs/2-10-Photo.jpg",
         "imgSrcs": [
-          "https://i.ibb.co/zfDkrBG/DDDDDDDDD.jpg",
-          "https://i.ibb.co/JrZNNBs/2-10-Photo.jpg",
-          "https://i.ibb.co/FXBQf5b/2-5-Photo.jpg"
+          "/images/EPC/1.jpeg",
+          "/images/EPC/2.jpeg",
+          "/images/EPC/3.jpeg",
+          "/images/EPC/4.jpeg",
+          "/images/EPC/5.jpeg"
         ],
-        "text": "A Escola Primária 12 de Outubro foi concebida com o objetivo de proporcionar uma educação de qualidade para crianças em idade escolar na comunidade local. O processo de criação do projeto envolveu várias etapas importantes, desde a concepção da ideia inicial até a implementação final."
+        "text": "A Escola Primária 12 de Outubro foi projetada com o objetivo de fornecer educação de qualidade para crianças em idade escolar na comunidade local. O processo de criação do projeto envolveu várias etapas importantes, desde a concepção da ideia inicial até a implementação final."
       },
       {
         "id": "2",
-        "title": "Escola Primária Completa de Muda",
+        "title": "Escola Primária Completa Muda",
         "imgSrc": "https://i.ibb.co/fFpP2m6/1-5-ZQ-Photo.jpg",
         "imgSrcs": [
           "https://i.ibb.co/MV4fXHg/1-4-Photo.jpg",
           "https://i.ibb.co/7WmFkLw/EF.jpg",
-          "https://i.ibb.co/1GqBy67/1-3-1-Photo.jpg"
+          "https://i.ibb.co/1GqBy67/1-3-1-Photo.jpg",
+          "/images/Esturro/1.jpeg",
+          "/images/Esturro/2.jpeg",
+          "/images/Esturro/3.jpeg",
+          "/images/Esturro/4.jpeg"
         ],
-        "text": "A Escola Primária 12 de Outubro foi concebida com o objetivo de proporcionar uma educação de qualidade para crianças em idade escolar na comunidade local. O processo de criação do projeto envolveu várias etapas importantes, desde a concepção da ideia inicial até a implementação final."
+        "text": "A construção da EPC Muda Mufo é parte integrante dos esforços de reconstrução e recuperação após a devastação causada pelo Ciclone Idai em março de 2019. O ciclone danificou significativamente muitas infraestruturas na região, incluindo escolas. Este novo edifício escolar foi projetado não apenas para substituir as estruturas destruídas, mas também para melhorar a qualidade das instalações educacionais, garantindo que a comunidade tenha acesso a um ambiente de aprendizagem seguro e adequado. Este projeto implica a expansão da Escola Primária Muda Mufo (EPC) existente, localizada num terreno relativamente plano com uma área de aproximadamente 29.252,48 m² e uma área construída de 1.942,9 m². A construção inclui três blocos, abrangendo obras civis, hidráulicas, elétricas e externas, conforme descrito nos desenhos do projeto."
       },
       {
         "id": "3",
-        "title": "Escola Primária Completa de Tica",
+        "title": "Escola Primária Completa Tica",
         "imgSrc": "https://i.ibb.co/g9TXdrt/1-11-Foto.jpg",
         "imgSrcs": [
           "https://i.ibb.co/6F1ZGT5/1-4-Photo.jpg",
           "https://i.ibb.co/W6mNKLS/2-5-Photo.jpg",
-          "https://i.ibb.co/4FdGdgY/2-9-Photo.jpg"
+          "https://i.ibb.co/4FdGdgY/2-9-Photo.jpg",
+          "/images/Esturro/1.jpeg",
+          "/images/Esturro/2.jpeg",
+          "/images/Esturro/3.jpeg",
+          "/images/Esturro/4.jpeg"
         ],
-        "text": "A Escola Primária 12 de Outubro foi concebida com o objetivo de proporcionar uma educação de qualidade para crianças em idade escolar na comunidade local. O processo de criação do projeto envolveu várias etapas importantes, desde a concepção da ideia inicial até a implementação final."
+        "text": "Este projeto envolve a expansão da Escola Secundária Tica (ESG), localizada num terreno relativamente plano de aproximadamente 44.310,4006 m². O novo edifício, que cobrirá uma área de 1.795,53 m², representa uma extensão da escola existente. A estrutura em construção inclui um bloco com 11 salas de aula, projetado para acomodar a crescente população estudantil. Além das obras de engenharia civil e paisagismo detalhadas nos desenhos, o projeto também inclui a reconstrução do pavimento de uma quadra poliesportiva. Esta quadra foi removida para dar lugar à construção do novo edifício de salas de aula. Uma vez concluída, a escola terá um total de 22 salas de aula, com capacidade para atender 1.150 alunos por turno."
       },
       {
         "id": "4",
-        "title": "Escola Primária Completa de Esturro",
+        "title": "Escola Primária Completa Esturro",
         "imgSrc": "https://i.ibb.co/ZdctybZ/4-11-Foto.jpg",
         "imgSrcs": [
           "https://i.ibb.co/G7xzXxM/2-9-Photo.jpg",
           "https://i.ibb.co/r7XRXg3/2-10-Photo.jpg",
-          "https://i.ibb.co/mTQxC0C/4-12-Foto.jpg"
+          "https://i.ibb.co/mTQxC0C/4-12-Foto.jpg",
+          "/images/Esturro/1.jpeg",
+          "/images/Esturro/2.jpeg",
+          "/images/Esturro/3.jpeg",
+          "/images/Esturro/4.jpeg"
         ],
-        "text": "A Escola Primária 12 de Outubro foi concebida com o objetivo de proporcionar uma educação de qualidade para crianças em idade escolar na comunidade local. O processo de criação do projeto envolveu várias etapas importantes, desde a concepção da ideia inicial até a implementação final."
+        "text": "O edifício da EPC Esturro foi projetado para ser uma instalação educacional abrangente situada num terreno relativamente plano de aproximadamente 11.915,91m². O edifício cobre uma área total de 2.527,04m² e está desenvolvido em quatro blocos. Um bloco consiste em 2 pisos, enquanto os três blocos restantes consistem em 3 pisos. O projeto abrange obras civis, hidráulicas, elétricas e externas, conforme detalhado nos desenhos anexos."
       },
       {
         "id": "5",
-        "title": "Escola Primária Completa de Lamego",
+        "title": "Escola Primária Completa Lamengo",
         "imgSrc": "https://i.ibb.co/5xW96g4/2-8-QPhoto.jpg",
         "imgSrcs": [
           "https://i.ibb.co/m8Fz42S/2-4-1-Photo.jpg",
           "https://i.ibb.co/5xW96g4/2-8-QPhoto.jpg",
           "https://i.ibb.co/hC8vSxL/2-9-2-Photo.jpg"
         ],
-        "text": "A Escola Primária 12 de Outubro foi concebida com o objetivo de proporcionar uma educação de qualidade para crianças em idade escolar na comunidade local. O processo de criação do projeto envolveu várias etapas importantes, desde a concepção da ideia inicial até a implementação final."
+        "text": "A Escola Primária 12 de Outubro foi projetada com o objetivo de fornecer educação de qualidade para crianças em idade escolar na comunidade local. O processo de criação do projeto envolveu várias etapas importantes, desde a concepção da ideia inicial até a implementação final."
       },
       {
         "id": "6",
-        "title": "Ensino Secundário Geral Metuchira",
+        "title": "Escola Secundária Geral Metuchira",
         "imgSrc": "https://i.ibb.co/ZMsxtrx/1-11-Foto.jpg",
         "imgSrcs": [
           "https://i.ibb.co/L1tQ2Vx/15.jpg",
           "https://i.ibb.co/Mppn3ZR/1-7-Photo-2.jpg",
           "https://i.ibb.co/ZMsxtrx/1-11-Foto.jpg"
         ],
-        "text": "A Escola Primária 12 de Outubro foi concebida com o objetivo de proporcionar uma educação de qualidade para crianças em idade escolar na comunidade local. O processo de criação do projeto envolveu várias etapas importantes, desde a concepção da ideia inicial até a implementação final."
+        "text": "Este projeto envolve a expansão da Escola Primária 12 de Outubro (EPC) existente em Metuchira. A construção decorrerá num terreno relativamente plano com uma área de aproximadamente 10.615,19 m² e uma área coberta de 1.335,25 m². O novo edifício, que terá dois pisos e 10 salas de aula, inclui obras de construção civil e paisagismo, bem como arranjos exteriores, conforme detalhado nos desenhos do projeto."
       }
     ]
   },

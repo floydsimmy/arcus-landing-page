@@ -1,4 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+"use client";
+import React from "react";
 import { Footer } from "@/app/_components/footer";
 import { Navbar } from "@/app/_components/navbar";
 import { SectionHeader } from "@/app/_components/section-header";

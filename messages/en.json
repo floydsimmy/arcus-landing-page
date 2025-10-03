@@ -208,16 +208,20 @@
       "title": "Project Title",
       "text": "Project Description"
     },
+
     "ProjectList": [
       {
         "id": "1",
         "title": "12th of October Complete Primary School",
         "imgSrc": "https://i.ibb.co/JrZNNBs/2-10-Photo.jpg",
         "imgSrcs": [
-          "https://i.ibb.co/zfDkrBG/DDDDDDDDD.jpg",
-          "https://i.ibb.co/JrZNNBs/2-10-Photo.jpg",
-          "https://i.ibb.co/FXBQf5b/2-5-Photo.jpg"
+          "/images/EPC/1.jpeg",
+          "/images/EPC/2.jpeg",
+          "/images/EPC/3.jpeg",
+          "/images/EPC/4.jpeg",
+          "/images/EPC/5.jpeg"
         ],
+
         "text": "The 12th of October Primary School was designed with the aim of providing quality education for school-aged children in the local community. The project creation process involved several important stages, from the initial idea conception to the final implementation."
       },
       {
@@ -225,33 +229,36 @@
         "title": "Muda Complete Primary School",
         "imgSrc": "https://i.ibb.co/fFpP2m6/1-5-ZQ-Photo.jpg",
         "imgSrcs": [
-          "https://i.ibb.co/MV4fXHg/1-4-Photo.jpg",
-          "https://i.ibb.co/7WmFkLw/EF.jpg",
-          "https://i.ibb.co/1GqBy67/1-3-1-Photo.jpg"
+          "/images/Esturro/1.jpeg",
+          "/images/Esturro/2.jpeg",
+          "/images/Esturro/3.jpeg",
+          "/images/Esturro/4.jpeg"
         ],
-        "text": "The 12th of October Primary School was designed with the aim of providing quality education for school-aged children in the local community. The project creation process involved several important stages, from the initial idea conception to the final implementation."
+        "text": "The construction of the EPC Muda Mufo is an integral part of the reconstruction and recovery efforts following the devastation caused by Cyclone Idai in March 2019. The cyclone significantly damaged many infrastructures in the region, including schools. This new school building is designed not only to replace the destroyed structures but also to enhance the quality of educational facilities, ensuring that the community has access to a safe and adequate learning environment. This project entails the expansion of the existing Muda Mufo Primary School (EPC), located on a relatively flat site with an area of approximately 29,252.48 m² and a built-up area of 1,942.9 m². The construction includes three blocks, covering civil, hydraulic, electrical, and external works as outlined in the project drawings."
       },
       {
         "id": "3",
         "title": "Tica Complete Primary School",
         "imgSrc": "https://i.ibb.co/g9TXdrt/1-11-Foto.jpg",
         "imgSrcs": [
-          "https://i.ibb.co/6F1ZGT5/1-4-Photo.jpg",
-          "https://i.ibb.co/W6mNKLS/2-5-Photo.jpg",
-          "https://i.ibb.co/4FdGdgY/2-9-Photo.jpg"
+          "/images/Esturro/1.jpeg",
+          "/images/Esturro/2.jpeg",
+          "/images/Esturro/3.jpeg",
+          "/images/Esturro/4.jpeg"
         ],
-        "text": "The 12th of October Primary School was designed with the aim of providing quality education for school-aged children in the local community. The project creation process involved several important stages, from the initial idea conception to the final implementation."
+        "text": "This project involves the expansion of the Tica Secondary School (ESG), located on a relatively flat plot of approximately 44,310.4006 m². The new building, which will cover an area of 1,795.53 m², represents an extension of the existing school. The structure under construction includes a block with 11 classrooms, designed to accommodate the growing student population. In addition to the civil engineering and landscaping works detailed in the drawings, the project also includes the reconstruction of the pavement of a multipurpose court. This court was removed to make way for the construction of the new classroom building. Once completed, the school will have a total of 22 classrooms, with a capacity to serve 1,150 students per shift."
       },
       {
         "id": "4",
         "title": "Esturro Complete Primary School",
         "imgSrc": "https://i.ibb.co/ZdctybZ/4-11-Foto.jpg",
         "imgSrcs": [
-          "https://i.ibb.co/G7xzXxM/2-9-Photo.jpg",
-          "https://i.ibb.co/r7XRXg3/2-10-Photo.jpg",
-          "https://i.ibb.co/mTQxC0C/4-12-Foto.jpg"
+          "/images/Esturro/1.jpeg",
+          "/images/Esturro/2.jpeg",
+          "/images/Esturro/3.jpeg",
+          "/images/Esturro/4.jpeg"
         ],
-        "text": "The 12th of October Primary School was designed with the aim of providing quality education for school-aged children in the local community. The project creation process involved several important stages, from the initial idea conception to the final implementation."
+        "text": "The EPC Esturro building is designed to be a comprehensive educational facility situated on a relatively flat plot of approximately 11,915.91m². The building covers a total area of 2,527.04m² and is developed into four blocks. One block consists of 2 floors, while the remaining three blocks consist of 3 floors. The project encompasses civil, hydraulic, electrical, and external works, as detailed in the accompanying drawings."
       },
       {
         "id": "5",
@@ -273,7 +280,7 @@
           "https://i.ibb.co/Mppn3ZR/1-7-Photo-2.jpg",
           "https://i.ibb.co/ZMsxtrx/1-11-Foto.jpg"
         ],
-        "text": "The 12th of October Primary School was designed with the aim of providing quality education for school-aged children in the local community. The project creation process involved several important stages, from the initial idea conception to the final implementation."
+        "text": "This project involves the expansion of the existing October 12 Primary School (EPC) in Metuchira. Construction will take place on a relatively flat site with an area of approximately 10,615.19 m² and a covered area of 1,335.25 m². The new building, which will have two floors and 10 classrooms, includes civil construction and landscaping works, as well as exterior arrangements, as detailed in the project drawings."
       }
     ]
   },
