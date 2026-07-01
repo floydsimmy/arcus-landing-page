@@ -44,7 +44,12 @@ const TeamSection = ({ value, t, cards }: any) => (
     <SectionHeader title={t(`${value}.title`)} description="" />
     <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 ">
       {cards.map((card: any) => (
-        <TeamCard title={card.title} text={card.text} />
+        <TeamCard
+          key={card.title}
+          title={card.title}
+          text={card.text}
+          imgSrc={card.imgSrc}
+        />
       ))}
     </div>
   </div>
@@ -85,7 +90,7 @@ const AdditionalInfoSection = ({ value, t }: any) => (
             href={'https://g.co/kgs/54yy8Fp'}
             className="text-slate-arc-900"
           >
-            Museu
+             nº555 Avenida Friedrich Engels, Maputo, Mozambique
           </Link>
         </p>
         <p className="text-slate-arc-500">

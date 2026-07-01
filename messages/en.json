@@ -357,19 +357,23 @@
       "cards": [
         {
           "title": "Eduardo Nhate",
-          "text": "Head of Projects/Creation"
+          "text": "Head of Projects/Creation",
+          "imgSrc": "/images/team members/eduardo nhate.svg"
         },
         {
-          "title": "John Doe",
-          "text": "Head of Something"
+          "title": "Arnaldo Simango",
+          "text": "Founder & Ceo",
+          "imgSrc": "/images/team members/arnaldo simango.svg"
         },
         {
           "title": "Stela Nhantumbo",
-          "text": "Head of Administration/Finance"
+          "text": "Head of Administration/Finance",
+          "imgSrc": "/images/team members/stela custodia.svg"
         },
         {
-          "title": "Florêncio Chau",
-          "text": "Budget and Supervision Coordinator"
+          "title": "Crescencio Maposse",
+          "text": "Executive Director",
+          "imgSrc": "/images/team members/Crescencio maposse.svg"
         }
       ]
     },
