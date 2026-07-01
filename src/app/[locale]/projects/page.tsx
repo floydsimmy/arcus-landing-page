@@ -7,9 +7,15 @@ import { SectionHeader } from "@/app/_components/section-header";
 // import projectsData from "@/data/projects.json";
 import { Pagination } from "@nextui-org/pagination";
 import { ProjectCard } from "../../_components/cards/project-card";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 
-export default async function Projects() {
+export default async function Projects({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  // Enable static rendering for this server component under `output: 'export'`.
+  unstable_setRequestLocale(locale);
   const t = await getTranslations("Projects");
   const projectsData = t.raw(`ProjectList`);
 

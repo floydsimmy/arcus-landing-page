@@ -3,8 +3,17 @@ import { Footer } from '@/app/_components/footer'
 import { Navbar } from '@/app/_components/navbar'
 import { SectionHeader } from '@/app/_components/section-header'
 import { useTranslations } from 'next-intl'
+import { unstable_setRequestLocale } from 'next-intl/server'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
+import projectMessages from '../../../../../messages/en.json'
+
+// Pre-render one page per project id at build time (required for `output: 'export'`).
+// Project ids are shared across locales, so reading one locale's list is enough.
+export function generateStaticParams() {
+  const list = (projectMessages as any).Projects?.ProjectList ?? []
+  return list.map((project: any) => ({ id: String(project.id) }))
+}
 
 interface Project {
   id: string
@@ -15,10 +24,12 @@ interface Project {
 }
 
 interface ProjectProps {
-  params: { id: string }
+  params: { locale: string; id: string }
 }
 
 export default function ProjectDetails({ params }: ProjectProps) {
+  // Enable static rendering so reading the locale doesn't opt into dynamic mode.
+  unstable_setRequestLocale(params.locale)
   const t = useTranslations('Projects')
   const projectsData = t.raw(`ProjectList`)
   const project = projectsData.find(

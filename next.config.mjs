@@ -5,7 +5,10 @@ const withNextIntl = createNextIntlPlugin()
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   images: {
+    // Static export can't run the Image Optimization API at runtime.
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
