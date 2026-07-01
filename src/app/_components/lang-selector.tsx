@@ -1,7 +1,9 @@
 'use client'
-import { usePathname, useRouter } from '@/i18n/routing'
+import { routing, usePathname, useRouter } from '@/i18n/routing'
 import { useLocale } from 'next-intl'
 import { ChangeEvent, useTransition } from 'react'
+
+type Locale = (typeof routing.locales)[number]
 
 export const LanguageSelector = () => {
   const [isPending, startTransition] = useTransition()
@@ -10,7 +12,7 @@ export const LanguageSelector = () => {
   const pathname = usePathname()
 
   const onSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
-    const nextLocale = e.target.value
+    const nextLocale = e.target.value as Locale
     startTransition(() => {
       router.replace(pathname, { locale: nextLocale })
     })
