@@ -1,3 +1,4 @@
+import path from 'node:path'
 import createNextIntlPlugin from 'next-intl/plugin'
 
 const withNextIntl = createNextIntlPlugin()
@@ -22,6 +23,14 @@ const nextConfig = {
   },
    experimental: {
     optimizeCss: true,
+  },
+  webpack: (config) => {
+    config.resolve.alias['@react-stately/flags'] = path.resolve(
+      process.cwd(),
+      'src/polyfills/react-stately-flags.ts',
+    )
+
+    return config
   },
 }
 

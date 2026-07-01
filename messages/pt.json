@@ -34,9 +34,9 @@
     "contactInfo": {
       "phone": "+258 87 313 3920",
       "email": "info@arcus.co.mz",
-      "location": "Museu"
+      "location": "nº555 Avenida Friedrich Engels, Maputo, Mozambique"
     },
-    "copyright": "© 2024 Arcus",
+    "copyright": "© 2026 Arcus",
     "credits": "Feito pela: Digital View"
   },
   "Home": {
@@ -364,19 +364,23 @@
       "cards": [
         {
           "title": "Eduardo Nhate",
-          "text": "Chefe de Projectos/Criação"
+          "text": "Chefe de Projectos/Criação",
+          "imgSrc": "/images/team members/eduardo nhate.svg"
         },
         {
-          "title": "John Doe",
-          "text": "Chefe de something"
+          "title": "Arnaldo Simango",
+          "text": "Ceo e Fundador",
+          "imgSrc": "/images/team members/arnaldo simango.svg"
         },
         {
           "title": "Stela Nhantumbo",
-          "text": "Chefe de Administração/Finanças"
+          "text": "Chefe de Administração/Finanças",
+          "imgSrc": "/images/team members/stela custodia.svg"
         },
         {
-          "title": "Florêncio Chau",
-          "text": "Coordenador de Orçamento e Fiscalização"
+          "title": "Crescencio Maposse",
+          "text": "Director Executivo",
+          "imgSrc": "/images/team members/Crescencio maposse.svg"
         }
       ]
     },

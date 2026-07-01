@@ -1,17 +1,18 @@
 'use client'
+import { usePathname, useRouter } from '@/i18n/routing'
 import { useLocale } from 'next-intl'
-import { useRouter } from 'next/navigation'
 import { ChangeEvent, useTransition } from 'react'
 
 export const LanguageSelector = () => {
   const [isPending, startTransition] = useTransition()
   const router = useRouter()
   const localActive = useLocale()
+  const pathname = usePathname()
 
   const onSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
     const nextLocale = e.target.value
     startTransition(() => {
-      router.replace(`/${nextLocale}`)
+      router.replace(pathname, { locale: nextLocale })
     })
   }
 

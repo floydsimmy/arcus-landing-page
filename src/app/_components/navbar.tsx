@@ -1,12 +1,11 @@
 'use client'
-import { Link } from '@/i18n/routing'
+import { Link, usePathname } from '@/i18n/routing'
 import { EnvelopeSimple, List, X } from '@phosphor-icons/react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { useState } from 'react'
 
 import { useTranslations } from 'next-intl'
-import { usePathname } from 'next/navigation'
 import { Button } from './button'
 import { LanguageSelector } from './lang-selector'
 

@@ -298,7 +298,7 @@ const ContactSection = ({ value, t }: any) => (
       />
       <Image
         className="hidden lg:block"
-        src={"./contact.svg"}
+        src={"/Bottom.jpeg"}
         width={780}
         height={800}
         alt=""
