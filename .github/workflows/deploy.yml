@@ -1,0 +1,47 @@
+name: Build static site for cPanel
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cpanel-deploy
+  cancel-in-progress: true
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      # --legacy-peer-deps: eslint 9 vs eslint-config-next@14 peer conflict
+      # predates this workflow; a plain `npm ci` fails to resolve.
+      - name: Install dependencies
+        run: npm ci --legacy-peer-deps
+
+      - name: Build static export
+        run: npm run build:static
+
+      # .cpanel.yml must sit at the root of the published branch so cPanel
+      # runs its deployment tasks when the branch is deployed.
+      - name: Add cPanel deployment file
+        run: cp deploy/cpanel.yml out/.cpanel.yml
+
+      # Appends a commit to cpanel-deploy (no force-push): cPanel's
+      # "Update from Remote" only fast-forwards, so history must be linear.
+      - name: Publish out/ to cpanel-deploy branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out
+          publish_branch: cpanel-deploy
+          commit_message: 'deploy: ${{ github.sha }}'

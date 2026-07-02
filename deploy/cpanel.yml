@@ -1,0 +1,13 @@
+---
+# This file is copied to out/.cpanel.yml by .github/workflows/deploy.yml and
+# ships at the root of the `cpanel-deploy` branch. cPanel's Git Version
+# Control runs these tasks when that branch is deployed.
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home2/arcusco/public_html/
+    # Clear stale hashed build assets so old JS/CSS chunks don't pile up.
+    - /bin/rm -rf ${DEPLOYPATH}_next
+    # `*` does not match dotfiles, so .cpanel.yml itself is never deployed
+    # and .htaccess must be copied explicitly.
+    - /bin/cp -R * $DEPLOYPATH
+    - /bin/cp .htaccess $DEPLOYPATH

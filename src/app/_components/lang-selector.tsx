@@ -10,7 +10,7 @@ export const LanguageSelector = () => {
   const pathname = usePathname()
 
   const onSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
-    const nextLocale = e.target.value
+    const nextLocale = e.target.value as 'pt' | 'en'
     startTransition(() => {
       router.replace(pathname, { locale: nextLocale })
     })
