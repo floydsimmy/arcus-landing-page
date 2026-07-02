@@ -1,0 +1,8 @@
+# Deployed to public_html together with the static export (see DEPLOYMENT.md).
+
+# The site has no root page — send visitors to the default locale.
+RewriteEngine On
+RewriteRule ^$ /pt/ [R=302,L]
+
+# Serve the Next.js exported 404 page for unknown paths.
+ErrorDocument 404 /404.html
